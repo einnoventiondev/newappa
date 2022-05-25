@@ -31,34 +31,34 @@
 						</div>
 						<div class="col-md-12">
 							<label for="video" class="video-box">Video</label>
-							<input type="file" id="video" class="d-none">
+							
 						</div>
 
 						<div class="col-md-6">
 							<label for="img-1" class="image-box-season">Images</label>
-							<input type="file" id="img-1" class="d-none">
+							
 						</div>
 						<div class="col-md-6">
 							<label for="img-2" class="image-box-season">Images</label>
-							<input type="file" id="img-2" class="d-none">
+							
 						</div>
 
 						<div class="col-md-6">
 							<label for="img-3" class="image-box-season">Images</label>
-							<input type="file" id="img-3" class="d-none">
+							
 						</div>
 						<div class="col-md-6">
 							<label for="img-4" class="image-box-season">Images</label>
-							<input type="file" id="img-4" class="d-none">
+							
 						</div>
 
 						<div class="col-md-6">
 							<label for="img-5" class="image-box-season">Images</label>
-							<input type="file" id="img-5" class="d-none">
+							
 						</div>
 						<div class="col-md-6">
 							<label for="img-6" class="image-box-season">Images</label>
-							<input type="file" id="img-6" class="d-none">
+							
 						</div>
 						<!-- <div class="col-md-12">
 							<button class="btn btn-primary img-submit"> Submit</button>
