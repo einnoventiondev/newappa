@@ -33,7 +33,7 @@
                 جائزة الأمير <br>عبدالله الفيصل
 
               </span>
-              <h1 class="animate__animated animate__fadeInRight animate_slower">لأفضل مشروع  في  خدمة<br> الشعر العربي</h1>
+              <h1 class="animate__animated animate__fadeInRight animate_slower">جائزة الأمير عبدالله الفيصل لأفضل مشروع في خدمة</h1>
             </div>
             <div class="box-theatrical">
               <img src="{{asset('./assets/images/red.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="red-diamond">
