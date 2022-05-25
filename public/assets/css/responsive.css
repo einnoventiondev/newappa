@@ -94,7 +94,7 @@
 		margin-bottom: 25px;
 	}
 }
-@media (min-width: 360px) and (max-width: 767px) {
+    @media (min-width: 360px) and (max-width: 767px) {
 	.content .reset-con{
 		padding-right:0px !important;
 	}
@@ -1011,8 +1011,6 @@
         }
     
     }
-    
-    
     @media (min-width: 576px) and (max-width: 767px) {
         .title-index h3 {
             font-size: 26px !important;
@@ -1157,8 +1155,6 @@
         }
       
     }
-    
-    
     /* tablet responsive */
     @media  (min-width: 360px) and (max-width: 767px) {
     .navbar-collapse, .navbar-collapse.show{
@@ -1225,10 +1221,6 @@
     }
     
     }
-    
-    
-    
-    
     @media only screen and (min-width: 768px) and (max-width: 991px) {
         .mobile-menu{
             display:none !important;
