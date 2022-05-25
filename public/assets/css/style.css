@@ -1497,6 +1497,7 @@ a:hover {
 	line-height: 1;
 	margin-bottom: 45px;
 	font-weight: 600;
+    color: #00514c;
 }
 
 .accordinas__desc {
@@ -1713,7 +1714,7 @@ a:hover {
 
 /* ============================== award-season ==================================== */
 #award-seasons .season-box {
-	height: 460px;
+	height: 360px;
 	width: auto;
 	background: url(../images/pentagone-yellow.png) center;
 	background-size: 100% 100%;
@@ -1728,6 +1729,7 @@ a:hover {
 	transition: all 0.5s ease-in-out;
 	position: relative;
 	overflow: hidden;
+    margin: 0 30px;
 }
 .season-box__img{
 	position: absolute;
@@ -1846,8 +1848,13 @@ a:hover {
 	width:76px;
 }
 /* weather season */
+.season-title h2{
+    color: #00514c !important;
+    margin-bottom: 40px;
+}
 #season-view{
-	padding: 50px 0;
+	padding-top: 50px;
+	padding-bottom: 220px;
 }
 #season-view label{
 	color: #00514c !important;
@@ -1906,7 +1913,7 @@ a:hover {
 	color: #00514C;
 }
 .table-box-1{
-	padding-right: 320px !important;
+	padding-right: 320px;
 }
 .table-h{
 	width: 200px;
@@ -1956,6 +1963,7 @@ a:hover {
     color: #00514C;
     font-weight: 600;
     font-family: 'Cairo', sans-serif;
+    transition: all 0.5s ease-in-out;
 }
 #award-seasons .season-box:hover .season-name .years {
 	color: #fff;
@@ -1971,6 +1979,8 @@ a:hover {
 	margin-bottom: 10px;
 	background-color: #B79B66;
 	transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 .acc-mob-box:hover{
 	background-color: #00514C;

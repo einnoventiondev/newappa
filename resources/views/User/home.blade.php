@@ -279,150 +279,55 @@
 				</div>
 			</div>
 		</section>
-		<!-- <section class="accordians-mobile">
-			<div class="container">
-				<h1 class="accordinas__heading">عن الأمير عبد الله الفيصل</h1>
-				<p class="accordinas__desc">
-					في عام 1341هـ -1922م ولد الشاعر الأمير عبد الله الفيصل في مدينة الرياض وهو الابن البكر للملك فيصل بن
-					عبد العزيز، ووالدته هي الأميرة سلطانة بنت أحمد بن محمد السديري، وقد نشأ في كنف جده الملك المؤسس وتحت
-					رعايته في مدينة الرياض قبل أن ينتقل إلى مكة المكرمة حيث عاش والده الملك فيصل الذي كان يشغل منصب نائب
-					الملك في الحجاز.
-				</p>
-				<div class="row">
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">مسيرة حياته</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg6.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">المسيرة الشعرية</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg5.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">قالو عنه</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg4.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">الأوسمة والجوائز</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg3.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading"> المناصب التي تولاها </h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg2.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">نماذج من شعره المغنى</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg1.jpg" alt="">
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section> -->
 		<section class="acc-mob">
-			<div class="row gx-2">
-				<h2 class="award-txt">عن الأمير عبد الله الفيصل</h2>
-				<p class="accordinas__desc">
-					في عام 1341هـ -1922م ولد الشاعر الأمير عبد الله الفيصل في مدينة الرياض وهو الابن البكر للملك فيصل بن
-					عبد العزيز، ووالدته هي الأميرة سلطانة بنت أحمد بن محمد السديري، وقد نشأ في كنف جده الملك المؤسس وتحت
-					رعايته في مدينة الرياض قبل أن ينتقل إلى مكة المكرمة حيث عاش والده الملك فيصل الذي كان يشغل منصب نائب
-					الملك في الحجاز.
-				</p>
+			<div class="container">
+				<div class="row gx-2">
+					<h2 class="award-txt">عن الأمير عبد الله الفيصل</h2>
+					<p class="accordinas__desc">
+						في عام 1341هـ -1922م ولد الشاعر الأمير عبد الله الفيصل في مدينة الرياض وهو الابن البكر للملك فيصل بن
+						عبد العزيز، ووالدته هي الأميرة سلطانة بنت أحمد بن محمد السديري، وقد نشأ في كنف جده الملك المؤسس وتحت
+						رعايته في مدينة الرياض قبل أن ينتقل إلى مكة المكرمة حيث عاش والده الملك فيصل الذي كان يشغل منصب نائب
+						الملك في الحجاز.
+					</p>
+				</div>
 				<div class="row">
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box1">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box1">
 							<h1 class="acc-mob-box__heading">مسيرة حياته</h1>
 							<p class="acc-mob-box__desc">انتظم الأمير عبد الله الفيصل في الدراسة والتعليم ونال الشهادة الابتدائية من المدرسة الفيصلية </p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box2">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box2">
 							<h1 class="acc-mob-box__heading">المسيرة الشعرية</h1>
 							<p class="acc-mob-box__desc">يعد الأمير عبد الله الفيصل أحد أهم فرسان القصيدة العربية في عصر الرومانسية </p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box3">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box3">
 							<h1 class="acc-mob-box__heading">قالو عنه</h1>
 							<p class="acc-mob-box__desc">إذا كان الأمير عبد الله الفيصل قد جعل من الحرمان موضوعا أساسيا في شعره، </p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box4">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box4">
 							<h1 class="acc-mob-box__heading">الأوسمة والجوائز</h1>
 							<p class="acc-mob-box__desc">
 								كُرم الأمير عبد الله الفيصل في العديد من المحافل السعودية والإقليمية والدولية،
 							</p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box5">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box5">
 							<h1 class="acc-mob-box__heading"> المناصب التي تولاها </h1>
 							<p class="acc-mob-box__desc">تولى في عهد جده الملك عبد العزيز آل سعود المناصب الآتية مساعد نائب الملك (والده الأمير فيصل) على الحجاز  </p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box6">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box6">
 							<h1 class="acc-mob-box__heading">نماذج من شعره المغنى</h1>
 							<p class="acc-mob-box__desc">مثلت أعمال الشاعر الأمير عبد الله الفيصل نقطة تحول هامة في مسيرة سيدة الغناء العربي كوكب الشرق (أم كلثوم) </p>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -432,7 +337,7 @@
                 <div class="row gx-2">
                     <h2 class="award-txt">الجوائز</h2>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-dark-gray jQueryEqualHeight1" data-aos="fade-up">
+                        <a href="{{route('Prince.PoeticExperience')}}" class="box-trophy box-trophy-dark-gray jQueryEqualHeight1" data-aos="fade-up">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -440,10 +345,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للتجربة الشعرية</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-blue jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="200">
+                        <a href="{{route('Prince.diwan')}}" class="box-trophy box-trophy-blue jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="200">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -451,10 +356,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للديوان</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-green jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="400">
+                        <a href="{{route('Prince.Theatricalpoetry')}}" class="box-trophy box-trophy-green jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="400">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -462,10 +367,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للشعر المسرحي</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-light-gray jQueryEqualHeight1" data-aos="fade-up">
+                        <a href="{{route('Prince.singingpoem')}}" class="box-trophy box-trophy-light-gray jQueryEqualHeight1" data-aos="fade-up">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -473,10 +378,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للقصيدة المغناة</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-dark-brown jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="200">
+                        <a href="{{route('Prince.ArabicPoetry')}}" class="box-trophy box-trophy-dark-brown jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="200">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -484,10 +389,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>لأفضل مشروع في خدمة الشعر العربي</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-light-green jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="400">
+                       <a href="{{route('award')}}" class="box-trophy box-trophy-light-green jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="400">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -495,7 +400,7 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للشاعر الواعد</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                 </div>
             </div>
@@ -546,47 +451,47 @@
                 <div class="row gx-3">
                     <h2 class="award-txt">مواسم الجائزة</h2>
                     <div class="col-xs-12 col-sm-12 col-md-4" data-aos="fade-up">
-                        <div class="season-box">
+                        <a href="{{route('user.season019')}}" class="season-box">
                             
                             <div class="season-name">
                                 <span>الموسم الأول</span>
-                                {{-- <p class="years">٢٠١٩</p> --}}
-                                <form action="{{ route('index_portfolio') }}" method="POST">
+                                <p class="years">٢٠١٩</p>
+                                {{-- <form action="{{route('user.season019')}}" method="POST">
                                     @csrf
-                                    <input type="hidden" name="year" value="{{ 2019 }}">
+                                    <input type="hidden" name="year" value="٢٠١٩ ">
                                     <button type="submit" class="years">٢٠١٩</button>
-                                </form>
+                                </form> --}}
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="season-box">
+                        <a href="{{route('user.season020')}}" class="season-box">
                         
                             <div class="season-name">
                                 <span>الموسم الثاني</span>
-                                {{-- <p class="years">٢٠٢٠</p> --}}
-                                <form action="{{ route('index_portfolio') }}" method="POST">
+                                <p class="years">٢٠٢٠</p>
+                                {{-- <form action="{{route('user.season020')}}" method="POST">
                                     @csrf
-                                    <input type="hidden" name="year" value="{{ 2020 }}">
+                                    <input type="hidden" name="year" value="٢٠٢٠">
                                     <button type="submit" class="years">٢٠٢٠</button>
-                                </form>
+                                </form> --}}
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="season-box">
+                        <a href="{{route('user.season021')}}" class="season-box">
                         
                             <div class="season-name">
                                 <span>الموسم الثالث</span>
-                                {{-- <p class="years">٢٠٢١</p> --}}
-                                <form action="{{ route('index_portfolio') }}" method="POST">
+                                <p class="years">٢٠٢١</p>
+                                {{-- <form action="{{route('user.season021')}}" method="POST">
                                     @csrf
-                                    <input type="hidden" name="year" value="{{ 2021 }}">
+                                    <input type="hidden" name="year" value="٢٠٢١">
                                     <button type="submit" class="years">٢٠٢١</button>
-                                </form>
+                                </form> --}}
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

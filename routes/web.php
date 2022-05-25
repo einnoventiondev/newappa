@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\SeasonController;
 use App\Models\Country;
 use App\Models\Nation;
 
@@ -161,6 +162,9 @@ Route::post('/password_updates', [HomeController::class, 'editpassword'])->name(
 //contact us message from users
 
 // ---------------------------------------USER---------------------------------------------------
+Route::get('season19', [SeasonController::class, 'season19'])->name('user.season019');
+Route::get('season20', [SeasonController::class, 'season20'])->name('user.season020');
+Route::get('season21', [SeasonController::class, 'season21'])->name('user.season021');
 
 Route::get('AboutPrince', [userController::class, 'AboutPrince'])->name('Prince.AboutPrinceCompetition');
 Route::get('ArabicPoetry', [userController::class, 'ArabicPoetry'])->name('Prince.ArabicPoetry');
