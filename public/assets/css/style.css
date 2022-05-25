@@ -2025,7 +2025,7 @@ a:hover {
     padding-left: 0;
 }
 @media(max-width:1399px){
-	
+
 	.time-plan-txt {
 		color: #00514C;
 		text-align: center;
@@ -2100,7 +2100,7 @@ a:hover {
 	}
 }
 @media(max-width:767px){
-	
+
 	.time-plan-section table th, .time-plan-section table td {
 		padding-right: 5px !important;
 		font-size: 13px;
@@ -2120,3 +2120,76 @@ a:hover {
 		margin-bottom: 25px;
 	}
 }
+
+
+
+
+
+
+
+/* asim */
+.coprate-section .add-more-btn-main{
+    margin-bottom: 75px;
+}
+
+.btn-green-icon {
+      color: #00514c;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.2;
+      box-shadow: none;
+      z-index: 1;
+      position: relative;
+}
+.btn-green-icon {
+    color: #00514c;
+}
+.coprate-section h1{
+    font-size: 56px;
+    width: 60%;
+}
+.coprate-section h2{
+    font-size: 28px;
+}
+.coprate-section label{
+    font-size: 26px;
+}
+.coprate-section .form-group input ,.coprate-section .form-group select , .coprate-section .upload-file-img {
+    min-height: 68px !important;
+}
+
+.per-color{
+    color: #b79b66 !important;
+}
+.radio-main{
+    margin-top: 47px;
+}
+.radio-main .form-check-label{
+    margin-top: 0px !important;
+}
+.radio-main label {
+    color: #B79B66;
+}
+.filter-txt{
+    color: #00514C !important;
+}
+.corporate-form .upload-file .upload-file-img{
+    padding-left: 50px !important;
+    color: #00514C !important;
+}
+.corporate-form .upload-file .upload-file-img img{
+    width: 30px !important;
+    height: auto !important;
+}
+.corporate-form  .check-label{
+    margin-top: 0px !important;
+}
+.corporate-form select{
+    background-image: url('../images/arrow-down.png') !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
