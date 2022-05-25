@@ -1400,9 +1400,18 @@
         .title span {
             padding-right: 0;
         }
-			.season-name span{
-		font-size: 32px;
-	}
+        .season-name span{
+            font-size: 32px;
+        }
+        .title-right span {
+            font-size: 35px;
+        }
+        .title-right h1 {
+            font-size: 40px;
+        }
+        .title-right .sub-title {
+            top: 100px;
+        }
     }
     @media only screen and (min-width: 1300px) {
         .mobile-menu{
@@ -1424,15 +1433,7 @@
         .table-box-1 {
             padding-right: 260px !important;
         }
-        .title-right span {
-            font-size: 35px;
-        }
-        .title-right h1 {
-            font-size: 40px;
-        }
-        .title-right .sub-title {
-            top: 100px;
-        }
+        
     }
     @media only screen and (min-width: 1400px) {
         .mobile-menu{
