@@ -19,10 +19,10 @@
                     <a class="nav-link" href="{{route('Prince.PoeticExperience')}}">عن الجائزة</a>
                 </li> -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link rotate-arrow-click" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link rotate-arrow-click-b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         الجوائز
                         <!-- <img src="{{asset('/assets/icons/arrow-down.png')}}" alt=""> -->
-                        <i class="rotate-arrow-main fa-solid fa-angle-left"></i>
+                        <i class="rotate-arrow-main-b fa-solid fa-angle-left"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{route('Prince.PoeticExperience')}}">جائزة الأمير عبدالله الفيصل للتجربة الشعرية</a></li>
@@ -50,8 +50,8 @@
                 </li>
 
                 <li  class="nav-item dropdown">
-                    <a class="nav-link rotate-arrow-click"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">مواسم الجائزة 
-                    <i class="rotate-arrow-main fa-solid fa-angle-left"></i>
+                    <a class="nav-link rotate-arrow-click-a"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">مواسم الجائزة 
+                    <i class="rotate-arrow-main-a fa-solid fa-angle-left"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{route('user.season019')}}"> الموسم الأول ٢٠١٩</a></li>
@@ -66,9 +66,9 @@
                
 				
               <li class="nav-item dropdown">
-                    <a class="nav-link rotate-arrow-click" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link rotate-arrow-click-c" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         الشروط والأحكام
-                        <i class="rotate-arrow-main fa-solid fa-angle-left"></i></a>
+                        <i class="rotate-arrow-main-c fa-solid fa-angle-left"></i></a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{url('terms-and-conditions')}}">الأحكام العامة</a>
                         <li><a class="dropdown-item" href="{{url('legal-policy')}}"> المسؤولية القانونية</a>
