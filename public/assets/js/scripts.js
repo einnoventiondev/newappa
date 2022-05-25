@@ -2,32 +2,37 @@ $(document).ready(function () {
 
     $(".mobile-toggle").click(function () {
         $(".mobile-menu").toggleClass("d-block");
- });
- 
+    });
+
 
     $(".dropdown-main-3 .aljwise").click(function () {
-           $(".dropdown-div-1").toggleClass("d-block");
-           $(".dropdown-main-link .rotate-arrow").toggleClass("fa-angle-down fa-angle-left");
-        });
-        $(".dropdown-inner-condition").click(function () {
-            $(".dropdown-main-link-div").toggleClass("d-block");
-            $(".dropdown-main-link .rotate-arrow-1").toggleClass("fa-angle-down fa-angle-left");
-         });
-         $(".rotate-arrow-click").click(function () {
-            $(".rotate-arrow-main").toggleClass("fa-angle-down fa-angle-left");
-         });
-         
-//  $(".dropdown-main-link-5").click(function () {
-//     console.log("main")
-//     $(".dropdown-main-link-div ").toggleClass("d-block");
-// });
+        $(".dropdown-div-1").toggleClass("d-block");
+        $(".dropdown-main-link .rotate-arrow").toggleClass("fa-angle-down fa-angle-left");
+    });
+    $(".dropdown-inner-condition").click(function () {
+        $(".dropdown-main-link-div").toggleClass("d-block");
+        $(".dropdown-main-link .rotate-arrow-1").toggleClass("fa-angle-down fa-angle-left");
+    });
+    $(".rotate-arrow-click").click(function () {
+        $(".rotate-arrow-main").toggleClass("fa-angle-down fa-angle-left");
+    });
+   
+    $(".dropdown-main-2 .aljwise").click(function () {
+        $(".dropdown-div-2").toggleClass("d-block");
+        $(".dropdown-main-link-2 .rotate-arrow").toggleClass("fa-angle-down fa-angle-left");
+    });
 
-// $(".dropdown-main-3").click(function () {
-//     console.log("3")
-//     $(".dropdown-div-1").toggleClass("d-block");
-// });
+    //  $(".dropdown-main-link-5").click(function () {
+    //     console.log("main")
+    //     $(".dropdown-main-link-div ").toggleClass("d-block");
+    // });
 
-    var show=false;
+    // $(".dropdown-main-3").click(function () {
+    //     console.log("3")
+    //     $(".dropdown-div-1").toggleClass("d-block");
+    // });
+
+    var show = false;
     $(".hide-field").click(function () {
         $(".hide-form").removeClass("d-none");
         $(".click-hide").hide();
@@ -92,45 +97,45 @@ $(document).ready(function () {
     //     format: "dd/mm/yyyy",
     // });
 
-    
-//   datatable
 
-// end datatale
+    //   datatable
 
-//  mobile menu
+    // end datatale
+
+    //  mobile menu
 
 
-$('.show-letter').click(function(){
-	$('.optional').toggleClass('d-none');
-})
-	let count=0;
-	 $(".add-more-btn").click(function () {
-		 var add= `<div class="row">
+    $('.show-letter').click(function () {
+        $('.optional').toggleClass('d-none');
+    })
+    let count = 0;
+    $(".add-more-btn").click(function () {
+        var add = `<div class="row">
 							<div class="col-md-6">
                             <div class="form-group">
                                 <label for="title" class="form-label">عنوان الدیوان</label>
-                                <input type="text" class="form-control"  name="title`+ count +`" id="title">
+                                <input type="text" class="form-control"  name="title`+ count + `" id="title">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="place" class="form-label">دار النشر</label>
-                                <input type="text" class="form-control"  name="place`+ count +`" id="place">
+                                <input type="text" class="form-control"  name="place`+ count + `" id="place">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="release" class="form-label">سنة الإصدار</label>
-                                <input type="date" class="form-control" name="release`+ count +`" id="release">
+                                <input type="date" class="form-control" name="release`+ count + `" id="release">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group upload-file">
                                 <label for="publishedWorks" class="form-label">التحمیل</label>
-                                <input class="form-control" type="file" id="download-file-append" accept="application/pdf, application/vnd.ms-excel"  name="publishedWorks`+ count +`">
+                                <input class="form-control" type="file" id="download-file-append" accept="application/pdf, application/vnd.ms-excel"  name="publishedWorks`+ count + `">
                                 <span class="upload-file-img download-file-name">
                                     <img src="https://zen-boyd.161-97-115-110.plesk.page/appa/public/assets/images/file-icon.png
 " class="img-fluid" alt="">
@@ -139,38 +144,38 @@ $('.show-letter').click(function(){
                         </div>
  						</div>`;
         $(".add-more").append(add);
-		 console.log(add);
- });
-	
- $("input[type=file]").change( function (){
-    var i = $(this).prev("label").clone();
-    var file = $(this)[0].files[0].name;
-   $(this).next().text(file);
-})
+        console.log(add);
+    });
 
- $(document).on('change', 'input[type=file]', function () {
-    var i = $(this).prev("label").clone();
-    var file = $(this)[0].files[0].name;
-   $(this).next().text(file);
-});
- $('.accBox').hover(function () {
-		$(this).prevAll().removeClass('expand');
-		$(this).nextAll().removeClass('expand');
+    $("input[type=file]").change(function () {
+        var i = $(this).prev("label").clone();
+        var file = $(this)[0].files[0].name;
+        $(this).next().text(file);
+    })
+
+    $(document).on('change', 'input[type=file]', function () {
+        var i = $(this).prev("label").clone();
+        var file = $(this)[0].files[0].name;
+        $(this).next().text(file);
+    });
+    $('.accBox').hover(function () {
+        $(this).prevAll().removeClass('expand');
+        $(this).nextAll().removeClass('expand');
         $(this).prevAll().toggleClass('shrink');
-		$(this).nextAll().toggleClass('shrink');
-		$(this).toggleClass('expand');
+        $(this).nextAll().toggleClass('shrink');
+        $(this).toggleClass('expand');
         $(this).find('.accBox-h2').toggleClass('accBoxToggle');
         $(this).find('.accBox-h').toggleClass('accBoxhToggle');
-	});
+    });
     // $('.accordinas-wrapper').mouseout(function () {
     //     $('.accBox').removeClass('expand');
     //     $('.accBox').removeClass('shrink');
     //     $('.accBox').removeClass('shrink');
     // });
     AOS.init({
-		offset: 200, 
-		duration: 1000
-	});
+        offset: 200,
+        duration: 1000
+    });
 
 
 });
