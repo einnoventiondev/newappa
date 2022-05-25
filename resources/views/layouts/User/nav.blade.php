@@ -49,15 +49,26 @@
                     </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('Prince.videocontent')}}">مواسم الجائزة</a>
+                <li  class="nav-item dropdown">
+                    <a class="nav-link rotate-arrow-click"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">مواسم الجائزة 
+                    <i class="rotate-arrow-main fa-solid fa-angle-left"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{route('user.season019')}}"> الموسم الأول ٢٠١٩</a></li>
+                        <li><a class="dropdown-item" href="{{route('user.season020')}}">  الموسم الثاني ٢٠٢٠</a></li>
+                        <li><a class="dropdown-item" href="{{route('user.season021')}}"> الموسم الثالث ٢٠٢١</a></li>
+				
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('Prince.awardwinners')}}">الفائزون</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        الشروط والأحكام</a>
+               
+				
+              <li class="nav-item dropdown">
+                    <a class="nav-link rotate-arrow-click" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        الشروط والأحكام
+                        <i class="rotate-arrow-main fa-solid fa-angle-left"></i></a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{url('terms-and-conditions')}}">الأحكام العامة</a>
                         <li><a class="dropdown-item" href="{{url('legal-policy')}}"> المسؤولية القانونية</a>

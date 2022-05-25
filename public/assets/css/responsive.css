@@ -1,294 +1,140 @@
-@media(max-width:1399px) {
 
-    .time-plan-txt {
-        color: #00514C;
-        text-align: center;
-        font-size: 30px;
-        font-weight: 500;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 40px;
-    }
-
-    .time-plan-section td {
-        font-size: 26px;
-    }
-
-    .time-plan-section thead {
-        font-size: 26px;
-    }
-}
-
-@media(max-width:1199px) {
-    .season-name span {
-        font-size: 32px;
-    }
-
-    #award-seasons .season-box {
-        height: 350px;
-    }
-
-    .form-abouts-us {
-        padding-left: 0;
-    }
-
-    .accBox-h__desc {
-        white-space: normal;
-        padding: 20px;
-    }
-
-    .box-trophy .tropy-text h3 {
-        color: #fff;
-        font-size: 17px;
-        margin-bottom: 20px;
-        font-weight: 400;
-    }
-
-    /* .box-trophy .tropy-text p {
-		font-size: 19px;
-	} */
-    .t-desc {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-}
-
-@media(max-width:991px) {
-    .table-h {
-        width: 0px;
-    }
-
-    .table-box-1 {
-        padding-right: 100px !important;
-    }
-
-    .form-abouts-us {
-        padding-left: 0;
-    }
-
-    .accordinas {
-        display: none;
-    }
-
-    .accordians-mobile {
-        display: block;
-    }
-
-    .box-trophy .tropy-text h3 {
-        color: #fff;
-        font-size: 18px;
-        margin-bottom: 20px;
-        font-weight: 400;
-    }
-
-    .box-trophy .tropy-text p {
-        font-size: 22px;
-    }
-
-    .acc-mob {
-        display: block;
-    }
-}
-
-@media(max-width:767px) {
-
-    .time-plan-section table th,
-    .time-plan-section table td {
-        padding-right: 5px !important;
-        font-size: 13px;
-    }
-
-    .accordinas__heading {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
-    .accordinas__desc {
-        font-size: 15px;
-    }
-
-    .award-txt {
-        font-size: 30px;
-    }
-
-    .time-plan-txt {
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 767px) {
-    .content .reset-con {
-        padding-right: 0px !important;
-    }
-
-    .prince-abd-comp-inner-heading .reset-img img {
-        top: -205px !important;
-    }
-
-    .hding-reset {
-        padding-top: 90px !important;
-    }
-
-    .zhd-padding-reset {
-        padding-top: 70px !important;
-    }
-
-    .rules-std-content .heading-reset {
-        padding-top: 7rem !important;
-    }
-
-    .issue {
-        padding: 0px !important;
-    }
-
-    .issue p {
-        padding-left: 0px !important;
-    }
-
-    .issue-btn {
-        margin-bottom: 40px !important;
-    }
-
-    .content-mobile li {
-        font-size: 15px;
-        color: #f7f8f8;
-    }
-
-    .title-index {
-        margin-bottom: 23px
-    }
-
-    .submit-content {
-        padding-left: 0px !important;
-        display: block;
+    @media (min-width: 360px) and (max-width: 767px) {
+        .content .reset-con{
+            padding-right:0px !important;
+        }
+        .prince-abd-comp-inner-heading .reset-img img{
+                top: -205px !important;
+        }
+        #award-seasons .season-box{
+            margin-bottom: 30px;
+            height: 300px;
+        }
+        .hding-reset{
+            padding-top:90px !important;
+        }
+        .zhd-padding-reset {
+                padding-top: 70px !important;
+        }
+        .rules-std-content .heading-reset{
+                padding-top: 7rem !important;
+        }
+        .issue {
+            padding: 0px !important;
+        }
+        .issue p{
+            padding-left: 0px !important;
+        }
+        .issue-btn{
+            margin-bottom:40px !important;
+        }
+        .content-mobile li {
+                font-size: 15px;
+                color: #f7f8f8;
+            }
+        .title-index{
+            margin-bottom:23px
+        }
+        .submit-content{
+            padding-left: 0px !important;
+            display: block;
         width: 200px;
-    }
-
-    .apply-nomination-btn-2 {
-        /* margin-top: 40px!important; */
-        display: block;
+        }
+        .apply-nomination-btn-2{
+            /* margin-top: 40px!important; */
+            display: block;
         width: 168px;
-    }
-
-    .apply-nomination-btn {
-        margin-bottom: 23px;
-    }
-
-    /* new index responsive */
-
-    .index-side-img {
-        width: 150px !important;
-        top: 100px;
-    }
-
-    .box-index img {
-        width: 300px !important;
-        left: 0px !important;
-        right: 40px;
-        margin: 0px;
-        top: -85px !important;
-    }
-
-    .box-index ul:last-child {
-        right: 55px;
-        top: 65px;
-        font-size: 16px;
-        left: 0;
-    }
-
-    .trophy {
-        width: 150px !important;
-        top: 595px;
-        left: 30px;
-    }
-
-    .creme-diamond {
-        top: 440px;
-        left: 20px;
-        width: 200px;
-    }
-
-    .index-wrapper .footer-img {
-        display: block !important;
-        width: 345px;
-        right: 0;
-        left: 0;
-    }
-
-    .title-index .sub-title {
-        font-size: 30px !important;
-        padding-right: 35px;
-    }
-
-    .title-index h1 {
-        font-size: 32px !important;
-        padding-right: 35px;
-        padding-left: 51px;
-    }
-
-    .title-index h3 {
-        font-size: 20px !important;
-        padding-right: 35px;
-    }
-
-    .definition-sec {
-        padding-top: 12rem;
-        padding-right: 35px;
-    }
-
-    .definition-sec p {
-        padding-left: 20px;
-    }
-
-    .definition-sec h3 {
-        padding-right: 12px !important;
-    }
-
-    .bottom-index {
-        padding-right: 35px !important;
-        margin-bottom: 140px;
-    }
-
-    .bottom-index p {
-        padding-left: 15px !important;
-
-    }
-
-    .bottom-index .title-index h3 {
-        padding-right: 0px !important;
-    }
-
-    /* end new index responsive */
-    .paragraph {
-        padding: 0px 25px
-    }
-
-    .content-video iframe {
-        width: 100%;
-        padding-left: 17px;
-    }
-
-    .title-video h1 {
-        font-size: 30px !important;
-    }
-
-
-    /* .dropdown-award ul {
-            display:block;
-            position: relative;
+        }
+        .apply-nomination-btn{
+            margin-bottom: 23px;
+        }
+        /* new index responsive */
+        
+        .index-side-img{
+            width: 150px !important;
+            top: 100px;
+        }
+        .box-index img{
+            width: 300px !important;
+            left: 0px !important;
+            right: calc(50% - 150px);
+            margin: 0px;
+            top: -85px !important;
+        }
+        .box-index ul:last-child{
+            right: 55px;
+            top: 65px;
+            font-size: 16px;
             left: 0;
-            border-bottom: 1px solid #d1d1d1;
-        } */
+        }
+        .trophy{
+            width: 150px !important;
+            top: 595px;
+            left: 30px;
+        }
+        .creme-diamond {
+            top: 440px;
+            left: 20px;
+            width: 200px;
+        }
+        .index-wrapper .footer-img{
+            display: block !important;
+            width: 345px;
+            right: 0;
+            left: 0;
+        }
+        .title-index .sub-title{
+            font-size: 30px !important;
+            padding-right: 35px;
+        }
+        .title-index  h1{
+            font-size: 32px !important;
+            padding-right: 35px;
+            padding-left: 51px;
+        }
+        .title-index h3{
+            font-size: 20px !important;
+            padding-right: 35px;
+        }
+        .definition-sec{
+            padding-top: 12rem;
+        }
+        .definition-sec p{
+            padding-left: 20px;
+        }
+        .definition-sec h3{
+            padding-right: 12px  !important;
+        }
+        .bottom-index{
+            padding-right: 35px !important;
+            margin-bottom: 140px;
+        }
+        .bottom-index p{
+            padding-left: 15px !important;
+        
+        }
+        .bottom-index .title-index h3{
+            padding-right: 0px !important;
+        }
+        /* end new index responsive */
+        .paragraph{
+            padding: 0px 25px
 
-    .mobile-hide {
-        display: none !important;
-    }
-
-    .mobile-show {
-        display: block;
-    }
-
+        }
+        .content-video iframe {
+            width: 100%;
+            padding-left: 17px;
+        }
+        .title-video h1 {
+            font-size: 30px !important;
+        }
+        .mobile-hide{
+            display: none !important;
+        }
+        .mobile-show{
+            display: block;
+        }
+    
     /* new style  start here*/
     .polygon-btn {
         position: relative;
@@ -1030,8 +876,116 @@
 
     .content-container.about {
         padding-right: 35px;
-        padding-left: 10px;
-        padding-bottom: 3.2rem;
+            
+        font-size: 54px;
+        }
+        .box-uni-stnd img:first-child{
+        top: -200px;
+        }
+        .rules-std .content.rules-std-content{
+            /* padding-top: 10rem; */
+            padding-right: 35px;
+            padding-left: 0px;
+        }
+        .rules-std .content{
+            padding-right: 35px;
+            padding-left: 5px;
+            padding-top: 30px;
+        }
+        .rules-std .content p{
+            padding-left: 10px;
+        }
+        .rules-std-container {
+            padding-bottom: 7rem;
+        }
+        .rules-std table td, .rules-std table th{
+            padding: 11px !important;
+        }
+        .rules-std table td:last-child{
+            width: 28%;
+            padding: 3px !important;
+            padding-top: 11px !important;
+            padding-bottom: 11px !important;
+        }
+    
+    
+        .content-title-student .content{
+            padding-right: 35px;
+            padding-left: 10px;
+            padding-top: 30px;
+        }
+        .content-title-student .content p{
+            padding-left: 10px;
+        }
+        .prince-comp-container{
+            padding-bottom: 7rem;
+        }
+        .content-prince{
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        .award-winners{
+            padding-right:35px !important;
+            padding-left: 10px;
+        }
+        .award-winner-heading .sub-title{
+            color: #b79b66 !important;
+        }
+        /* .award-winner-heading{
+            padding-right: 35px;
+        } */
+    
+        .content-award-table{
+            padding-top: 30px;
+        }
+        .video-content-container{
+            padding-right: 35px;
+            padding-left: 10px;
+            padding-bottom: 3.5rem !important;
+        }
+        .content-title-student {
+            padding-top: 170px;
+        }
+        .prince-abd-comp img{
+        top: -127px !important;
+        }
+        .prince-abd-comp-heading{
+            padding-right: 35px;
+        }
+        .prince-abd-comp-heading .sub-title{
+            padding-right: 0px;
+            font-size: 28px;
+    
+        }
+        .prince-abd-comp-heading h1{
+            padding-right: 0px;
+            font-size: 54px;
+        }
+        .prince-abd-comp-heading .box-student img{
+            top: -155px;
+        }
+        .prince-abd-comp-inner-heading {
+            padding-top: 60px;
+        }
+        .season-box{
+            margin-bottom: 40px;
+        }
+        .about-us .pt-pb {
+            padding: 50px 0;
+        }
+        #main-about-us {
+            padding-bottom: 12rem;
+        }
+        #awards-section, #award-seasons, #about-us {
+            padding: 35px 0;
+        }
+        .acc-mob {
+            padding: 35px 0;
+        }
+        .dropdown-items{
+            font-size: 11px;
+            padding-right: 35px !important;
+        }
     }
 
     .title-about p {
@@ -1170,23 +1124,71 @@
         padding-left: 10px;
         padding-bottom: 3.5rem !important;
     }
+    @media only screen and (min-width: 1200px) {
+    
+        .mobile-menu{
+            display:none !important;
+        }
+        .side-img {
+            width: 230px;
+        }
+        .title-about p {
+            padding-left: 180px;
+        }
+        .bg-img {
+            height: 100%;
+        }
+        .content-wrapper {
+            background-size: 35% 35%;
+            height: 100%;
+        }
+        .box-index ul {
+            right: 260px !important;
+        }
+        .index-side-img {
+            width: 440px;
+        }
+        .top-prize img {
+            margin-right: 0;
+        }
+        .title h1 {
+            padding-right: 0;
+        }
+        .title span {
+            padding-right: 0;
+        }
+        .season-name span{
+            font-size: 32px;
+        }
+        .title-right span {
+            font-size: 35px;
+        }
+        .title-right h1 {
+            font-size: 40px;
+        }
 
-    .content-title-student {
-        padding-top: 170px;
     }
-
-    .prince-abd-comp img {
-        top: -127px !important;
-    }
-
-    .prince-abd-comp-heading {
-        padding-right: 35px;
-    }
-
-    .prince-abd-comp-heading .sub-title {
-        padding-right: 0px;
-        font-size: 28px;
-
+    @media only screen and (min-width: 1300px) {
+        .mobile-menu{
+            display:none !important;
+        }
+        .footer-img {
+            width: 700px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 250px;
+        }
+        .accBox-h__desc{
+            font-size: 15px;
+        }
+        .box-trophy .tropy-text p {
+            font-size: 24px;
+        }
+        .table-box-1 {
+            padding-right: 260px !important;
+        }
+        
     }
 
     .prince-abd-comp-heading h1 {
@@ -1197,9 +1199,44 @@
     .prince-abd-comp-heading .box-student img {
         top: -155px;
     }
-
-    .prince-abd-comp-inner-heading {
-        padding-top: 60px;
+    @media only screen and (min-width: 1660px) {
+        .mobile-menu{
+            display:none  !important;
+        }
+        .bg-img {
+            height: 100%;
+        }
+        .index-side-img {
+            width: 600px;
+        }
+        .creme-diamond {
+            top: 410px;
+            left: 490px;
+            width: 350px;
+        }
+        .trophy {
+            width: 570px;
+            left: 290px;
+            top: 380px;
+        }
+        .accBox-h__desc{
+            font-size: 18px;
+        }
+        .box-trophy .tropy-text p {
+            font-size: 26px;
+        }
+        .table-box-1 {
+            padding-right: 320px !important;
+        }
+        .title-right span {
+            font-size: 50px;
+        }
+        .title-right h1 {
+            font-size: 60px;
+        }
+        .title-right .sub-title {
+            top: 50px;
+        }
     }
 
 }
@@ -1458,7 +1495,7 @@
     .mobile-menu .dropdown-main-3:focus .dropdown-main-link {
         background: #b79b66 !important;
     }
-    
+
     .dropdown-div-2 {
         display: none;
     }

@@ -30,9 +30,9 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="season-title">
-                        <h1>الموسم الأول</h1>
-                        <h2>{{ $year ?? '' }}</h2>
+                    <div class="season-title col-md-12 title-video">
+                        <h1 class="animate__animated animate__fadeInRight animate_slower">الموسم الأول</h1>
+                        <h2 class="animate__animated animate__fadeInRight animate_slower">{{ $year ?? '' }}</h2>
                     </div>
                     <input type="hidden" name="year" value="{{ $portfolio->year ?? '' }}">
                     <div class="col-md-12 mb-4">
