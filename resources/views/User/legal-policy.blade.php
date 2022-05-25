@@ -52,14 +52,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/jquery-equal-height.min.js"></script>
     <script src="{{asset('/assets/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('/assets/js/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/scripts.js')}}"> </script>
-	<!-- <script src="assets/js/jquery-equal-height-old.js"></script> -->
-	<script src="assets/js/scripts.js"></script>
-
 </body>
 
 </html>
