@@ -456,7 +456,7 @@
                             <div class="season-name">
                                 <span>الموسم الأول</span>
                                 {{-- <p class="years">٢٠١٩</p> --}}
-                                <form action="{{ route('index_portfolio') }}" method="POST">
+                                <form action="{{route('user.season019')}}" method="POST">
                                     @csrf
                                     <input type="hidden" name="year" value="٢٠١٩ ">
                                     <button type="submit" class="years">٢٠١٩</button>
@@ -471,7 +471,7 @@
                             <div class="season-name">
                                 <span>الموسم الثاني</span>
                                 {{-- <p class="years">٢٠٢٠</p> --}}
-                                <form action="{{ route('index_portfolio') }}" method="POST">
+                                <form action="{{route('user.season020')}}" method="POST">
                                     @csrf
                                     <input type="hidden" name="year" value="٢٠٢٠">
                                     <button type="submit" class="years">٢٠٢٠</button>
@@ -485,7 +485,7 @@
                             <div class="season-name">
                                 <span>الموسم الثالث</span>
                                 {{-- <p class="years">٢٠٢١</p> --}}
-                                <form action="{{ route('index_portfolio') }}" method="POST">
+                                <form action="{{route('user.season021')}}" method="POST">
                                     @csrf
                                     <input type="hidden" name="year" value="٢٠٢١">
                                     <button type="submit" class="years">٢٠٢١</button>
