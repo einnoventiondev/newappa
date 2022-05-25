@@ -458,7 +458,7 @@
                                 {{-- <p class="years">٢٠١٩</p> --}}
                                 <form action="{{ route('index_portfolio') }}" method="POST">
                                     @csrf
-                                    <input type="hidden" name="year" value="{{ 2019 }}">
+                                    <input type="hidden" name="year" value="٢٠١٩ ">
                                     <button type="submit" class="years">٢٠١٩</button>
                                 </form>
                             </div>
@@ -473,7 +473,7 @@
                                 {{-- <p class="years">٢٠٢٠</p> --}}
                                 <form action="{{ route('index_portfolio') }}" method="POST">
                                     @csrf
-                                    <input type="hidden" name="year" value="{{ 2020 }}">
+                                    <input type="hidden" name="year" value="٢٠٢٠">
                                     <button type="submit" class="years">٢٠٢٠</button>
                                 </form>
                             </div>
@@ -487,7 +487,7 @@
                                 {{-- <p class="years">٢٠٢١</p> --}}
                                 <form action="{{ route('index_portfolio') }}" method="POST">
                                     @csrf
-                                    <input type="hidden" name="year" value="{{ 2021 }}">
+                                    <input type="hidden" name="year" value="٢٠٢١">
                                     <button type="submit" class="years">٢٠٢١</button>
                                 </form>
                             </div>

@@ -1847,6 +1847,10 @@ a:hover {
 	width:76px;
 }
 /* weather season */
+.season-title h2{
+    color: #00514c !important;
+    margin-bottom: 40px;
+}
 #season-view{
 	padding: 50px 0;
 }
