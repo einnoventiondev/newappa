@@ -986,7 +986,7 @@
             font-size: 11px;
             padding-right: 35px !important;
         }
-    }
+
 
     .title-about p {
         padding-left: 0px;
@@ -1014,13 +1014,13 @@
         display: block !important;
     }
 
-    .title-diwan.title-hide-mobile h1 {
+    /* .title-diwan.title-hide-mobile h1 {
         font-size: 38px !important;
     }
 
     .title-diwan.title-hide-mobile .sub-title {
         font-size: 28px !important;
-    }
+    } */
 
     .title-diwan.title-hide-mobile h1,
     .title-diwan.title-hide-mobile .sub-title {
@@ -1124,6 +1124,10 @@
         padding-left: 10px;
         padding-bottom: 3.5rem !important;
     }
+    .content-container.diwan .content, .content-container.diwan p {
+        padding-left: 0px;
+    }
+}
     @media only screen and (min-width: 1200px) {
     
         .mobile-menu{
@@ -1191,14 +1195,7 @@
         
     }
 
-    .prince-abd-comp-heading h1 {
-        padding-right: 0px;
-        font-size: 54px;
-    }
 
-    .prince-abd-comp-heading .box-student img {
-        top: -155px;
-    }
     @media only screen and (min-width: 1660px) {
         .mobile-menu{
             display:none  !important;
