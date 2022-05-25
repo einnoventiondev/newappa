@@ -1,99 +1,4 @@
-@media(max-width:1399px){
-	
-	.time-plan-txt {
-		color: #00514C;
-		text-align: center;
-		font-size: 30px;
-		font-weight: 500;
-		width: 100%;
-		margin: auto;
-		margin-bottom: 40px;
-	}
-	.time-plan-section td {
-		font-size: 26px;
-	}
-	.time-plan-section thead{
-		font-size: 26px;
-	}
-}
-@media(max-width:1199px){
-	.season-name span{
-		font-size: 32px;
-	}
-	#award-seasons .season-box{
-		height: 350px;
-	}
-	.form-abouts-us{
-		padding-left: 0;
-	}
-	.accBox-h__desc {
-		white-space: normal;
-		padding: 20px;
-	}
-	.box-trophy .tropy-text h3 {
-		color: #fff;
-		font-size: 17px;
-		margin-bottom: 20px;
-		font-weight: 400;
-	}
-	/* .box-trophy .tropy-text p {
-		font-size: 19px;
-	} */
-	.t-desc{
-		font-size: 16px;
-		line-height: 1.5;
-	}
-}
-@media(max-width:991px){
-	.table-h {
-		width: 0px;
-	}
-	.table-box-1 {
-		padding-right: 100px !important;
-	}
-	.form-abouts-us{
-		padding-left: 0;
-	}
-	.accordinas {
-		display: none;
-	}
-	.accordians-mobile {
-		display: block;
-	}
-	.box-trophy .tropy-text h3 {
-		color: #fff;
-		font-size: 18px;
-		margin-bottom: 20px;
-		font-weight: 400;
-	}
-	.box-trophy .tropy-text p {
-		font-size: 22px;
-	}
-	.acc-mob{
-		display: block;
-	}
-}
-@media(max-width:767px){
-	
-	.time-plan-section table th, .time-plan-section table td {
-		padding-right: 5px !important;
-		font-size: 13px;
-	}
-	.accordinas__heading {
-		font-size: 28px;
-		margin-bottom: 20px;
-	}
-	.accordinas__desc{
-		font-size: 15px;
-	}
-	.award-txt{
-		font-size: 30px;
-	}
-	.time-plan-txt {
-		font-size: 22px;
-		margin-bottom: 25px;
-	}
-}
+
     @media (min-width: 360px) and (max-width: 767px) {
 	.content .reset-con{
 		padding-right:0px !important;
@@ -101,7 +6,10 @@
 	.prince-abd-comp-inner-heading .reset-img img{
 		    top: -205px !important;
 	}
-	
+	#award-seasons .season-box{
+        margin-bottom: 30px;
+        height: 300px;
+    }
 	.hding-reset{
 		padding-top:90px !important;
 	}
@@ -149,7 +57,7 @@
     .box-index img{
         width: 300px !important;
         left: 0px !important;
-        right: 40px;
+        right: calc(50% - 150px);
         margin: 0px;
         top: -85px !important;
     }
@@ -190,7 +98,6 @@
     }
     .definition-sec{
         padding-top: 12rem;
-        padding-right: 35px;
     }
     .definition-sec p{
         padding-left: 20px;
@@ -210,18 +117,17 @@
         padding-right: 0px !important;
     }
     /* end new index responsive */
-.paragraph{
-    padding: 0px 25px
+    .paragraph{
+        padding: 0px 25px
 
-}
- 
-.content-video iframe {
-            width: 100%;
-            padding-left: 17px;
-        }
-        .title-video h1 {
-            font-size: 30px !important;
-        }
+    }
+    .content-video iframe {
+        width: 100%;
+        padding-left: 17px;
+    }
+    .title-video h1 {
+        font-size: 30px !important;
+    }
      
     
         /* .dropdown-award ul {
@@ -1009,7 +915,9 @@
         .prince-abd-comp-inner-heading {
             padding-top: 60px;
         }
-    
+        .season-box{
+            margin-bottom: 40px;
+        }
     }
     @media (min-width: 576px) and (max-width: 767px) {
         .title-index h3 {

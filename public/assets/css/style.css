@@ -1713,7 +1713,7 @@ a:hover {
 
 /* ============================== award-season ==================================== */
 #award-seasons .season-box {
-	height: 460px;
+	height: 360px;
 	width: auto;
 	background: url(../images/pentagone-yellow.png) center;
 	background-size: 100% 100%;
@@ -1728,6 +1728,7 @@ a:hover {
 	transition: all 0.5s ease-in-out;
 	position: relative;
 	overflow: hidden;
+    margin: 0 30px;
 }
 .season-box__img{
 	position: absolute;
@@ -1972,6 +1973,8 @@ a:hover {
 	margin-bottom: 10px;
 	background-color: #B79B66;
 	transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 .acc-mob-box:hover{
 	background-color: #00514C;

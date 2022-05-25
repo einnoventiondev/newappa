@@ -20,9 +20,7 @@
 	.season-name span{
 		font-size: 32px;
 	}
-	#award-seasons .season-box{
-		height: 350px;
-	}
+
 	.form-abouts-us{
 		padding-left: 0;
 	}
@@ -78,6 +76,9 @@
 	.time-plan-section table th, .time-plan-section table td {
 		padding-right: 5px !important;
 		font-size: 13px;
+	}
+	#award-seasons .season-box{
+		height: 320px;
 	}
 	.accordinas__heading {
 		font-size: 28px;

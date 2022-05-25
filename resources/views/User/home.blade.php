@@ -279,150 +279,55 @@
 				</div>
 			</div>
 		</section>
-		<!-- <section class="accordians-mobile">
-			<div class="container">
-				<h1 class="accordinas__heading">عن الأمير عبد الله الفيصل</h1>
-				<p class="accordinas__desc">
-					في عام 1341هـ -1922م ولد الشاعر الأمير عبد الله الفيصل في مدينة الرياض وهو الابن البكر للملك فيصل بن
-					عبد العزيز، ووالدته هي الأميرة سلطانة بنت أحمد بن محمد السديري، وقد نشأ في كنف جده الملك المؤسس وتحت
-					رعايته في مدينة الرياض قبل أن ينتقل إلى مكة المكرمة حيث عاش والده الملك فيصل الذي كان يشغل منصب نائب
-					الملك في الحجاز.
-				</p>
-				<div class="row">
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">مسيرة حياته</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg6.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">المسيرة الشعرية</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg5.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">قالو عنه</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg4.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">الأوسمة والجوائز</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg3.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading"> المناصب التي تولاها </h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg2.jpg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<a href="#">
-							<div class="box">
-								<div class="content">
-									<h1 class="accBox-h__heading">نماذج من شعره المغنى</h1>
-									<p class="accBox-h__desc">
-										انتظم الأمير عبد الله الفيصل في الدراسة والتعليم <br> ونال الشهادة الابتدائية من المدرسة
-										الفيصلية
-									</p>
-								</div>
-								<img src="./assets/images/bg1.jpg" alt="">
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section> -->
 		<section class="acc-mob">
-			<div class="row gx-2">
-				<h2 class="award-txt">عن الأمير عبد الله الفيصل</h2>
-				<p class="accordinas__desc">
-					في عام 1341هـ -1922م ولد الشاعر الأمير عبد الله الفيصل في مدينة الرياض وهو الابن البكر للملك فيصل بن
-					عبد العزيز، ووالدته هي الأميرة سلطانة بنت أحمد بن محمد السديري، وقد نشأ في كنف جده الملك المؤسس وتحت
-					رعايته في مدينة الرياض قبل أن ينتقل إلى مكة المكرمة حيث عاش والده الملك فيصل الذي كان يشغل منصب نائب
-					الملك في الحجاز.
-				</p>
+			<div class="container">
+				<div class="row gx-2">
+					<h2 class="award-txt">عن الأمير عبد الله الفيصل</h2>
+					<p class="accordinas__desc">
+						في عام 1341هـ -1922م ولد الشاعر الأمير عبد الله الفيصل في مدينة الرياض وهو الابن البكر للملك فيصل بن
+						عبد العزيز، ووالدته هي الأميرة سلطانة بنت أحمد بن محمد السديري، وقد نشأ في كنف جده الملك المؤسس وتحت
+						رعايته في مدينة الرياض قبل أن ينتقل إلى مكة المكرمة حيث عاش والده الملك فيصل الذي كان يشغل منصب نائب
+						الملك في الحجاز.
+					</p>
+				</div>
 				<div class="row">
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box1">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box1">
 							<h1 class="acc-mob-box__heading">مسيرة حياته</h1>
 							<p class="acc-mob-box__desc">انتظم الأمير عبد الله الفيصل في الدراسة والتعليم ونال الشهادة الابتدائية من المدرسة الفيصلية </p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box2">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box2">
 							<h1 class="acc-mob-box__heading">المسيرة الشعرية</h1>
 							<p class="acc-mob-box__desc">يعد الأمير عبد الله الفيصل أحد أهم فرسان القصيدة العربية في عصر الرومانسية </p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box3">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box3">
 							<h1 class="acc-mob-box__heading">قالو عنه</h1>
 							<p class="acc-mob-box__desc">إذا كان الأمير عبد الله الفيصل قد جعل من الحرمان موضوعا أساسيا في شعره، </p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box4">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box4">
 							<h1 class="acc-mob-box__heading">الأوسمة والجوائز</h1>
 							<p class="acc-mob-box__desc">
 								كُرم الأمير عبد الله الفيصل في العديد من المحافل السعودية والإقليمية والدولية،
 							</p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box5">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box5">
 							<h1 class="acc-mob-box__heading"> المناصب التي تولاها </h1>
 							<p class="acc-mob-box__desc">تولى في عهد جده الملك عبد العزيز آل سعود المناصب الآتية مساعد نائب الملك (والده الأمير فيصل) على الحجاز  </p>
-						</div>
+						</a>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="acc-mob-box acc-mob-box6">
+						<a href="{{route('Prince.AboutPrinceCompetition')}}" class="acc-mob-box acc-mob-box6">
 							<h1 class="acc-mob-box__heading">نماذج من شعره المغنى</h1>
 							<p class="acc-mob-box__desc">مثلت أعمال الشاعر الأمير عبد الله الفيصل نقطة تحول هامة في مسيرة سيدة الغناء العربي كوكب الشرق (أم كلثوم) </p>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
