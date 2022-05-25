@@ -23,7 +23,7 @@ $(document).ready(function () {
     // $(".rotate-arrow-click-a").click(function () {
     //     $(".rotate-arrow-main-a").toggleClass("fa-angle-down fa-angle-left");
     // });
-
+   
     $(".dropdown-main-2 .aljwise").click(function () {
         $(".dropdown-div-2").toggleClass("d-block");
         $(".dropdown-main-link-2 .rotate-arrow").toggleClass("fa-angle-down fa-angle-left");
@@ -183,8 +183,6 @@ $(document).ready(function () {
         offset: 200,
         duration: 1000
     });
-
-
 
 
 });
