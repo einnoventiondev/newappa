@@ -201,3 +201,10 @@ Route::get('/privacy-policy', function () {
 Route::get('/terms-and-conditions', function () {
     return view('User.terms-and-conditions');
 });
+Route::get('/indivi',function(){
+    return view('User.individual-form');
+})->name('individual');
+Route::get('/corpor',function(){
+    return view('User.corporate-form');
+})->name('corporate');
+
