@@ -1,0 +1,27 @@
+<svg id="diamond" xmlns="http://www.w3.org/2000/svg" width="76.659" height="77.678" viewBox="0 0 76.659 77.678">
+  <g id="Group_29" data-name="Group 29" transform="translate(0 18.193)">
+    <g id="Group_28" data-name="Group 28">
+      <path id="Path_5957" data-name="Path 5957" d="M79.637,135.4,66.408,120.43a1.517,1.517,0,0,0-1.137-.512H18.1a1.517,1.517,0,0,0-1.137.512L3.739,135.4a1.516,1.516,0,0,0,.145,2.152l.009.011,36.661,41.329a1.517,1.517,0,0,0,2.27,0l36.661-41.329.009-.011a1.516,1.516,0,0,0,.145-2.152ZM62.581,122.952l-6.742,10.869L45.034,122.952ZM52.62,134.887H30.756l10.932-11ZM38.342,122.952,27.537,133.822l-6.742-10.869Zm-20.473,1.04,6.758,10.895H8.241Zm-9.6,13.929H26.2L38.581,172.1Zm36.584,34.112L53.5,148.613a1.517,1.517,0,1,0-2.846-1.052L41.7,171.8l-12.278-33.88H75.109Zm13.9-37.146,6.758-10.895,9.628,10.895Z" transform="translate(-3.358 -119.918)" fill="#b79b66"/>
+    </g>
+  </g>
+  <g id="Group_31" data-name="Group 31" transform="translate(36.812)">
+    <g id="Group_30" data-name="Group 30">
+      <path id="Path_5958" data-name="Path 5958" d="M247.517,0A1.517,1.517,0,0,0,246,1.517V9.332a1.517,1.517,0,1,0,3.034,0V1.517A1.517,1.517,0,0,0,247.517,0Z" transform="translate(-246 0)" fill="#b79b66"/>
+    </g>
+  </g>
+  <g id="Group_33" data-name="Group 33" transform="translate(44.029 5.552)">
+    <g id="Group_32" data-name="Group 32">
+      <path id="Path_5959" data-name="Path 5959" d="M301.681,37.04a1.517,1.517,0,0,0-2.146,0l-5.526,5.526a1.517,1.517,0,0,0,2.146,2.146l5.526-5.526A1.517,1.517,0,0,0,301.681,37.04Z" transform="translate(-293.564 -36.595)" fill="#b79b66"/>
+    </g>
+  </g>
+  <g id="Group_35" data-name="Group 35" transform="translate(23.774 5.552)">
+    <g id="Group_34" data-name="Group 34">
+      <path id="Path_5960" data-name="Path 5960" d="M168.178,42.566l-5.526-5.526a1.517,1.517,0,0,0-2.146,2.146l5.526,5.526a1.517,1.517,0,0,0,2.146-2.146Z" transform="translate(-160.061 -36.595)" fill="#b79b66"/>
+    </g>
+  </g>
+  <g id="Group_37" data-name="Group 37" transform="translate(49.167 39.197)">
+    <g id="Group_36" data-name="Group 36">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="1.517" cy="1.517" r="1.517" fill="#b79b66"/>
+    </g>
+  </g>
+</svg>
