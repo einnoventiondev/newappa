@@ -33,7 +33,7 @@
               <h1 class="animate__animated animate__fadeInRight animate_slower">للتجربة الشعرية</h1>
             </div>
             <div class="box-theatrical">
-              <img src="{{asset('./assets/images/gray.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="brown-diamond">
+              <img src="{{asset('./assets/images/red.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="brown-diamond">
               <img src="{{asset('./assets/images/creme-diamond.png')}}" class="animate__animated animate__shakeY animate__infinite animate_slowest" alt="creme-diamond">
               <!-- <img src="./assets/images/golden-group.png" alt="golden"> -->
             </div>

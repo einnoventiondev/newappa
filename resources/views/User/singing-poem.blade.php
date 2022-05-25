@@ -22,7 +22,7 @@
   </div>
   <div class="content-wrapper">
     @include('layouts.User.nav')
-    <section class="poetic-sec green-bg content-container">
+    <section class="poetic-sec singing-sec green-bg content-container">
       <div class="container">
         <div class="row g-0">
           <div class="col-md-4 title-right title-hide-mobile">
@@ -33,7 +33,7 @@
               <h1 class="animate__animated animate__fadeInRight animate_slower">للقصيدة المغناة</h1>
             </div>
             <div class="box-theatrical">
-              <img src="{{asset('./assets/images/gold.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="green-diamond">
+              <img src="{{asset('./assets/images/gray.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="green-diamond">
               <img src="{{asset('./assets/images/creme-diamond.png')}}" class="animate__animated animate__shakeY animate__infinite animate_slowest" alt="creme-diamond">
               <!-- <img src="./assets/images/green-group.png" alt="green"> -->
             </div>
