@@ -60,7 +60,9 @@
                 </li>
 
                 <li  class="nav-item dropdown">
-                    <a class="nav-link"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">مواسم الجائزة</a>
+                    <a class="nav-link rotate-arrow-click"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">مواسم الجائزة 
+                    <i class="rotate-arrow-main fa-solid fa-angle-left"></i>
+                    </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{route('user.season019')}}"> الموسم الأول ٢٠١٩</a></li>
                         <li><a class="dropdown-item" href="{{route('user.season020')}}">  الموسم الثاني ٢٠٢٠</a></li>
@@ -74,8 +76,9 @@
                
 				
               <li class="nav-item dropdown">
-                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        الشروط والأحكام</a>
+                    <a class="nav-link rotate-arrow-click" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        الشروط والأحكام
+                        <i class="rotate-arrow-main fa-solid fa-angle-left"></i></a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="https://hopeful-khorana.161-97-115-110.plesk.page/appa/public/terms-and-conditions">الأحكام العامة</a>
                         <li><a class="dropdown-item" href="https://hopeful-khorana.161-97-115-110.plesk.page/appa/public/legal-policy"> المسؤولية القانونية</a>
