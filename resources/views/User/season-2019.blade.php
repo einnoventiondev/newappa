@@ -19,148 +19,56 @@
 <body>
   <div class="content-wrapper">
   @include('layouts.User.nav')
-   <!-- season images page start
-   <section id="season-view">
-            <div class="container">
+  
+<!-- season images page start -->
+		<section id="season-view">
+			<div class="container">
+				<form action="">
+					<div class="row">
+						<div class="season-title col-md-12 title-video">
+							<h1 class="animate__animated animate__fadeInRight animate_slower">الموسم الأول</h1>
+							<h2 class="animate__animated animate__fadeInRight animate_slower">٢٠١٩</h2>
+						</div>
+						<div class="col-md-12">
+							<label for="video" class="video-box">Video</label>
+							<input type="file" id="video" class="d-none">
+						</div>
 
-                <div class="row">
-                    <div class="season-title">
-                        <h1  class="animate__animated animate__fadeInRight animate_slower">الموسم الأول</h1>
-                        <h2>٢٠١٩</h2>
-                    </div>
-                    <input type="hidden" name="year" value="">
-                    <div class="col-md-12 mb-4">
-                        <td class="video-box">
-                            <video  controls width="100%">
-                                <source  src=""  type="video/mp4"  >
+						<div class="col-md-6">
+							<label for="img-1" class="image-box-season">Images</label>
+							<input type="file" id="img-1" class="d-none">
+						</div>
+						<div class="col-md-6">
+							<label for="img-2" class="image-box-season">Images</label>
+							<input type="file" id="img-2" class="d-none">
+						</div>
 
-                            </video>
-                        </td>
-                    </div>
+						<div class="col-md-6">
+							<label for="img-3" class="image-box-season">Images</label>
+							<input type="file" id="img-3" class="d-none">
+						</div>
+						<div class="col-md-6">
+							<label for="img-4" class="image-box-season">Images</label>
+							<input type="file" id="img-4" class="d-none">
+						</div>
 
-                    <div class="col-md-6 mb-4">
-                        <td class="image-box-season">
-                            <img src="" width="100%">
-                        </td>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <td class="image-box-season">
-                            <img src="" width="100%">
-                        </td>
-                    </div>
+						<div class="col-md-6">
+							<label for="img-5" class="image-box-season">Images</label>
+							<input type="file" id="img-5" class="d-none">
+						</div>
+						<div class="col-md-6">
+							<label for="img-6" class="image-box-season">Images</label>
+							<input type="file" id="img-6" class="d-none">
+						</div>
+						<!-- <div class="col-md-12">
+							<button class="btn btn-primary img-submit"> Submit</button>
+					</div> -->
+					</div>
+				</form>
 
-                    <div class="col-md-6 mb-4">
-                        <td class="image-box-season">
-                            <img src="" width="100%">
-                        </td>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <td class="image-box-season">
-                            <img src="" width="100%">
-                        </td>
-                    </div>
-
-                    <div class="col-md-6 mb-4">
-                        <td class="image-box-season">
-                            <img src="" width="100%">
-                        </td>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <td class="image-box-season">
-                            <img src="" width="100%">
-                        </td>
-                    </div>
-
-                </div>
-                <form action="{{ route('update_portfolio') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <input type="hidden" name="year" value="{{ $year ?? '' }}">
-                    <button  type="submit" class="btn btn-primary img-submit mt-4"> update</button>
-
-                </form>
-
-            </div>
-        </section> -->
-        <!-- season images page start -->
-
-    <section class="content-container video-content-container">
-     
-      <div class="container-fluid">
-        <div class="row g-0">
-          <div class="col-md-12 title-video">
-
-            <h1 class="animate__animated animate__fadeInRight animate_slower">المحتوى المرئي للحفل الموسم الأو ل</h1>
-          </div>
-
-          <div class="content-video">
-            <div class="row tbody-video">
-              <div class="col-md-6">
-                
-                <div class="iframe">
-                <h4>حفل الجائزة للموسم الأول كاملاً	</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/drVoOD9fy4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                  <h4>السلام الملكي	</h4>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/CnWQSD4v1vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                  <h4>القرآن الكريم	</h4>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4Dc1BaD8hNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                  <h4>كلمة الأمير خالد الفيصل	</h4>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/3Zg7lVYdZ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                  <h4>كلمة أمين الجائزة	</h4>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/EVFNbwUUhCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                  <h4>كلمة مستشار رئيس مجلس الأمناء	</h4>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/oHVyTm1-P_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                  <h4>تدشين موسوعة الشعر العربي	</h4>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/6dK0UdXZ_ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                 <h4>العمل النثري	</h4>
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ty8_-dfHz_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                <h4>الفاصل الغنائي	</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TUuWr16IV0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                <h4>الفائزين</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fxfSFb_RNzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
-              </div>
-              <div class="col-md-6">
-                <div class="iframe">
-                 <h4>المكرمين	</h4>
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Vse6yywXvWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          </div>
-              </div>
-              
-            </div>
-
-          
-          </div>
-        </div>
-      </div>
-    </section>
-
+			</div>
+		</section>
+		<!-- season images page start -->
     <img src="{{asset('/assets/images/top-side.png')}}" class="side-img" alt="top-side">
     @include('layouts.User.footer')
   </div>
