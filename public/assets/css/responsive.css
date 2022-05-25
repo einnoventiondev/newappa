@@ -1424,6 +1424,15 @@
         .table-box-1 {
             padding-right: 260px !important;
         }
+        .title-right span {
+            font-size: 35px;
+        }
+        .title-right h1 {
+            font-size: 40px;
+        }
+        .title-right .sub-title {
+            top: 100px;
+        }
     }
     @media only screen and (min-width: 1400px) {
         .mobile-menu{
@@ -1502,6 +1511,15 @@
         }
         .table-box-1 {
             padding-right: 320px !important;
+        }
+        .title-right span {
+            font-size: 50px;
+        }
+        .title-right h1 {
+            font-size: 60px;
+        }
+        .title-right .sub-title {
+            top: 50px;
         }
     }
     @media only screen and (min-width: 1900px) {
