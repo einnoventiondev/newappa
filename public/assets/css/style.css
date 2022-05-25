@@ -1497,6 +1497,7 @@ a:hover {
 	line-height: 1;
 	margin-bottom: 45px;
 	font-weight: 600;
+    color: #00514c;
 }
 
 .accordinas__desc {
@@ -1907,7 +1908,7 @@ a:hover {
 	color: #00514C;
 }
 .table-box-1{
-	padding-right: 320px !important;
+	padding-right: 320px;
 }
 .table-h{
 	width: 200px;

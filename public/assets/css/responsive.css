@@ -1,142 +1,133 @@
 
     @media (min-width: 360px) and (max-width: 767px) {
-	.content .reset-con{
-		padding-right:0px !important;
-	}
-	.prince-abd-comp-inner-heading .reset-img img{
-		    top: -205px !important;
-	}
-	#award-seasons .season-box{
-        margin-bottom: 30px;
-        height: 300px;
-    }
-	.hding-reset{
-		padding-top:90px !important;
-	}
-	.zhd-padding-reset {
-		    padding-top: 70px !important;
-	}
-	.rules-std-content .heading-reset{
-		    padding-top: 7rem !important;
-	}
-	.issue {
-		padding: 0px !important;
-	}
-	.issue p{
-		padding-left: 0px !important;
-	}
-	.issue-btn{
-		margin-bottom:40px !important;
-	}
-	 .content-mobile li {
-            font-size: 15px;
-            color: #f7f8f8;
+        .content .reset-con{
+            padding-right:0px !important;
         }
-	.title-index{
-		margin-bottom:23px
-	}
-    .submit-content{
-        padding-left: 0px !important;
-        display: block;
-    width: 200px;
-    }
-    .apply-nomination-btn-2{
-        /* margin-top: 40px!important; */
-        display: block;
-    width: 168px;
-    }
-    .apply-nomination-btn{
-        margin-bottom: 23px;
-    }
-    /* new index responsive */
-    
-    .index-side-img{
-        width: 150px !important;
-        top: 100px;
-    }
-    .box-index img{
-        width: 300px !important;
-        left: 0px !important;
-        right: calc(50% - 150px);
-        margin: 0px;
-        top: -85px !important;
-    }
-    .box-index ul:last-child{
-        right: 55px;
-        top: 65px;
-        font-size: 16px;
-        left: 0;
-    }
-    .trophy{
-        width: 150px !important;
-        top: 595px;
-        left: 30px;
-    }
-    .creme-diamond {
-        top: 440px;
-        left: 20px;
+        .prince-abd-comp-inner-heading .reset-img img{
+                top: -205px !important;
+        }
+        #award-seasons .season-box{
+            margin-bottom: 30px;
+            height: 300px;
+        }
+        .hding-reset{
+            padding-top:90px !important;
+        }
+        .zhd-padding-reset {
+                padding-top: 70px !important;
+        }
+        .rules-std-content .heading-reset{
+                padding-top: 7rem !important;
+        }
+        .issue {
+            padding: 0px !important;
+        }
+        .issue p{
+            padding-left: 0px !important;
+        }
+        .issue-btn{
+            margin-bottom:40px !important;
+        }
+        .content-mobile li {
+                font-size: 15px;
+                color: #f7f8f8;
+            }
+        .title-index{
+            margin-bottom:23px
+        }
+        .submit-content{
+            padding-left: 0px !important;
+            display: block;
         width: 200px;
-    }
-    .index-wrapper .footer-img{
-        display: block !important;
-        width: 345px;
-        right: 0;
-        left: 0;
-    }
-    .title-index .sub-title{
-        font-size: 30px !important;
-        padding-right: 35px;
-    }
-    .title-index  h1{
-        font-size: 32px !important;
-        padding-right: 35px;
-		padding-left: 51px;
-    }
-    .title-index h3{
-        font-size: 20px !important;
-        padding-right: 35px;
-    }
-    .definition-sec{
-        padding-top: 12rem;
-    }
-    .definition-sec p{
-        padding-left: 20px;
-    }
-    .definition-sec h3{
-        padding-right: 12px  !important;
-    }
-    .bottom-index{
-        padding-right: 35px !important;
-        margin-bottom: 140px;
-    }
-    .bottom-index p{
-        padding-left: 15px !important;
-    
-    }
-    .bottom-index .title-index h3{
-        padding-right: 0px !important;
-    }
-    /* end new index responsive */
-    .paragraph{
-        padding: 0px 25px
-
-    }
-    .content-video iframe {
-        width: 100%;
-        padding-left: 17px;
-    }
-    .title-video h1 {
-        font-size: 30px !important;
-    }
-     
-    
-        /* .dropdown-award ul {
-            display:block;
-            position: relative;
+        }
+        .apply-nomination-btn-2{
+            /* margin-top: 40px!important; */
+            display: block;
+        width: 168px;
+        }
+        .apply-nomination-btn{
+            margin-bottom: 23px;
+        }
+        /* new index responsive */
+        
+        .index-side-img{
+            width: 150px !important;
+            top: 100px;
+        }
+        .box-index img{
+            width: 300px !important;
+            left: 0px !important;
+            right: calc(50% - 150px);
+            margin: 0px;
+            top: -85px !important;
+        }
+        .box-index ul:last-child{
+            right: 55px;
+            top: 65px;
+            font-size: 16px;
             left: 0;
-            border-bottom: 1px solid #d1d1d1;
-        } */
-    
+        }
+        .trophy{
+            width: 150px !important;
+            top: 595px;
+            left: 30px;
+        }
+        .creme-diamond {
+            top: 440px;
+            left: 20px;
+            width: 200px;
+        }
+        .index-wrapper .footer-img{
+            display: block !important;
+            width: 345px;
+            right: 0;
+            left: 0;
+        }
+        .title-index .sub-title{
+            font-size: 30px !important;
+            padding-right: 35px;
+        }
+        .title-index  h1{
+            font-size: 32px !important;
+            padding-right: 35px;
+            padding-left: 51px;
+        }
+        .title-index h3{
+            font-size: 20px !important;
+            padding-right: 35px;
+        }
+        .definition-sec{
+            padding-top: 12rem;
+        }
+        .definition-sec p{
+            padding-left: 20px;
+        }
+        .definition-sec h3{
+            padding-right: 12px  !important;
+        }
+        .bottom-index{
+            padding-right: 35px !important;
+            margin-bottom: 140px;
+        }
+        .bottom-index p{
+            padding-left: 15px !important;
+        
+        }
+        .bottom-index .title-index h3{
+            padding-right: 0px !important;
+        }
+        /* end new index responsive */
+        .paragraph{
+            padding: 0px 25px
+
+        }
+        .content-video iframe {
+            width: 100%;
+            padding-left: 17px;
+        }
+        .title-video h1 {
+            font-size: 30px !important;
+        }
         .mobile-hide{
             display: none !important;
         }
@@ -918,6 +909,22 @@
         .season-box{
             margin-bottom: 40px;
         }
+        .about-us .pt-pb {
+            padding: 50px 0;
+        }
+        #main-about-us {
+            padding-bottom: 12rem;
+        }
+        #awards-section, #award-seasons, #about-us {
+            padding: 35px 0;
+        }
+        .acc-mob {
+            padding: 35px 0;
+        }
+        .dropdown-items{
+            font-size: 11px;
+            padding-right: 35px !important;
+        }
     }
     @media (min-width: 576px) and (max-width: 767px) {
         .title-index h3 {
@@ -1101,10 +1108,8 @@
         .menu-main a {
             text-decoration: none;
             color: #fff;
-            padding: 10px 35px;
+            padding: 10px 25px;
         }
-    
-    
         .dropdown{
             padding: 0px;
             display:none;
@@ -1410,7 +1415,15 @@
             right: 0;
             height: 250px;
         }
-
+        .accBox-h__desc{
+            font-size: 15px;
+        }
+        .box-trophy .tropy-text p {
+            font-size: 24px;
+        }
+        .table-box-1 {
+            padding-right: 260px !important;
+        }
     }
     @media only screen and (min-width: 1400px) {
         .mobile-menu{
@@ -1480,6 +1493,15 @@
             width: 570px;
             left: 290px;
             top: 380px;
+        }
+        .accBox-h__desc{
+            font-size: 18px;
+        }
+        .box-trophy .tropy-text p {
+            font-size: 26px;
+        }
+        .table-box-1 {
+            padding-right: 320px !important;
         }
     }
     @media only screen and (min-width: 1900px) {
