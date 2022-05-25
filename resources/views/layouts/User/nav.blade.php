@@ -152,9 +152,6 @@
                     <li><a class="dropdown-items" href="{{ route('Prince.Abdullah.Al.Faisal.Competition') }}"> - مسابقة طلبة  
                             الثانوية</a>
                     </li> -->
-        <li>
-            <a class="nav-link" href="{{route('Prince.videocontent')}}">مواسم الجائزة</a>
-        </li>
         <li class="dropdown-main-4 drop-main">
             <a class="dropdown-main-link-4 aljwise" href='javascript:void(0);'>
                 مواسم الجائزة

@@ -1503,6 +1503,14 @@
     .mobile-menu .dropdown-main-2:focus .dropdown-main-link {
         background: #b79b66 !important;
     }
+
+    .dropdown-div-4 {
+        display: none;
+    }
+
+    .mobile-menu .dropdown-main-4:focus .dropdown-main-link {
+        background: #b79b66 !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
