@@ -59,7 +59,7 @@ html {
 }
 .title-box h1 {
     position: absolute;
-    top: 120px;
+    /* top: 120px; */
 }
 .title-right .sub-title {
     position: relative;
@@ -74,6 +74,14 @@ html {
 }
 .award-winners table td:first-child {
     font-weight: 700;
+}
+.award-winner-heading .title span {
+    position: relative;
+    top: 100px;
+    z-index: 2;
+}
+.award-winner-heading .title h1 {
+    top: 100px;
 }
 .nav-container {
     width: 1500px;
@@ -98,6 +106,11 @@ html {
 }
 .title h1 {
     font-size: 65px;
+}
+.diwan .title-box h1, .poetic-sec .title-box h1 {
+    position: absolute;
+    /* top: 120px; */
+    margin-top: 50px;
 }
 .color-green {
     color: #00514c !important;

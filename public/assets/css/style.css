@@ -1956,6 +1956,7 @@ a:hover {
     color: #00514C;
     font-weight: 600;
     font-family: 'Cairo', sans-serif;
+    transition: all 0.5s ease-in-out;
 }
 #award-seasons .season-box:hover .season-name .years {
 	color: #fff;
