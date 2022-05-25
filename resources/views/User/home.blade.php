@@ -432,7 +432,7 @@
                 <div class="row gx-2">
                     <h2 class="award-txt">الجوائز</h2>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-dark-gray jQueryEqualHeight1" data-aos="fade-up">
+                        <a href="{{route('Prince.PoeticExperience')}}" class="box-trophy box-trophy-dark-gray jQueryEqualHeight1" data-aos="fade-up">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -440,10 +440,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للتجربة الشعرية</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-blue jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="200">
+                        <a href="{{route('Prince.diwan')}}" class="box-trophy box-trophy-blue jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="200">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -451,10 +451,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للديوان</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-green jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="400">
+                        <a href="{{route('Prince.Theatricalpoetry')}}" class="box-trophy box-trophy-green jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="400">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -462,10 +462,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للشعر المسرحي</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-light-gray jQueryEqualHeight1" data-aos="fade-up">
+                        <a href="{{route('Prince.singingpoem')}}" class="box-trophy box-trophy-light-gray jQueryEqualHeight1" data-aos="fade-up">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -473,10 +473,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للقصيدة المغناة</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-dark-brown jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="200">
+                        <a href="{{route('Prince.ArabicPoetry')}}" class="box-trophy box-trophy-dark-brown jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="200">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -484,10 +484,10 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>لأفضل مشروع في خدمة الشعر العربي</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="box-trophy box-trophy-light-green jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="400">
+                       <a href="{{route('award')}}" class="box-trophy box-trophy-light-green jQueryEqualHeight1" data-aos="fade-up" data-aos-delay="400">
 							<div class="trophy-img">
 								<img src="assets/trophy.png" alt="">
 							</div>
@@ -495,7 +495,7 @@
 								<h3>جائزة الأمير عبدالله الفيصل</h3>
 								<p>للشاعر الواعد</p>
 							</div>
-                        </div>
+						</a>
                     </div>
                 </div>
             </div>
