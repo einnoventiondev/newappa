@@ -451,47 +451,47 @@
                 <div class="row gx-3">
                     <h2 class="award-txt">مواسم الجائزة</h2>
                     <div class="col-xs-12 col-sm-12 col-md-4" data-aos="fade-up">
-                        <div class="season-box">
+                        <a href="{{route('user.season019')}}" class="season-box">
                             
                             <div class="season-name">
                                 <span>الموسم الأول</span>
-                                {{-- <p class="years">٢٠١٩</p> --}}
-                                <form action="{{route('user.season019')}}" method="POST">
+                                <p class="years">٢٠١٩</p>
+                                {{-- <form action="{{route('user.season019')}}" method="POST">
                                     @csrf
                                     <input type="hidden" name="year" value="٢٠١٩ ">
                                     <button type="submit" class="years">٢٠١٩</button>
-                                </form>
+                                </form> --}}
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="season-box">
+                        <a href="{{route('user.season020')}}" class="season-box">
                         
                             <div class="season-name">
                                 <span>الموسم الثاني</span>
-                                {{-- <p class="years">٢٠٢٠</p> --}}
-                                <form action="{{route('user.season020')}}" method="POST">
+                                <p class="years">٢٠٢٠</p>
+                                {{-- <form action="{{route('user.season020')}}" method="POST">
                                     @csrf
                                     <input type="hidden" name="year" value="٢٠٢٠">
                                     <button type="submit" class="years">٢٠٢٠</button>
-                                </form>
+                                </form> --}}
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="season-box">
+                        <a href="{{route('user.season021')}}" class="season-box">
                         
                             <div class="season-name">
                                 <span>الموسم الثالث</span>
-                                {{-- <p class="years">٢٠٢١</p> --}}
-                                <form action="{{route('user.season021')}}" method="POST">
+                                <p class="years">٢٠٢١</p>
+                                {{-- <form action="{{route('user.season021')}}" method="POST">
                                     @csrf
                                     <input type="hidden" name="year" value="٢٠٢١">
                                     <button type="submit" class="years">٢٠٢١</button>
-                                </form>
+                                </form> --}}
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
