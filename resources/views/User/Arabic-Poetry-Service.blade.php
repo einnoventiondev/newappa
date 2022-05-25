@@ -24,7 +24,7 @@
   <div class="content-wrapper">
     @include('layouts.User.nav')
 
-    <section class="poetic-sec brown-bg content-container">
+    <section class="poetic-sec arabic-sec brown-bg content-container">
       <div class="container">
         <div class="row g-0">
           <div class="col-md-4 title-poetry title-right title-hide-mobile">

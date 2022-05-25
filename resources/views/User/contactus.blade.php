@@ -26,9 +26,9 @@
                     <div class="col-md-12 title-uni-stnd ">
                         <div class="row">
                             <div class="col-md-2 mob-order-1">
-                                <div class="top-prize">
+                                <!-- <div class="top-prize">
                                     <img src="{{ asset('assets/images/prize4.svg') }}" alt="top">
-                                </div>
+                                </div> -->
                             </div>
                             <div class="col-md-10">
                                 <div class="uni-stnd-txt partic-txt">
