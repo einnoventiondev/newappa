@@ -71,7 +71,7 @@
             </div>
 
             <div class="col-md-12 rules-std">
-				<div class="content rules-std-content"> <p>
+				<div class="content rules-std-content paragraph-signing"> <p>
               <h2>قيمة جائزة الأمير عبد الله الفيصل في الشعر العربي لطلاب وطالبات الجامعات</h2>
               <p>
 				 
@@ -82,7 +82,7 @@
 
 					            </div>
             <div class="col-md-12 rules-std">
-				<div class="content rules-std-content"> <p>
+				<div class="content rules-std-content paragraph-signing"> <p>
               <h2>آلية المشاركة في المسابقة:</h2>
               <p>
 				   <ul class="paragraph">
