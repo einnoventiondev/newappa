@@ -118,8 +118,8 @@
             <!-- <a href="advance.html" class="btn btn-green mt-4 ">تقدم للترشيح<img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a> -->
 
           </div>
-          <div class="col-md-8 desk-content">
-            <div class="content"> <!--
+          <div class="col-md-6 desk-content">
+            <div class="content paragraph-signing"> <!--
               <h2>الشروط العامة</h2>
               <p>
                 <ul class="paragraph">

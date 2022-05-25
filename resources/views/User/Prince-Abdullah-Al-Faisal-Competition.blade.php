@@ -72,10 +72,10 @@
             </div>
 
           </div>
-          <div class="col-md-8 content-title-student zhd-padding-reset">
-            <div class="content">
+          <div class="col-md-6 content-title-student zhd-padding-reset">
+            <div class="content paragraph-signing">
 				
-            <div class="content reset-con"> 
+            <div class="content reset-con paragraph-signing"> 
 				<p>
               <h2>شروط جائزة طلاب وطالبات المرحلة الثانوية في التعليم العام والأهلي والتربية الخاصة</h2>
               <p>
@@ -94,7 +94,7 @@
             </div>
 			  
 			  
-			              <div class="content reset-con"> 
+			              <div class="content reset-con paragraph-signing"> 
 				<p>
               <h2>قيمة جائزة الأمير عبد الله الفيصل في الشعر العربي لطلاب وطالبات الثانوية</h2>
 							  <p> (٢٠٠,٠٠٠) مئتي ألف ريال سعودي
@@ -106,7 +106,7 @@
              
               </p>
             </div>
-            <div class="content reset-con">
+            <div class="content reset-con paragraph-signing">
               <h2>آلية المشاركة في الجائزة</h2>
               <p>
               <ul class="paragraph">

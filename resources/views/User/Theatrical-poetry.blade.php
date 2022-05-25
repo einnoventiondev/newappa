@@ -79,8 +79,8 @@
             <a href="{{ route('first.paricipationb') }}" class="btn btn-green mt-4 apply-nomination-btn-2"> ترشيح فردي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
           </div>
 
-          <div class="col-md-8 desk-content">
-            <div class="content">
+          <div class="col-md-6 desk-content">
+            <div class="content paragraph-signing">
             <!--  <h2>الشروط العامة</h2>
               <p> <ul class="paragraph">
                 <li>ألا يكون المرشح من العاملين في أكاديمية الشعر العربي ولا عضوا (بأي صفة) في أي من لجانها إلا بعد مضي
@@ -95,7 +95,7 @@
 
               </p> -->
             </div>
-            <div class="content">
+            <div class="content paragraph-signing">
               <h2>شروط الترشيح</h2>
               <p>
                 <ul class="paragraph">
