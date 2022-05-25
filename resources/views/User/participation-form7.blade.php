@@ -57,14 +57,14 @@
                             </div>
 
                              <div class="col-md-6">
-								
+
 								<div class="form-group">
                                     <label for="inputNationality" class="form-label">المدينة</label>
                                     <input type="text" class="form-control" required name="state" id="state">
                                 </div>
-								
+
                             </div>
-                            
+
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="fieldname" class="form-label"> المنسق من قبل الجامعة </label>
@@ -114,7 +114,7 @@
                                 <label for="age" class="form-label">العمر </label>
                                 <select required name="age" id="age" class="form-select">
                                     <option selected disabled>اختر العمر من 18 إلى 30</option>
-                              
+
                                     <option value="18" name="age18">18</option>
                                     <option value="19" name="age19">19</option>
                                     <option value="20" name="age20">20</option>
@@ -236,7 +236,7 @@
                         </div>
 
                         <div class="col-md-6">
-							
+
                             <div class="form-group upload-file">
                                 <label for="publishedWorks" class="form-label">التحمیل</label>
                                 <input class="form-control" type="file" id="download-file-name" accept="application/pdf, application/vnd.ms-excel"  name="publishedWorks" id="publishedWorks">
@@ -244,16 +244,16 @@
                                     <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
                                 </span>
                             </div>
-								
+
                         </div>
 							<div class="add-more">
-						
+
 							</div>
 						 <div class="content add-more-btn-main">
                             <button type="button" class="btn btn-green add-more-btn mt-4">أضف المزيد<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>
                         </div>
                         <div class="click-hide row">
-		
+
                          <div class="content">
                          <!-- <button type="button" class="btn btn-green submit-btn mt-4 show-letter"><i class="fa-solid fa-chevron-down"></i></button>-->
                         </div>
@@ -263,8 +263,8 @@
                             </div>
 
                             <div class="col-md-12">
-						
-								
+
+
                                 <div class="form-group upload-file">
                                     <label for="letter" class="form-label">ترفق الجهة خطاب الترشيح على ورق رسمي باستخدام الماسح الضوئي مصدقا بالختم الرسمي للجهة</label>
                                     <input class="form-control" type="file" id="authority-letter-file-name" accept="application/pdf, application/vnd.ms-excel" required name="letter" id="letter">
@@ -273,13 +273,13 @@
                                     </span>
                                 </div>
                             </div>
-								
-                       
+
+
                         <div class="form-check zhd-check">
                             <input class="form-check-input" type="checkbox" value="1" required name="check2" id="check2">
                             <label class="form-check-label" for="check2">جميع المعلومات المدونة والمرفقة في هذا النموذج صحيحة ودقيقة ونتحمل مسؤولية ما يخالف ذلك</label>
                         </div>
-								 </div>  
+								 </div>
 
                         <div class="content">
                             <button type="submit" class="btn btn-green submit-btn mt-4">إرسال طلب الترشح<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>

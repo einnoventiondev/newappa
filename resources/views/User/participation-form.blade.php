@@ -43,7 +43,7 @@
 
                     <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form">
                         @csrf
-                        
+
 
                         <input type="text" required name="form" value="first" hidden>
 
@@ -67,7 +67,7 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <input type="text" required name="type" value="2" hidden>
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -170,7 +170,7 @@
                         <div>
                             <h2>تحمیل أعمال المرشح</h2>
                         </div>
-						
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="title" class="form-label">عنوان الدیوان</label>
@@ -202,7 +202,7 @@
                             </div>
                         </div>
 						<div class="add-more">
-						
+
 							</div>
 						 <div class="content add-more-btn-main">
                             <button type="button" class="btn btn-green add-more-btn mt-4">أضف المزيد<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>

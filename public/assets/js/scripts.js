@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".mobile-toggle").click(function () {
         $(".mobile-menu").toggleClass("d-block");
  });
- 
+
 
     $(".dropdown-main-3 .aljwise").click(function () {
            $(".dropdown-div-1").toggleClass("d-block");
@@ -16,7 +16,7 @@ $(document).ready(function () {
          $(".rotate-arrow-click").click(function () {
             $(".rotate-arrow-main").toggleClass("fa-angle-down fa-angle-left");
          });
-         
+
 //  $(".dropdown-main-link-5").click(function () {
 //     console.log("main")
 //     $(".dropdown-main-link-div ").toggleClass("d-block");
@@ -92,7 +92,7 @@ $(document).ready(function () {
     //     format: "dd/mm/yyyy",
     // });
 
-    
+
 //   datatable
 
 // end datatale
@@ -104,44 +104,46 @@ $('.show-letter').click(function(){
 	$('.optional').toggleClass('d-none');
 })
 	let count=0;
-	 $(".add-more-btn").click(function () {
-		 var add= `<div class="row">
-							<div class="col-md-6">
-                            <div class="form-group">
-                                <label for="title" class="form-label">عنوان الدیوان</label>
-                                <input type="text" class="form-control"  name="title`+ count +`" id="title">
-                            </div>
-                        </div>
+// 	 $(".add-more-btn").click(function () {
+// 		 var add= `<div class="row">
+// 							<div class="col-md-6">
+//                             <div class="form-group">
+//                                 <label for="title" class="form-label">عنوان الدیوان</label>
+//                                 <input type="text" class="form-control"  name="title`+ count +`" id="title">
+//                             </div>
+//                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="place" class="form-label">دار النشر</label>
-                                <input type="text" class="form-control"  name="place`+ count +`" id="place">
-                            </div>
-                        </div>
+//                         <div class="col-md-6">
+//                             <div class="form-group">
+//                                 <label for="place" class="form-label">دار النشر</label>
+//                                 <input type="text" class="form-control"  name="place`+ count +`" id="place">
+//                             </div>
+//                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="release" class="form-label">سنة الإصدار</label>
-                                <input type="date" class="form-control" name="release`+ count +`" id="release">
-                            </div>
-                        </div>
+//                         <div class="col-md-6">
+//                             <div class="form-group">
+//                                 <label for="release" class="form-label">سنة الإصدار</label>
+//                                 <input type="date" class="form-control" name="release`+ count +`" id="release">
+//                             </div>
+//                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group upload-file">
-                                <label for="publishedWorks" class="form-label">التحمیل</label>
-                                <input class="form-control" type="file" id="download-file-append" accept="application/pdf, application/vnd.ms-excel"  name="publishedWorks`+ count +`">
-                                <span class="upload-file-img download-file-name">
-                                    <img src="https://zen-boyd.161-97-115-110.plesk.page/appa/public/assets/images/file-icon.png
-" class="img-fluid" alt="">
-                                </span>
-                            </div>
-                        </div>
- 						</div>`;
-        $(".add-more").append(add);
-		 console.log(add);
- });
-	
+//                         <div class="col-md-6">
+//                             <div class="form-group upload-file">
+//                                 <label for="publishedWorks" class="form-label">التحمیل</label>
+//                                 <input class="form-control" type="file" id="download-file-append" accept="application/pdf, application/vnd.ms-excel"  name="publishedWorks`+ count +`">
+//                                 <span class="upload-file-img download-file-name">
+//                                     <img src="https://zen-boyd.161-97-115-110.plesk.page/appa/public/assets/images/file-icon.png
+// " class="img-fluid" alt="">
+//                                 </span>
+//                             </div>
+//                         </div>
+//  						</div>`;
+//         $(".add-more").append(add);
+// 		 console.log(add);
+//  });
+
+
+
  $("input[type=file]").change( function (){
     var i = $(this).prev("label").clone();
     var file = $(this)[0].files[0].name;
@@ -168,9 +170,11 @@ $('.show-letter').click(function(){
     //     $('.accBox').removeClass('shrink');
     // });
     AOS.init({
-		offset: 200, 
+		offset: 200,
 		duration: 1000
 	});
+
+
 
 
 });

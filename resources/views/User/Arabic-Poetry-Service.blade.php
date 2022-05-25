@@ -53,7 +53,7 @@
           <h2>شروط الترشيح</h2>
               <p>
               <ul class="paragraph">
-				 <!-- <h6 class="prize mt-3">(خصصت في هذه الدورة لأفضل كتاب يخدم الشعر العربي) </h6> <p> --> 
+				 <!-- <h6 class="prize mt-3">(خصصت في هذه الدورة لأفضل كتاب يخدم الشعر العربي) </h6> <p> -->
 				  <li>ألا يكون المرشح ممن يعمل في أكاديمية الشعر العربي ولا عضوا (بأي صفة) في أي من لجانها في الموسم نفسه.
 </li>
 				  <li>لا يحق للفائز في أيٍّ من فروع جائزة الأمير عبدالله الفيصل التقدم للحصول على الجائزة مرةً أخرى في الفرع نفسه مطلقاً؛ ويُـتـاح له ذلك في بقية الفروع في العام الذي يليه.</li>
@@ -65,8 +65,8 @@
 </li>
 				  <li>تقبل الجائزة  ترشيح الأفراد والمؤسسات  وفق المحددات التالية:
 </li>
-				  <liأن يكون المشروع مؤسسًا لخدمة الشعر العربي، أو أن يكون الشعر العربي جزءًا أصيلًا في بنائه.
-li>
+				  <li>أن يكون المشروع مؤسسًا لخدمة الشعر العربي، أو أن يكون الشعر العربي جزءًا أصيلًا في بنائه.
+</li>
 				  <li>أن يمثل المشروع إضافةً نوعية مؤثرة في المشهد الشعري العربي.
 </li>
 				  <li>ألا يتعارض المشروع مع أنظمة الملكية الفكرية المعمول بها في المملكة العربية السعودية.
@@ -74,15 +74,15 @@ li>
 				  <li>ألا يقل عمر المشروع قبل التقدم للجائزة عن ثلاث سنوات منذ انطلاقته.</li>
 				  <li>استيفاء جميع البيانات المطلوبة في نموذج الترشيح.
 </li>
-              
+
               </ul>
 <p>
             <h2 class="prize-value-txt">قيمة الجائزة</h2>
             <span class="prize">(١٠٠,٠٠٠) مائة ألف ريال</span>
-            
+
             <a href="{{ route('third') }}" class="btn btn-green mt-4 apply-nomination-btn"> ترشيح مؤسسي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
 
-<a href="{{ route('thirdb') }}" class="btn btn-green mt-4 apply-nomination-btn-2"> ترشيح فردي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
+           <a href="{{ route('thirdb') }}" class="btn btn-green mt-4 apply-nomination-btn-2"> ترشيح فردي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
           </div>
 
           <div class="col-md-8 desk-content">
@@ -95,17 +95,17 @@ li>
                 <li>ألا يسبق فوز العمل المرشح لأي من فروع جائزة الأمير عبدالله الفيصل بأي جائزة أخرى.</li>
                 <li> لأكاديمية الشعر العربي حق التصرف بالأعمال الفائزة بالجائزة .</li>
                 <li> أكاديمية الشعر العربي ليست ملزمة بإعادة الأعمال المرشحة للجائزة.</li>
-                
-              </ul>  
-             
+
+              </ul>
+
               </p> -->
-           
+
             </div>
             <div class="content">
               <h2>شروط الترشيح</h2>
               <p>
               <ul class="paragraph">
-				 <!-- <h6 class="prize mt-3">(خصصت في هذه الدورة لأفضل كتاب يخدم الشعر العربي) </h6> <p> --> 
+				 <!-- <h6 class="prize mt-3">(خصصت في هذه الدورة لأفضل كتاب يخدم الشعر العربي) </h6> <p> -->
 				  <li>ألا يكون المرشح ممن يعمل في أكاديمية الشعر العربي ولا عضوا (بأي صفة) في أي من لجانها في الموسم نفسه.
 </li>
 				  <li>لا يحق للفائز في أيٍّ من فروع جائزة الأمير عبدالله الفيصل التقدم للحصول على الجائزة مرةً أخرى في الفرع نفسه مطلقاً؛ ويُـتـاح له ذلك في بقية الفروع في العام الذي يليه.</li>
@@ -126,17 +126,17 @@ li>
 				  <li>ألا يقل عمر المشروع قبل التقدم للجائزة عن ثلاث سنوات منذ انطلاقته.</li>
 				  <li>استيفاء جميع البيانات المطلوبة في نموذج الترشيح.
 </li>
-              
+
               </ul>
-             
+
               </p>
               <h2 class="mt-3">قيمة الجائزة</h2>
               <span class="prize mt-3">١٠٠,٠٠٠ مائة ألف ريال</span>
 
 
-              <a href="{{ route('third') }}" class="btn btn-green mt-4 apply-nomination-btn"> ترشيح مؤسسي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
+              <a href="{{ route('corporate') }}" class="btn btn-green mt-4 apply-nomination-btn"> ترشيح مؤسسي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
 
-              <a href="{{ route('thirdb') }}" class="btn btn-green mt-4 apply-nomination-btn-2"> ترشيح فردي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
+              <a href="{{ route('individual') }}" class="btn btn-green mt-4 apply-nomination-btn-2"> ترشيح فردي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
             </div>
           </div>
         </div>
