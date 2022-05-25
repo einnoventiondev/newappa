@@ -159,9 +159,9 @@
             </a>
             <div class="dropdown-div-4">
                 <ul class="dropdown-4">
-                    <li><a class="dropdown-item" href="{{route('user.season019')}}"> الموسم الأول ٢٠١٩</a></li>
-                    <li><a class="dropdown-item" href="{{route('user.season020')}}"> الموسم الثاني ٢٠٢٠</a></li>
-                    <li><a class="dropdown-item" href="{{route('user.season021')}}"> الموسم الثالث ٢٠٢١</a></li>
+                    <li><a class="dropdown-items" href="{{route('user.season019')}}"> الموسم الأول ٢٠١٩</a></li>
+                    <li><a class="dropdown-items" href="{{route('user.season020')}}"> الموسم الثاني ٢٠٢٠</a></li>
+                    <li><a class="dropdown-items" href="{{route('user.season021')}}"> الموسم الثالث ٢٠٢١</a></li>
                 <ul>
             </div>
         </li>
