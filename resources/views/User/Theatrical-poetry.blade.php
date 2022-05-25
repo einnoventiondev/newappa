@@ -23,7 +23,7 @@
   </div>
   <div class="content-wrapper theatical-main">
     @include('layouts.User.nav')
-    <section class="poetic-sec blue-bg content-container">
+    <section class="poetic-sec theatrical-sec blue-bg content-container">
       <div class="container">
 
         <div class="row g-0">

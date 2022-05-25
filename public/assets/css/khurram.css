@@ -81,7 +81,7 @@ html {
     z-index: 2;
 }
 .award-winner-heading .title h1 {
-    top: 100px;
+    top: 120px;
 }
 .nav-container {
     width: 1500px;
@@ -107,10 +107,26 @@ html {
 .title h1 {
     font-size: 65px;
 }
-.diwan .title-box h1, .poetic-sec .title-box h1 {
+.diwan .title-box h1 {
     position: absolute;
     /* top: 120px; */
     margin-top: 50px;
+}
+.poetic-sec .title-box h1 {
+    position: absolute;
+    margin-top: 10px;
+}
+.singing-sec .title-box h1 {
+    margin-top: 60px;
+}
+.arabic-sec .title-box h1 {
+    margin-top: 60px;
+}
+.theatrical-sec .title-box h1 {
+    margin-top: 60px;
+}
+.theatrical-sec .sub-title {
+    color: #959595;
 }
 .color-green {
     color: #00514c !important;
