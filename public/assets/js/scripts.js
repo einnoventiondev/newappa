@@ -13,16 +13,16 @@ $(document).ready(function () {
         $(".dropdown-main-link-div").toggleClass("d-block");
         $(".dropdown-main-link .rotate-arrow-1").toggleClass("fa-angle-down fa-angle-left");
     });
-    $(".rotate-arrow-click-c").click(function () {
-        $(".rotate-arrow-main-c").toggleClass("fa-angle-down fa-angle-left");
-    });
-    $(".rotate-arrow-click-b").click(function () {
-        $(".rotate-arrow-main-b").toggleClass("fa-angle-down fa-angle-left");
-    });
+    // $(".rotate-arrow-click-c").click(function () {
+    //     $(".rotate-arrow-main-c").toggleClass("fa-angle-down fa-angle-left");
+    // });
+    // $(".rotate-arrow-click-b").click(function () {
+    //     $(".rotate-arrow-main-b").toggleClass("fa-angle-down fa-angle-left");
+    // });
 
-    $(".rotate-arrow-click-a").click(function () {
-        $(".rotate-arrow-main-a").toggleClass("fa-angle-down fa-angle-left");
-    });
+    // $(".rotate-arrow-click-a").click(function () {
+    //     $(".rotate-arrow-main-a").toggleClass("fa-angle-down fa-angle-left");
+    // });
    
     $(".dropdown-main-2 .aljwise").click(function () {
         $(".dropdown-div-2").toggleClass("d-block");
