@@ -426,7 +426,7 @@
     }
 
     .poetic-sec .sub-title-mobile {
-        padding-right: 30px;
+        /* padding-right: 30px; */
         padding-top: 180px;
     }
 
@@ -546,7 +546,7 @@
     }
 
     .content-mobile {
-        padding-right: 30px;
+        /* padding-right: 30px; */
     }
 
     .content-mobile h2 {
@@ -875,10 +875,10 @@
     }
 
     .content-container.about {
-        padding-right: 35px;
+        /* padding-right: 35px; */
             
         font-size: 54px;
-        }
+    }
         .box-uni-stnd img:first-child{
         top: -200px;
         }
@@ -993,10 +993,18 @@
     }
 
     .content-container.diwan {
-        padding-right: 35px;
-        padding-left: 10px;
+        /* padding-right: 35px; */
+        /* padding-left: 10px; */
     }
-
+    .apply-nomination-btn-2{
+        margin-bottom: 70px;
+    }
+    .navbar-toggler{
+        padding: 0 !important;
+    }
+    .logo{
+        transform: translateX(20px);
+    }
     .content-container.diwan .content,
     .content-container.diwan p {
         padding-left: 140px;
