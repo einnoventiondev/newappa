@@ -116,7 +116,7 @@
                     </li>
                     <li><a class="dropdown-items" href="{{route('Prince.ArabicPoetry')}}">جائزة الأمير عبدالله الفيصل لأفضل مشروع في خدمة الشعر العربي</a></li>
                     <li class="drop-main">
-                        <a class="dropdown-item" href="{{route('award')}}">جائزة الأمير عبدالله الفيصل للشاعر الواعد
+                        <a class="dropdown-items" href="{{route('award')}}">جائزة الأمير عبدالله الفيصل للشاعر الواعد
                             <!-- <img src="{{asset('/assets/icons/arrow-white.png')}}" alt=""> -->
                             <!--<i class="rotate-arrow-1 fa-solid fa-angle-left"></i> -->
                         </a>

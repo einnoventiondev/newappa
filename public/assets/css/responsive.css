@@ -1118,6 +1118,13 @@
 
     .award-winner-heading .sub-title {
         color: #b79b66 !important;
+        top: 0 !important;
+    }
+    .award-winner-heading .title h1 {
+        top: 0 !important;
+    }
+    .award-winners .content-award-table {
+        padding-top: 0;
     }
 
     /* .award-winner-heading{
