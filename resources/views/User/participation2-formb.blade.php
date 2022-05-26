@@ -21,7 +21,7 @@
 
     <div class="content-wrapper">
 
-        @include('layouts.User.nav')
+    @include('layouts.User.nav')
 
         <section class="content-container">
             <div class="container">

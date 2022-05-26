@@ -22,7 +22,7 @@
         @include('layouts.User.nav')
         <section class="content-container">
             <div class="container">
-                <div class="row g-0">
+                <div class="row justify-content-center">
                     <div class="col-md-12 title-uni-stnd ">
                         <div class="row">
                             <div class="col-md-2 mob-order-1">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                    <form action="{{route('sendemail')}}" method="POST" class="row gx-5 gy-3 candidate-form">
+                    <form action="{{route('sendemail')}}" method="POST" class="row candidate-form">
                         @csrf
                         <h2>اتصل بنا</h2>
                         <div class="col-md-6">
@@ -54,7 +54,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="telephone" class="form-label">رقم الجوال</label>
-                 <input type="tel" name="phone" class="form-control" id="telephone" placeholder=" أدخل رقم الجوال">
+                                <input type="tel" name="phone" class="form-control" id="telephone" placeholder=" أدخل رقم الجوال">
                             </div>
                        
                             <div class="form-group">

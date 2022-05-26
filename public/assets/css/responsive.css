@@ -39,6 +39,9 @@
         .title-index{
             margin-bottom:23px
         }
+        .tc {
+            padding-bottom: 5rem;
+        }
         .submit-content{
             padding-left: 0px !important;
             display: block;
@@ -672,10 +675,12 @@
 
     .candidate-form {
         padding-bottom: 80px;
-        padding-right: 50px;
+        padding-right: 0px;
         padding-left: 0px;
     }
-
+    .partic-txt{
+        padding-right: 0;
+    }
     .footer-img-show {
         display: block !important;
     }
@@ -715,6 +720,7 @@
     .submit-btn {
         padding: 6px 14px;
         line-height: 2;
+        width: 150px;
     }
 
     .datepicker.datepicker-dropdown {
