@@ -317,7 +317,7 @@
             </div>
 
 
-            <div class="col-md-6 padd-l-20">
+            <div class="col-md-6 padd-r-20">
                 <div class="form-group upload-file">
                     <label for="authentic_cv2" class="form-label" > جهة الشهادة Pdf, jpg, png</label>
                     <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv2" id="candidateImage">
