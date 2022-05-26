@@ -25,12 +25,16 @@
         .issue p{
             padding-left: 0px !important;
         }
-        .issue-btn{
-            margin-bottom:40px !important;
+        .award-winners .issue-btn1{
+            margin-bottom: 10px !important;
+        }
+        .award-winners .issue-btn2{
+            margin-bottom: 70px !important;
         }
         .content-mobile li {
                 font-size: 15px;
                 color: #f7f8f8;
+                margin-bottom: 20px;
             }
         .title-index{
             margin-bottom:23px
@@ -118,8 +122,8 @@
         }
         /* end new index responsive */
         .paragraph{
-            padding: 0px 25px
-
+            padding: 0px 25px;
+            padding-left: 10px;
         }
         .content-video iframe {
             width: 100%;
@@ -398,7 +402,7 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 92%;
-        padding-bottom: 180px;
+        /* padding-bottom: 180px; */
         margin-bottom: 80px;
     }
 
@@ -426,7 +430,7 @@
     }
 
     .poetic-sec .sub-title-mobile {
-        padding-right: 30px;
+        /* padding-right: 30px; */
         padding-top: 180px;
     }
 
@@ -546,7 +550,7 @@
     }
 
     .content-mobile {
-        padding-right: 30px;
+        /* padding-right: 30px; */
     }
 
     .content-mobile h2 {
@@ -875,10 +879,10 @@
     }
 
     .content-container.about {
-        padding-right: 35px;
+        /* padding-right: 35px; */
             
         font-size: 54px;
-        }
+    }
         .box-uni-stnd img:first-child{
         top: -200px;
         }
@@ -925,7 +929,7 @@
             padding-bottom: 10px;
         }
         .award-winners{
-            padding-right:35px !important;
+            /* padding-right:35px !important; */
             padding-left: 10px;
         }
         .award-winner-heading .sub-title{
@@ -993,10 +997,18 @@
     }
 
     .content-container.diwan {
-        padding-right: 35px;
-        padding-left: 10px;
+        /* padding-right: 35px; */
+        /* padding-left: 10px; */
     }
-
+    .apply-nomination-btn-2{
+        margin-bottom: 70px;
+    }
+    .navbar-toggler{
+        padding: 0 !important;
+    }
+    .logo{
+        transform: translateX(20px);
+    }
     .content-container.diwan .content,
     .content-container.diwan p {
         padding-left: 140px;
@@ -1104,12 +1116,22 @@
     }
 
     .award-winners {
-        padding-right: 35px !important;
+        /* padding-right: 35px !important; */
         padding-left: 10px;
     }
 
     .award-winner-heading .sub-title {
         color: #b79b66 !important;
+        top: 0 !important;
+    }
+    .award-winner-heading .title h1 {
+        top: 0 !important;
+    }
+    .award-winners .content-award-table {
+        padding-top: 0;
+    }
+    .content-award-table .paragraph li {
+        word-break: break-word;
     }
 
     /* .award-winner-heading{

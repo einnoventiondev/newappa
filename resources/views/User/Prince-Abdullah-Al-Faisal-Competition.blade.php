@@ -44,7 +44,7 @@
 						  <h1></h1>
                         <h1>لطلبة الثانوية</h1>
                         <div class="box-student reset-img">
-                            <img src="{{asset('/assets/images/hight-green.svg')}}"  alt="top">
+                            <img src="{{asset('/assets/images/light-green.svg')}}"  alt="top">
                         </div>
                     </div>
             </div>
