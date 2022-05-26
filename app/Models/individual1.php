@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Corporate1 extends Model
+class individual1 extends Model
 {
     use HasFactory;
-    protected $table='corporate1s';
+    protected $table='individual1s';
     protected $fillable=[
 'authentic_company',
 'authentic_cv',

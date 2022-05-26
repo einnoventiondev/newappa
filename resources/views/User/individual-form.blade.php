@@ -66,11 +66,10 @@
                 </div>
             </div>
 
-            <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row candidate-form corporate-form individual-form1 ">
+            <form method="POST" enctype="multipart/form-data" action="{{ route('first.individual2.form') }}" class="row candidate-form corporate-form individual-form1 ">
                 @csrf
                 <input type="text" required name="form" value="third" hidden>
                 <input type="text" required name="type" value="2" hidden>
-                {{-- <div class="click-hide row"> --}}
 
                     <div class="col-md-6 padd-l-20">
                         <div class="form-group">
@@ -117,8 +116,7 @@
                         </div>
                     </div>
 
-                {{-- </div> --}}
-                <div>
+                <div class="padd-0">
                     <h2>بيانات مدير المشروع</h1>
                 </div>
 
@@ -165,7 +163,7 @@
                 <div class="col-md-4 padd-r-20  padd-l-20">
                     <div class="form-group">
                         <label for="authentic_contact" class="form-label">رقم التواصل</label>
-                        <input type="number" class="form-control" required name="authentic_contact" id="idNumber">
+                        <input type="number" class="form-control" required name="authentic_contact1" id="idNumber">
                     </div>
                 </div>
                 <div class="col-md-4 padd-r-20">
@@ -205,7 +203,7 @@
                         <input type="number" class="form-control" required name="authentic_choose" id="idNumber">
                     </div>
                 </div>
-                <div>
+                <div class="padd-0">
                     <h2>مكان تفعيل المشروع</h2>
                 </div>
 
@@ -228,7 +226,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12 padd-0">
                     <div class="form-group">
                        <label for="authentic_idea" class="form-label">فكرة المشروع</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="authentic_idea" id="about" ></textarea>
@@ -236,42 +234,42 @@
                 </div>
 
 
-                <div>
+                <div class="padd-0">
                     <h2>البرامج أو الفعاليات أو الأنشطة المتعلقة بالشعر العربي التي نفذها المشروع:</h2>
                 </div>
 
                 <div class="col-md-4 padd-l-20">
                     <div class="form-group">
                         <label for="authentic_program" class="form-label">اسم البرنامج</label>
-                        <input type="text" class="form-control" required name="authentic_program" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_program[]" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-4 padd-l-20 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_history" class="form-label">تاريخه</label>
-                        <input type="text" class="form-control" required name="authentic_history" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_history[]" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-4 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_place" class="form-label">مكان إقامته</label>
-                        <input type="text" class="form-control" required name="authentic_place" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_place[]" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-6 padd-l-20">
                     <div class="form-group">
                         <label for="city" class="form-label">الهدف</label>
-                        <input type="text" class="form-control" required name="authentic_history" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_history1[]" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-6 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_target" class="form-label"> الشريحة المستهدفة</label>
-                        <input type="text" class="form-control" required name="authentic_target" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_target[]" id="idNumber">
                     </div>
                 </div>
 
@@ -292,7 +290,7 @@
 
 
 
-            <div>
+            <div class="padd-0">
                 <h2>شهادات حصل عليها المشروع</h2>
             </div>
 
@@ -319,7 +317,7 @@
             </div>
 
 
-            <div class="col-md-6 padd-l-20">
+            <div class="col-md-6 padd-r-20">
                 <div class="form-group upload-file">
                     <label for="authentic_cv2" class="form-label" > جهة الشهادة Pdf, jpg, png</label>
                     <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv2" id="candidateImage">
@@ -367,23 +365,22 @@
 
 
               {{-- individual form 2 start here --}}
-            <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form corporate-form individual-form2 d-none">
+            <form method="POST" enctype="multipart/form-data" action="{{ route('second.individual2.form') }}" class="row candidate-form corporate-form individual-form2 d-none">
 
 
                 @csrf
                 <input type="text" required name="form" value="third" hidden>
                 <input type="text" required name="type" value="2" hidden>
-                <div class="click-hide row">
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-l-20">
                         <div class="form-group">
                             <label for="behalf_candidate_name" class="form-label">اسم المرشح</label>
                             <input type="text" class="form-control" required name="behalf_candidate_name" id="inputName">
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-r-20">
                         <div class="form-group">
                             <label for="behalf_options" class="form-label">خيارات</label>
                             <select required name="behalf_options" id="state" class="form-select">
@@ -400,40 +397,39 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-l-20">
                         <div class="form-group">
                             <label for="behalf_name" class="form-label">اسم المشروع</label>
                             <input type="text" class="form-control" required name="behalf_name" id="inputName">
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-r-20">
                         <div class="form-group">
                             <label for="behalf_type" class="form-label">نوعه</label>
                             <input type="text" class="form-control" required name="behalf_type" id="inputName">
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-l-20">
                         <div class="form-group">
                             <label for="behalf_date" class="form-label">تاريخ الانطلاق</label>
                             <input type="text" class="form-control date" required name="behalf_date" id="inputName">
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-r-20">
                         <div class="form-group">
                         </div>
                     </div>
 
-                </div>
 
 
-                <div>
+                <div class="padd-0">
                     <h2>مكان تفعيل المشروع</h2>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 padd-l-20">
                     <div class="form-group">
                         <label for="behalf_country" class="form-label">الدولة</label>
                         <select required name="behalf_country" id="inputNationality" class="form-select">
@@ -445,7 +441,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 padd-r-20">
                     <div class="form-group">
                         <label for="behalf_city" class="form-label">المدينة</label>
                         <input type="text" class="form-control" required name="behalf_city" id="idNumber">
@@ -454,13 +450,13 @@
 
 
 
-                <div class="col-md-12">
+                <div class="col-md-12 padd-0">
                     <div class="form-group">
                        <label for="behalf_about" class="form-label">فكرة المشروع</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="behalf_about" id="about" ></textarea>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 padd-l-20">
                     <div class="form-group">
                         <label for="behalf_site" class="form-label">رابط الموقع الإلكتروني للتعريف بالمشروع وأنشطته</label>
                         <input type="url" class="form-control" required name="behalf_site" id="idNumber">
@@ -534,35 +530,35 @@
     <div class="col-md-4">
         <div class="form-group">
             <label for="city" class="form-label">اسم البرنامج</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_program[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-4">
         <div class="form-group">
             <label for="date" class="form-label">تاريخه</label>
-            <input type="text" class="form-control" required name="date`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_history[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-4">
         <div class="form-group">
             <label for="city" class="form-label">مكان إقامته</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_place[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-6">
         <div class="form-group">
             <label for="city" class="form-label">الهدف</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_history1[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-6">
         <div class="form-group">
             <label for="city" class="form-label"> الشريحة المستهدفة</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_target[]`+ count +`" id="idNumber">
         </div>
     </div>
 </div>`;

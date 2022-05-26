@@ -354,7 +354,7 @@ footer p {
 
 .title-right span {
     color: #153056;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -560,7 +560,7 @@ span {
 
 .title-diwan span {
     color: #00514c;
-    font-size: 40px;
+    /* font-size: 40px; */
     font-weight: 700;
     padding-right: 0;
 }
@@ -596,7 +596,6 @@ span {
 .title-poetry span {
     color: #959595;
     font-weight: 700;
-    font-size: 38px;
     z-index: 9999;
     position: relative;
 }
@@ -2132,15 +2131,51 @@ a:hover {
         align-items: center;
     }
     .coprate-section .content {
-        padding-left: 0px;
+        padding: 0px;
     }
 
     .coprate-section .submit-btn {
         width: 100% !important;
         padding: 0px !important;
     }
-    .coprate-section form .row ,.coprate-section form .col-md-6 ,.coprate-section form .col-md-8 .coprate-section form .col-md-4{
+    /* .coprate-section form .row ,.coprate-section form .col-md-6 ,.coprate-section form .col-md-8 .coprate-section form .col-md-4{
         padding: 0px !important;
+    } */
+
+    .coprate-section .partic-txt {
+        padding-right: 5px;
+    }
+    .radio-main{
+        padding-right: 5px;
+    }
+    .padd-l-20 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .padd-r-20 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .padd-0{
+        padding: 0px !important;
+    }
+    .coprate-section .candidate-form{
+        padding-right: 17px !important;
+    }
+    .coprate-section .add-more-btn-main {
+        margin-bottom: 20px !important;
+        margin-top: 10px !important;
+        padding-right: 0px;
+    }
+    .coprate-section .form-check{
+        padding: 0px;
+    }
+
+    .add-more-btn-main .btn:hover {
+        color: #00514c !important;
+    }
+    .add-more-btn-main .btn:focus {
+        box-shadow: none;
     }
 
 
@@ -2153,8 +2188,20 @@ a:hover {
 
 
 /* asim */
+
+.add-more-btn-main .btn:hover {
+    color: #00514c !important;
+}
+.candidate-form h2 {
+    margin-top: 78px;
+    margin-bottom: 27px;
+    color: #00514c !important;
+}
+.add-more-btn-main .btn:focus {
+    box-shadow: none;
+}
 .coprate-section .add-more-btn-main{
-    margin-bottom: 75px;
+    margin-bottom: 20px;
 }
 
 .btn-green-icon {
@@ -2177,7 +2224,7 @@ a:hover {
     font-size: 28px;
 }
 .coprate-section label{
-    font-size: 26px;
+    font-size: 26px !important;
 }
 .coprate-section .form-group input ,.coprate-section .form-group select , .coprate-section .upload-file-img,.coprate-section .form-control {
     min-height: 68px !important;
@@ -2210,7 +2257,9 @@ a:hover {
     height: 79px;
     padding: 0px !important;
     font-size: 26px !important;
+    margin-top: 48px !important;
 }
+
 .per-color{
     color: #b79b66 !important;
 }
@@ -2229,9 +2278,11 @@ a:hover {
 .corporate-form .upload-file .upload-file-img{
     padding-left: 50px !important;
     color: #00514C !important;
+    font-size: 26px !important;
+    text-align: left;
 }
 .corporate-form .upload-file .upload-file-img img{
-    width: 30px !important;
+    width: 34px !important;
     height: auto !important;
 }
 .corporate-form  .check-label{

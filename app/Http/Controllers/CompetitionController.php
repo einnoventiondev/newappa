@@ -11,6 +11,7 @@ use App\Models\Competition4;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Corporate1;
+use App\Models\Corporate2;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
@@ -48,7 +49,6 @@ class CompetitionController extends Controller
     }
 
     public function corporation1(Request $request){
-
       $corporate=new Corporate1;
       $corporate->authentic_name=$request->authentic_name;
       $corporate->authentic_type=$request->authentic_type;
@@ -64,19 +64,214 @@ class CompetitionController extends Controller
       $corporate->authentic_contact=$request->authentic_contact;
       $corporate->authentic_city=$request->authentic_city;
       $corporate->authentic_program=$request->authentic_program;
+      $corporate->authentic_history=$request->authentic_history;
+      $corporate->authentic_place=$request->authentic_place;
+      $corporate->authentic_history1=$request->authentic_history1;
+      $corporate->authentic_target=$request->authentic_target;
       $corporate->check=$request->check;
-      $corporate->authentic_cv=$request->authentic_cv;
-      $corporate->authentic_cv1= $request->authentic_cv1;
-      $corporate->authentic_cv2= $request->authentic_cv2;
-      $corporate->authentic_cv3= $request->authentic_cv3;
-      $corporate->authentic_program= $request->authentic_program;
-      $corporate->authentic_history= $request->authentic_history;
-      $corporate->authentic_place= $request->authentic_place;
-      $corporate->authentic_history1= $request->authentic_history1;
-      $corporate->authentic_target= $request->authentic_target;
+    //   foreach($request->authentic_program as $program)
+    //         {
+
+    //             $corporate->authentic_program= $program;
+
+    //         }
+    //         foreach($request->authentic_history as $history)
+    //         {
+    //             $corporate->authentic_history= $history;
+
+    //         }
+    //         foreach($request->authentic_place as $place)
+    //         {
+    //             $corporate->authentic_place= $place;
+
+    //         }
+    //         foreach($request->authentic_history1 as $history1)
+    //         {
+    //             $corporate->authentic_history1= $history1;
+
+    //         }
+    //         foreach($request->authentic_target as $target)
+    //         {
+    //             $corporate->authentic_target= $target;
+
+    //         }
+
+      if($request->hasfile('authentic_cv'))
+         {
+            foreach($request->file('authentic_cv') as $image)
+            {
+                $name=$image->getClientOriginalName();
+                $image->move(public_path().'authentic/images/', $name);
+                $data[] = $name;
+            }
+         }
+         if($request->hasfile('authentic_cv1'))
+         {
+            foreach($request->file('authentic_cv1') as $image)
+            {
+                $name=$image->getClientOriginalName();
+                $image->move(public_path().'authentic/images/', $name);
+                $data1[] = $name;
+            }
+         }
+         if($request->hasfile('authentic_cv2'))
+         {
+            foreach($request->file('authentic_cv2') as $image)
+            {
+                $name=$image->getClientOriginalName();
+                $image->move(public_path().'authentic/images/', $name);
+                $data2[] = $name;
+            }
+         }
+         if($request->hasfile('authentic_cv3'))
+         {
+            foreach($request->file('authentic_cv3') as $image)
+            {
+                $name=$image->getClientOriginalName();
+                $image->move(public_path().'authentic/images/', $name);
+                $data3[] = $name;
+            }
+         }
+    $corporate->authentic_cv=json_encode($data);
+    $corporate->authentic_cv1=json_encode($data1);
+    $corporate->authentic_cv2=json_encode($data2);
+    $corporate->authentic_cv3=json_encode($data3);
+    // $corporate->authentic_program=json_encode($program);
+    // $corporate->authentic_place=json_encode($place);
+    // $corporate->authentic_history=json_encode($history);
+    // $corporate->authentic_history1=json_encode($history1);
+    // $corporate->authentic_target=json_encode($target);
       $corporate->save();
       return redirect()->back();
     }
+    public function corporation2(Request $request){
+        $corporate=new Corporate2;
+        $corporate->behalf_candidate_name=$request->behalf_candidate_name;
+        $corporate->behalf_options=$request->behalf_options;
+        $corporate->behalf_name=$request->behalf_name;
+        $corporate->behalf_type=$request->behalf_type;
+        $corporate->behalf_date=$request->behalf_date;
+        $corporate->behalf_company_name=$request->behalf_company_name;
+        $corporate->behalf_options1=$request->behalf_options1;
+        $corporate->behalf_project=$request->behalf_project;
+        $corporate->behalf_number=$request->behalf_number;
+        $corporate->behalf_email=$request->behalf_email;
+        $corporate->behalf_country=$request->behalf_country;
+        $corporate->behalf_city=$request->behalf_city;
+        $corporate->behalf_about=$request->behalf_about;
+        $corporate->save();
+        return redirect()->back();
+      }
+      public function individual1(Request $request){
+        $corporate=new Corporate2;
+        $corporate->authentic_name=$request->authentic_name;
+        $corporate->authentic_type=$request->authentic_type;
+        $corporate->authentic_date=$request->authentic_date;
+        $corporate->authentic_project=$request->authentic_project;
+        $corporate->authentic_company=$request->authentic_company;
+        $corporate->authentic_options=$request->authentic_options;
+        $corporate->authentic_manager_name=$request->authentic_manager_name;
+        $corporate->authentic_email=$request->authentic_email;
+        $corporate->authentic_country=$request->authentic_country;
+        $corporate->authentic_idea=$request->authentic_idea;
+        $corporate->authentic_link=$request->authentic_link;
+        $corporate->authentic_contact=$request->authentic_contact;
+        $corporate->authentic_city=$request->authentic_city;
+        $corporate->authentic_program=$request->authentic_program;
+        $corporate->authentic_history=$request->authentic_history;
+        $corporate->authentic_place=$request->authentic_place;
+        $corporate->authentic_history1=$request->authentic_history1;
+        $corporate->authentic_target=$request->authentic_target;
+        $corporate->check=$request->check;
+      //   foreach($request->authentic_program as $program)
+      //         {
+
+      //             $corporate->authentic_program= $program;
+
+      //         }
+      //         foreach($request->authentic_history as $history)
+      //         {
+      //             $corporate->authentic_history= $history;
+
+      //         }
+      //         foreach($request->authentic_place as $place)
+      //         {
+      //             $corporate->authentic_place= $place;
+
+      //         }
+      //         foreach($request->authentic_history1 as $history1)
+      //         {
+      //             $corporate->authentic_history1= $history1;
+
+      //         }
+      //         foreach($request->authentic_target as $target)
+      //         {
+      //             $corporate->authentic_target= $target;
+
+      //         }
+
+        if($request->hasfile('authentic_cv'))
+           {
+              foreach($request->file('authentic_cv') as $image)
+              {
+                  $name=$image->getClientOriginalName();
+                  $image->move(public_path().'authentic/images/', $name);
+                  $data[] = $name;
+              }
+           }
+           if($request->hasfile('authentic_cv1'))
+           {
+              foreach($request->file('authentic_cv1') as $image)
+              {
+                  $name=$image->getClientOriginalName();
+                  $image->move(public_path().'authentic/images/', $name);
+                  $data1[] = $name;
+              }
+           }
+           if($request->hasfile('authentic_cv2'))
+           {
+              foreach($request->file('authentic_cv2') as $image)
+              {
+                  $name=$image->getClientOriginalName();
+                  $image->move(public_path().'authentic/images/', $name);
+                  $data2[] = $name;
+              }
+           }
+           if($request->hasfile('authentic_cv3'))
+           {
+              foreach($request->file('authentic_cv3') as $image)
+              {
+                  $name=$image->getClientOriginalName();
+                  $image->move(public_path().'authentic/images/', $name);
+                  $data3[] = $name;
+              }
+           }
+      $corporate->authentic_cv=json_encode($data);
+      $corporate->authentic_cv1=json_encode($data1);
+      $corporate->authentic_cv2=json_encode($data2);
+      $corporate->authentic_cv3=json_encode($data3);
+      // $corporate->authentic_program=json_encode($program);
+      // $corporate->authentic_place=json_encode($place);
+      // $corporate->authentic_history=json_encode($history);
+      // $corporate->authentic_history1=json_encode($history1);
+      // $corporate->authentic_target=json_encode($target);
+        $corporate->save();
+        return redirect()->back();
+      }
+      public function individual2(Request $request){
+        $corporate=new Corporate2;
+        $corporate->behalf_candidate_name=$request->behalf_candidate_name;
+        $corporate->behalf_options=$request->behalf_options;
+        $corporate->behalf_name=$request->behalf_name;
+        $corporate->behalf_type=$request->behalf_type;
+        $corporate->behalf_date=$request->behalf_date;
+        $corporate->behalf_country=$request->behalf_country;
+        $corporate->behalf_city=$request->behalf_city;
+        $corporate->behalf_about=$request->behalf_about;
+        $corporate->behalf_site=$request->behalf_site;
+        $corporate->save();
+        return redirect()->back();
+      }
 
     public function sendemail(Request $request)
     {

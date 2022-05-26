@@ -123,6 +123,12 @@ Route::any('fifth/participation', [CompetitionController::class, 'indexnew'])->n
 
 //corporation forms
 Route::post('first/corporation', [CompetitionController::class, 'corporation1'])->name('first.corporation.form');
+Route::post('second/corporation', [CompetitionController::class, 'corporation2'])->name('second.corporation.form');
+Route::post('first/individual', [CompetitionController::class, 'individual1'])->name('first.individual2.form');
+Route::post('second/individual', [CompetitionController::class, 'individual2'])->name('second.individual2.form');
+
+
+
 Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

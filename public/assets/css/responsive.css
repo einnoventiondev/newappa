@@ -1193,12 +1193,12 @@
         .season-name span{
             font-size: 32px;
         }
-        .title-right span {
+        /* .title-right span {
             font-size: 35px;
-        }
-        .title-right h1 {
+        } */
+        /* .title-right h1 {
             font-size: 40px;
-        }
+        } */
 
     }
     @media only screen and (min-width: 1300px) {
@@ -1254,12 +1254,12 @@
         .table-box-1 {
             padding-right: 320px !important;
         }
-        .title-right span {
+        /* .title-right span {
             font-size: 50px;
-        }
-        .title-right h1 {
+        } */
+        /* .title-right h1 {
             font-size: 60px;
-        }
+        } */
         .title-right .sub-title {
             top: 50px;
         }
