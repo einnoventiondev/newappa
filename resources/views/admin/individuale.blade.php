@@ -26,21 +26,31 @@
                 <thead>
                     <tr>
                         <!-- candidtae -->
-                        <th>حالة</th>
+                        <th>اسم المشروع</th>
                         <!-- candidtae -->
-                        <th>اسم المرشح الرباعي</th>
-                        <!-- Nationality -->
-                        <th>الجنسیة</th>
-                        <!-- idnummber -->
-                        <th>رقم الھویة</th>
-                        <!-- about -->
-                        <th>نبذة عن المرشح:</th>
+                        <!-- orgnization name  -->
+                        <th> نوعه </th>
+                        <!-- state -->
+                        <th>تاريخ الانطلاق </th>
+                        <!-- phone -->
+                        <th> ادارة المشروع</th>
+                        <!-- emial -->
+                        <th> اسم المؤسسة</th>
+                        <!-- candidtae -->
+                        <th>خيارات  </th>
+                        <!-- relation -->
+                        <th>اسم مدير المشروع :</th>
                         <!-- title -->
-                        <th>عنوان الدیوان</th>
+                        <th>رقم التواصل </th>
                         <!-- place -->
-                        <th>دار النشر</th>
+                        <th> البريد الالكتروني</th>
                         <!-- release -->
-                        <th>سنة الإصدار</th>
+                        <th>الدولة </th>
+
+                        <th>  المدينة</th>
+                        <th>فكرة المشروع</th>
+                        <th> اسم البرنامج</th>
+                        <th> تاريخه</th>
                         {{-- delete --}}
                         <th>عمل</th>
                     </tr>
@@ -87,23 +97,36 @@
                 <thead>
                     <tr>
                         <!-- candidtae -->
-                        <th>حالة</th>
+                        <th> اسم المرشح</th>
                         <!-- candidtae -->
-                        <th>اسم المرشح الرباعي</th>
-                        <!-- Nationality -->
-                        <th>الجنسیة</th>
-                        <!-- idnummber -->
-                        <th>رقم الھویة</th>
-                        <!-- about -->
-                        <th>نبذة عن المرشح:</th>
+                        <!-- orgnization name  -->
+                        <th> خيارات</th>
+                        <!-- state -->
+                        <th> اسم المشروع </th>
+                        <!-- phone -->
+                        <th> نوعه</th>
+                        <!-- emial -->
+                        <th>  تاريخ الانطلاق</th>
+                        <!-- candidtae -->
+                        <th>  اسم المؤسسة</th>
+                        <!-- relation -->
+                        <th>  خيارات</th>
                         <!-- title -->
-                        <th>عنوان الدیوان</th>
+                        <th> اسم مدير المشروع</th>
                         <!-- place -->
-                        <th>دار النشر</th>
+                        <th> رقم التواصل</th>
                         <!-- release -->
-                        <th>سنة الإصدار</th>
+                        <th> البريد الالكتروني</th>
+
+                        <th>  الدولة</th>
+                        <th> المدينة</th>
+                        <th> فكرة المشروع</th>
+
+                        <th>رقم التواصل</th>
                         {{-- delete --}}
                         <th>عمل</th>
+
+
                     </tr>
                 </thead>
                 <tbody>
