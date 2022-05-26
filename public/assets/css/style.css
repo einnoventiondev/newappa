@@ -2154,7 +2154,12 @@ a:hover {
 .coprate-section .form-group input ,.coprate-section .form-group select , .coprate-section .upload-file-img {
     min-height: 68px !important;
 }
-
+.coprate-section .submit-btn{
+    width: 524px;
+    height: 79px;
+    padding: 0px !important;
+    font-size: 26px !important;
+}
 .per-color{
     color: #b79b66 !important;
 }

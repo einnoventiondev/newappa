@@ -265,7 +265,7 @@
                         </div>
                     </div>
 
-                    <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form1 ">
+                    <form method="POST" enctype="multipart/form-data" action="{{ route('first.corporation.form') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form1 ">
                         @csrf
                         <input type="text" required name="form" value="third" hidden>
                         <input type="text" required name="type" value="2" hidden>
@@ -426,7 +426,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="city" class="form-label">الهدف</label>
-                                <input type="text" class="form-control" required name="authentic_history" id="idNumber">
+                                <input type="text" class="form-control" required name="authentic_history1" id="idNumber">
                             </div>
                         </div>
 
@@ -511,7 +511,7 @@
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="1" required name="check2" id="check2">
+                        <input class="form-check-input" type="checkbox" value="'checked' ? 1 :0" required name="check2" id="check2">
                         <label class="form-check-label check-label" for="check2">نملك جميع الحقوق الفكرية للمشروع المرشح، وجميع المعلومات المدونة والمرفقة في هذا النموذج صحيحة ودقيقة ونتحمل مسؤولية ما يخالف ذلك.
                         </label>
                     </div>
@@ -600,8 +600,8 @@
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="behalf_options" class="form-label">خيارات</label>
-                                <select required name="behalf_options" id="inputNationality" class="form-select">
+                                <label for="behalf_options1" class="form-label">خيارات</label>
+                                <select required name="behalf_options1" id="inputNationality" class="form-select">
                                     <option selected disabled></option>
                                     <option value="حكومية">
                                         حكومية

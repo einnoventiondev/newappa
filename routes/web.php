@@ -120,6 +120,9 @@ Route::get('first/dropdownCompetition', [CompetitionController::class, 'dropdown
 Route::get('second/dropdownCompetition', [CompetitionController::class, 'dropdownCompetition2'])->name('Prince.Abdullah.Al.Faisal.Competition');
 Route::any('fifth/participation', [CompetitionController::class, 'indexnew'])->name('fifth.participation');
 
+
+//corporation forms
+Route::post('first/corporation', [CompetitionController::class, 'corporation1'])->name('first.corporation.form');
 Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -10,6 +10,7 @@ use App\Models\competition2;
 use App\Models\Competition4;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Corporate1;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
@@ -46,6 +47,37 @@ class CompetitionController extends Controller
         return view('User.participation4-form');
     }
 
+    public function corporation1(Request $request){
+
+      $corporate=new Corporate1;
+      $corporate->authentic_name=$request->authentic_name;
+      $corporate->authentic_type=$request->authentic_type;
+      $corporate->authentic_date=$request->authentic_date;
+      $corporate->authentic_project=$request->authentic_project;
+      $corporate->authentic_company=$request->authentic_company;
+      $corporate->authentic_options=$request->authentic_options;
+      $corporate->authentic_manager_name=$request->authentic_manager_name;
+      $corporate->authentic_email=$request->authentic_email;
+      $corporate->authentic_country=$request->authentic_country;
+      $corporate->authentic_idea=$request->authentic_idea;
+      $corporate->authentic_link=$request->authentic_link;
+      $corporate->authentic_contact=$request->authentic_contact;
+      $corporate->authentic_city=$request->authentic_city;
+      $corporate->authentic_program=$request->authentic_program;
+      $corporate->check=$request->check;
+      $corporate->authentic_cv=$request->authentic_cv;
+      $corporate->authentic_cv1= $request->authentic_cv1;
+      $corporate->authentic_cv2= $request->authentic_cv2;
+      $corporate->authentic_cv3= $request->authentic_cv3;
+      $corporate->authentic_program= $request->authentic_program;
+      $corporate->authentic_history= $request->authentic_history;
+      $corporate->authentic_place= $request->authentic_place;
+      $corporate->authentic_history1= $request->authentic_history1;
+      $corporate->authentic_target= $request->authentic_target;
+      $corporate->save();
+      return redirect()->back();
+    }
+
     public function sendemail(Request $request)
     {
         $details = [
@@ -69,11 +101,11 @@ class CompetitionController extends Controller
         $request->validate([
             'type' => 'required',
         ]);
-		
+
         if ($request->type == 2) {
-			
+
             $request->validate([
-                
+
                 'release' => 'required',
                 'place' => 'required',
                 'title' => 'required',
@@ -88,12 +120,12 @@ class CompetitionController extends Controller
                 'orgniztionName' => 'required',
             ]);
         }
-		
-		
-		
+
+
+
 
         if (isset($request->letter) && !empty($request->letter)) {
-			
+
          //   $letter  = Storage::disk('public')->put('upload/', $request->letter);
 			$letter  = $request->letter->getClientOriginalName();
 			$path = $request->file('letter')->storeAs(
@@ -143,8 +175,8 @@ class CompetitionController extends Controller
 			$uni_number = $request->uniNumber;
 			$uni_email = $request->uniEmail;
 			$phone_number2 = $request->phoneNumber2;
-			
-		
+
+
 		}
 		else{
 		$fieldname =  'null';
