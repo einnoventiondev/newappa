@@ -28,6 +28,11 @@ $(document).ready(function () {
         $(".dropdown-div-2").toggleClass("d-block");
         $(".dropdown-main-link-2 .rotate-arrow").toggleClass("fa-angle-down fa-angle-left");
     });
+    
+    $(".dropdown-main-4 .aljwise").click(function () {
+        $(".dropdown-div-4").toggleClass("d-block");
+        $(".dropdown-main-link-4 .rotate-arrow").toggleClass("fa-angle-down fa-angle-left");
+    });
 
     //  $(".dropdown-main-link-5").click(function () {
     //     console.log("main")

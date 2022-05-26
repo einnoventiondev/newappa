@@ -35,7 +35,7 @@
               <!-- <img src="./assets/images/golden-group.png" alt="golden"> -->
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-6">
             <div class="content condition-content">
               <!-- <h2>الشروط العامة</h2>
               <p> 
@@ -48,7 +48,7 @@
 </ul>
               </p> -->
             </div>
-            <div class="content">
+            <div class="content paragraph-signing">
               <h2>شروط الترشيح</h2>
               <p>
                 <ul class="paragraph">

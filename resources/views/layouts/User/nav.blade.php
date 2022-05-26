@@ -49,23 +49,23 @@
                     </ul>
                 </li>
 
-                <li  class="nav-item dropdown">
-                    <a class="nav-link rotate-arrow-click"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">مواسم الجائزة 
-                    <i class="rotate-arrow-main fa-solid fa-angle-left"></i>
+                <li class="nav-item dropdown">
+                    <a class="nav-link rotate-arrow-click" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">مواسم الجائزة
+                        <i class="rotate-arrow-main fa-solid fa-angle-left"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{route('user.season019')}}"> الموسم الأول ٢٠١٩</a></li>
-                        <li><a class="dropdown-item" href="{{route('user.season020')}}">  الموسم الثاني ٢٠٢٠</a></li>
+                        <li><a class="dropdown-item" href="{{route('user.season020')}}"> الموسم الثاني ٢٠٢٠</a></li>
                         <li><a class="dropdown-item" href="{{route('user.season021')}}"> الموسم الثالث ٢٠٢١</a></li>
-				
+
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('Prince.awardwinners')}}">الفائزون</a>
                 </li>
-               
-				
-              <li class="nav-item dropdown">
+
+
+                <li class="nav-item dropdown">
                     <a class="nav-link rotate-arrow-click" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         الشروط والأحكام
                         <i class="rotate-arrow-main fa-solid fa-angle-left"></i></a>
@@ -152,8 +152,18 @@
                     <li><a class="dropdown-items" href="{{ route('Prince.Abdullah.Al.Faisal.Competition') }}"> - مسابقة طلبة  
                             الثانوية</a>
                     </li> -->
-        <li>
-            <a class="nav-link" href="{{route('Prince.videocontent')}}">مواسم الجائزة</a>
+        <li class="dropdown-main-4 drop-main">
+            <a class="dropdown-main-link-4 aljwise" href='javascript:void(0);'>
+                مواسم الجائزة
+                <i class="rotate-arrow fa-solid fa-angle-left"></i>
+            </a>
+            <div class="dropdown-div-4">
+                <ul class="dropdown-4">
+                    <li><a class="dropdown-items" href="{{route('user.season019')}}"> الموسم الأول ٢٠١٩</a></li>
+                    <li><a class="dropdown-items" href="{{route('user.season020')}}"> الموسم الثاني ٢٠٢٠</a></li>
+                    <li><a class="dropdown-items" href="{{route('user.season021')}}"> الموسم الثالث ٢٠٢١</a></li>
+                <ul>
+            </div>
         </li>
         <li>
             <a class="nav-link" href="{{route('Prince.awardwinners')}}">الفائزون</a>

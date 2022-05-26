@@ -44,8 +44,8 @@
               <img src="{{asset('assets/images/light-green.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="top">
             </div>
           </div>
-          <div class="col-md-8 rules-std">
-            <div class="content rules-std-content">
+          <div class="col-md-6 rules-std">
+            <div class="content rules-std-content paragraph-signing">
 				
               <h2 class="heading-reset">شروط التقدم لجائزة طلاب وطالبات الجامعات السعودية (الحكومية والخاصة)</h2>
               <p>
@@ -71,7 +71,7 @@
             </div>
 
             <div class="col-md-12 rules-std">
-				<div class="content rules-std-content"> <p>
+				<div class="content rules-std-content paragraph-signing"> <p>
               <h2>قيمة جائزة الأمير عبد الله الفيصل في الشعر العربي لطلاب وطالبات الجامعات</h2>
               <p>
 				 
@@ -82,7 +82,7 @@
 
 					            </div>
             <div class="col-md-12 rules-std">
-				<div class="content rules-std-content"> <p>
+				<div class="content rules-std-content paragraph-signing"> <p>
               <h2>آلية المشاركة في المسابقة:</h2>
               <p>
 				   <ul class="paragraph">

@@ -2021,6 +2021,9 @@ a:hover {
 .t-list{
 	margin-bottom: 50px;
 }
+.paragraph-signing{
+    padding-left: 0;
+}
 @media(max-width:1399px){
 
 	.time-plan-txt {
