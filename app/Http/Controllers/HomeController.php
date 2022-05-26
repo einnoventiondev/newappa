@@ -7,6 +7,8 @@ use App\Models\Competition1;
 use App\Models\competition2;
 use App\Models\Competition4;
 use App\Models\User;
+use App\Models\Corporate1;
+use App\Models\Corporate2;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -36,6 +38,12 @@ class HomeController extends Controller
     }
     public function institute()
     {
+        if (auth()->user()->role == 'admin1') {
+            $data = Competition::where('type', 2)->where('form', 'third')->where('accept', 0)->orWhere('accept', 1)->get();
+        } else {
+            $data = Competition::where('type', 2)->where('form', 'third')->where('accept', 1)->orWhere('accept', 2)->get();
+        }
+
         return view('admin.institute', compact('data'));
     }
     public function individuale()
@@ -67,12 +75,10 @@ class HomeController extends Controller
     }
     public function institute3()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 2)->where('form', 'third')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 2)->where('form', 'third')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.institute', compact('data'));
+        $corporate1=Corporate1::all();
+        $corporate2=Corporate2::all();
+
+        return view('admin.institute', compact('corporate1','corporate2'));
     }
     public function individuale3()
     {

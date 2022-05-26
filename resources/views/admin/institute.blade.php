@@ -54,16 +54,12 @@
                     <th>دار النشر</th>
                     <!-- release -->
                     <th>سنة الإصدار</th>
-					@if(request()->segment(1) == 'institute6' || request()->segment(1) == 'institute7')
+
 					<th>اسم المرشح الرباعي</th>
 					<th>العمر</th>
 					<th>الرقم الجامعي</th>
 					<th>الإيميل الجامعي</th>
 					<th>رقم التواصل</th>
-
-					@else
-
-					@endif
                     {{-- delete --}}
                     <th>عمل</th>
 
@@ -73,50 +69,29 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($data as $dat)
+                @foreach ($corporate1 as $corporate)
 
                 <tr>
-                    @if(auth()->user()->role == 'admin1')
-                    @if($dat->accept == 0)
-                    <td>ريثما</td>
-                    @else
-                    <td style="background-color: grean; color:green">وافق</td>
-                    @endif
-                    @endif
-                    @if(auth()->user()->role == 'admin2')
-                    @if($dat->accept == 1)
-                    <td>ريثما</td>
-                    @else
-                    <td style="background-color: grean; color:green">وافق</td>
-                    @endif
-                    @endif
-                    <td>{{ $dat->orgniztionName }}</td>
-                    <td>{{ $dat->state }}</td>
-                    <td>{{ $dat->phoneNumber }}</td>
-                    <td>{{ $dat->inputEmail }}</td>
-                    <td>{{ $dat->inputName }}</td>
-                    <td>{{ $dat->relation }}</td>
-                    <td>{{ $dat->title }}</td>
-                    <td>{{ $dat->place }}</td>
-                    <td>{{ $dat->release }}</td>
-						@if(request()->segment(1) == 'institute6' || request()->segment(1) == 'institute7')
-					<td>{{ $dat->fieldname }} </td>
-					<td>{{ $dat->age}}</td>
-					<td>{{ $dat->uni_number }}</td>
-					<td>{{ $dat->uni_email }}</td>
-					<td>{{ $dat->phone_number2 }}</td>
 
-					@else
 
-					@endif
+                    <td>{{ $corporate->authentic_name }}</td>
+                    <td>{{ $corporate->authentic_type }}</td>
+                    <td>{{ $corporate->authentic_date }}</td>
+                    <td>{{ $corporate->authentic_project }}</td>
+                    <td>{{ $corporate->authentic_options }}</td>
+                    <td>{{ $corporate->authentic_manager_name }}</td>
+                    <td>{{ $corporate->authentic_contact }}</td>
+                    <td>{{ $corporate->authentic_email }}</td>
+                    <td>{{ $corporate->authentic_country }}</td>
+
+					<td>{{ $corporate->authentic_city }} </td>
+					<td>{{ $corporate->authentic_idea}}</td>
+					<td>{{ $corporate->authentic_program }}</td>
+					<td>{{ $corporate->authentic_history }}</td>
+					<td>{{ $corporate->authentic_place }}</td>
                     <td>
-                        <form method="POST" action="{{ route('delete') }}">
-                            @csrf
-                            <input type="text" name="id" value="{{ $dat->id }}" hidden>
-                            <button type="submit" class="btn btn-danger">حذف</button>
-                            <a class="btn btn-info" href="{{ route('show', $dat->id) }}">يعرض</a>
-
-                        </form>
+                        <a href="" class="view-btn"> <i class="fa fa-eye"></i></a>
+                        <a href="" class="delete-btn"><i class="far fa-trash-alt"></i></a>
                     </td>
                 </tr>
                 @endforeach
