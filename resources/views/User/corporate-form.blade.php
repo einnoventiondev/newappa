@@ -27,210 +27,6 @@
         <section class="content-container coprate-section">
             <div class="container">
                 <div class="row g-0">
-                    {{-- <div class="col-md-12 title-uni-stnd ">
-                        <div class="row">
-                            <div class="col-md-2 mob-order-1">
-                                <div class="top-prize">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="uni-stnd-txt partic-txt">
-                                    <span class="sub-title animate__animated animate__fadeInRight animate_slower d-block">
-                                    </span>
-                                    <h2 class="animate__animated animate__fadeInRight animate_slower">جائزة </h2>
-                                    <h1 class="animate__animated animate__fadeInRight animate_slower"> خدمة الشعر العربي </h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-
-                    {{-- <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form d-none">
-                        @csrf
-                        <input type="text" required name="form" value="third" hidden>
-                        <input type="text" required name="type" value="2" hidden>
-                        <div class="click-hide row">
-                            <h2>معلومات الجھة المرشحة</h2>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="inputName" class="form-label">اسم الجھة</label>
-                                    <input type="text" class="form-control" required name="orgniztionName" id="inputName">
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="inputNationality" class="form-label">الدولة</label>
-                                    <select required name="state" id="state" class="form-select">
-                                        <option selected disabled>اختارالدولة</option>
-                                        @foreach ($country as $count)
-                                        <option value="{{$count->name}}">{{$count->name}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="phoneNumber1" class="form-label"> رقم التواصل</label>
-                                    <input type="phone" class="form-control" required name="phoneNumber" id="phoneNumber">
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="inputEmail" class="form-label">الإیمیل الرسمي</label>
-                                    <input type="email" class="form-control" required name="inputEmail" id="inputEmail">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2>معلومات المرشح</h1>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="inputName" class="form-label">الاسم الرباعي</label>
-                                <input type="text" class="form-control" required name="inputName" id="inputName">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="inputNationality" class="form-label">الجنسية</label>
-                                <select required name="inputNationality" id="inputNationality" class="form-select">
-                                    <option selected disabled>اختارالجنسية</option>
-                                    @foreach ($nation as $nat)
-                                    <option value="{{$nat->name}}">{{$nat->name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="idNumber" class="form-label">رقم الهوية</label>
-                                <input type="text" class="form-control" required name="idNumber" id="idNumber">
-                            </div>
-                        </div>
-
-                      <div class="col-md-12">
-                                <div class="form-group">
-                                   <label for="about" class="form-label">نبذة عن المرشح</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
-                                    <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
-                                </div>
-                            </div>
-                        <div class="col-md-12">
-                            <div class="form-group upload-file">
-                                <label for="passportimages" class="form-label">رفع صورة جواز السفر أو
-                                    الھویة</label>
-                                <input class="form-control" accept="image/*" type="file" id="passport-id-file-name" required name="passportimages" id="passportimages">
-                                <span class="upload-file-img passport-id">
-                                    <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
-                                </span>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-12">
-                            <div class="form-group upload-file">
-                                <label for="candidateImage" class="form-label">تحمیل السیرة الذاتیة</label>
-                                <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="candidateImage" id="candidateImage">
-                                <span class="upload-file-img download-cv">
-                                    <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="click-hide row">
-
-                            <div>
-                                <h2>مسوغات الترشیح</h2>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="relation" class="form-label">الترشیح</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="relation" id="relation" ></textarea>
-
-                                    <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <h2>تحمیل أعمال المرشح</h2>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="title" class="form-label">عنوان الدیوان</label>
-                                <input type="text" class="form-control" required name="title" id="title">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="place" class="form-label">دار النشر</label>
-                                <input type="text" class="form-control" required name="place" id="place">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="release" class="form-label">سنة الإصدار</label>
-                                <input type="date" class="form-control" required name="release" id="release">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group upload-file">
-                                <label for="publishedWorks" class="form-label">التحمیل</label>
-                                <input class="form-control" type="file" id="download-file-name" accept="application/pdf, application/vnd.ms-excel" required name="publishedWorks" id="publishedWorks">
-                                <span class="upload-file-img download-file-name">
-                                    <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
-                                </span>
-                            </div>
-                        </div>
-							<div class="add-more">
-
-							</div>
-						 <div class="content add-more-btn-main">
-                            <button type="button" class="btn btn-green add-more-btn mt-4">أضف المزيد<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>
-                        </div>
-                        <div class="click-hide row">
-
-                            <div>
-                                <h2>إرفاق خطاب الجھة</h2>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group upload-file">
-                                    <label for="letter" class="form-label">إرفاق خطاب الجھة</label>
-                                    <input class="form-control" type="file" id="authority-letter-file-name" accept="application/pdf, application/vnd.ms-excel" required name="letter" id="letter">
-                                    <span class="upload-file-img authority-letter">
-                                        <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="1" required name="check2" id="check2">
-                            <label class="form-check-label" for="check2">ترفق الجھة خطاب الترشیح على ورق رسمي
-                                باستخدام الماسح الضوئي مصدقا بالختم الرسمي للجھة </label>
-                        </div>
-
-                        <div class="content">
-                            <button type="submit" class="btn btn-green submit-btn mt-4">إرسال طلب الترشح<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>
-                        </div>
-
-                    </form> --}}
-
-
-
                     <div class="col-md-12 title-uni-stnd ">
                         <div class="row">
                             <div class="col-md-10">
@@ -270,31 +66,31 @@
                         <input type="text" required name="form" value="third" hidden>
                         <input type="text" required name="type" value="2" hidden>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-l-20">
                                 <div class="form-group">
                                     <label for="authentic_name" class="form-label">اسم المشروع</label>
                                     <input type="text" class="form-control" required name="authentic_name" id="inputName">
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-r-20">
                                 <div class="form-group">
                                     <label for="authentic_type" class="form-label">نوعه</label>
                                     <input type="text" class="form-control" required name="authentic_type" id="inputName">
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-l-20">
                                 <div class="form-group">
                                     <label for="authentic_date" class="form-label">تاريخ الانطلاق</label>
                                     <input type="text" class="form-control date" required name="authentic_date" id="inputName">
                                  </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-r-20">
                                 <div class="form-group">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-l-20">
                                 <div class="form-group">
                                     <label for="authentic_project" class="form-label">ادارة المشروع</label>
                                     <select required name="authentic_project" id="state" class="form-select">
@@ -310,7 +106,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-r-20">
                                 <div class="form-group">
                                 </div>
                             </div>
@@ -319,14 +115,14 @@
                             <h2>بيانات المؤسسة</h1>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-l-20">
                             <div class="form-group">
                                 <label for="authentic_company" class="form-label">اسم المؤسسة</label>
                                 <input type="text" class="form-control" required name="authentic_company " id="inputName">
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-r-20">
                             <div class="form-group">
                                 <label for="authentic_options" class="form-label">خيارات</label>
                                 <select required name="authentic_options" id="inputNationality" class="form-select">
@@ -344,20 +140,20 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-l-20">
                             <div class="form-group">
                                 <label for="authentic_manager_name" class="form-label">اسم مدير المشروع</label>
                                 <input type="text" class="form-control" required name="authentic_manager_name" id="idNumber">
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-r-20">
                             <div class="form-group">
                                 <label for="authentic_contact" class="form-label">رقم التواصل</label>
                                 <input type="number" class="form-control" required name="authentic_contact" id="idNumber">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-l-20">
                             <div class="form-group">
                                 <label for="authentic_email" class="form-label">البريد الالكتروني</label>
                                 <input type="email" class="form-control" required name="authentic_email" id="idNumber">
@@ -369,7 +165,7 @@
                             <h2>مكان تفعيل المشروع</h2>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-l-20">
                             <div class="form-group">
                                 <label for="authentic_country" class="form-label">الدولة</label>
                                 <select required name="authentic_country" id="inputNationality" class="form-select">
@@ -623,14 +419,14 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-r-20">
                             <div class="form-group">
                                 <label for="authentic_city" class="form-label">المدينة</label>
                                 <input type="text" class="form-control" required name="authentic_city" id="idNumber">
                             </div>
                         </div>
 
-                        <div class="col-md-12">
+                        <div class="col-md-12 padd-0">
                             <div class="form-group">
                                <label for="authentic_idea" class="form-label">فكرة المشروع</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="authentic_idea" id="about" ></textarea>
@@ -642,35 +438,35 @@
                             <h2>البرامج أو الفعاليات أو الأنشطة المتعلقة بالشعر العربي التي نفذها المشروع:</h2>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 padd-l-20">
                             <div class="form-group">
                                 <label for="authentic_program" class="form-label">اسم البرنامج</label>
                                 <input type="text" class="form-control" required name="authentic_program" id="idNumber">
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 padd-r-20 padd-l-20">
                             <div class="form-group">
                                 <label for="authentic_history" class="form-label">تاريخه</label>
                                 <input type="text" class="form-control" required name="authentic_history" id="idNumber">
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 padd-r-20">
                             <div class="form-group">
                                 <label for="authentic_place" class="form-label">مكان إقامته</label>
                                 <input type="text" class="form-control" required name="authentic_place" id="idNumber">
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-l-20">
                             <div class="form-group">
                                 <label for="city" class="form-label">الهدف</label>
                                 <input type="text" class="form-control" required name="authentic_history1" id="idNumber">
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-r-20">
                             <div class="form-group">
                                 <label for="authentic_target" class="form-label"> الشريحة المستهدفة</label>
                                 <input type="text" class="form-control" required name="authentic_target" id="idNumber">
@@ -685,7 +481,7 @@
                             <button type="button" class="btn btn-green-icon add-more-btn mt-4"><img src="{{ asset('assets/icons/plus-circle.png') }}" alt=""> إضافة جديد</button>
                         </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-l-20">
                         <div class="form-group">
                             <label for="authentic_link" class="form-label"> رابط الموقع الإلكتروني للتعريف بالمشروع وأنشطته</label>
                             <input type="url" class="form-control" required name="authentic_link" id="idNumber">
@@ -698,7 +494,7 @@
                         <h2>شهادات حصل عليها المشروع</h2>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-l-20">
                         <div class="form-group upload-file">
                             <label for="authentic_cv"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
                             <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cvF" id="candidateImage">
@@ -709,7 +505,7 @@
                     </div>
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-r-20">
                         <div class="form-group upload-file">
                             <label for="authentic_cv1"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
                             <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv1" id="candidateImage">
@@ -720,7 +516,7 @@
                     </div>
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-l-20">
                         <div class="form-group upload-file">
                             <label for="authentic_cv2"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
                             <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv2" id="candidateImage">
@@ -731,7 +527,7 @@
                     </div>
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 padd-r-20">
                         <div class="form-group upload-file">
                             <label for="authentic_cv3"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
                             <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv3" id="candidateImage">
@@ -775,14 +571,14 @@
                         <input type="text" required name="type" value="2" hidden>
 
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-l-20">
                                 <div class="form-group">
                                     <label for="behalf_candidate_name" class="form-label">اسم المرشح</label>
                                     <input type="text" class="form-control" required name="behalf_candidate_name" id="inputName">
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-r-20">
                                 <div class="form-group">
                                     <label for="behalf_options" class="form-label">خيارات</label>
                                     <select required name="behalf_options" id="state" class="form-select">
@@ -799,28 +595,28 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-l-20">
                                 <div class="form-group">
                                     <label for="behalf_name" class="form-label">اسم المشروع</label>
                                     <input type="text" class="form-control" required name="behalf_name" id="inputName">
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-r-20">
                                 <div class="form-group">
                                     <label for="behalf_type" class="form-label">نوعه</label>
                                     <input type="text" class="form-control" required name="behalf_type" id="inputName">
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-l-20">
                                 <div class="form-group">
                                     <label for="behalf_date" class="form-label">تاريخ الانطلاق</label>
                                     <input type="text" class="form-control date" required name="behalf_date" id="inputName">
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 padd-r-20">
                                 <div class="form-group">
                                 </div>
                             </div>
@@ -829,14 +625,14 @@
                             <h2>بيانات المؤسسة</h1>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 padd-l-20">
                             <div class="form-group">
                                 <label for="behalf_company_name" class="form-label">اسم المؤسسة</label>
                                 <input type="text" class="form-control" required name="behalf_company_name" id="inputName">
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 padd-r-20 padd-l-20">
                             <div class="form-group">
                                 <label for="behalf_options1" class="form-label">خيارات</label>
                                 <select required name="behalf_options1" id="inputNationality" class="form-select">
@@ -854,20 +650,20 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 padd-r-20">
                             <div class="form-group">
                                 <label for="behalf_project" class="form-label">اسم مدير المشروع</label>
                                 <input type="text" class="form-control" required name="behalf_project" id="idNumber">
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 padd-l-20">
                             <div class="form-group">
                                 <label for="behalf_number" class="form-label">رقم التواصل</label>
                                 <input type="number" class="form-control" required name="behalf_number" id="idNumber">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 padd-l-20 padd-r-20">
                             <div class="form-group">
                                 <label for="behalf_email" class="form-label">البريد الالكتروني</label>
                                 <input type="email" class="form-control" required name="behalf_email" id="idNumber">
@@ -879,7 +675,7 @@
                             <h2>مكان تفعيل المشروع</h2>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-l-20">
                             <div class="form-group">
                                 <label for="behalf_country" class="form-label">الدولة</label>
                                 <select required name="behalf_country" id="inputNationality" class="form-select">
@@ -891,7 +687,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 padd-r-20">
                             <div class="form-group">
                                 <label for="behalf_city" class="form-label">المدينة</label>
                                 <input type="text" class="form-control" required name="behalf_city" id="idNumber">
@@ -900,7 +696,7 @@
 
 
 
-                        <div class="col-md-12">
+                        <div class="col-md-12 padd-0">
                             <div class="form-group">
                                <label for="behalf_about" class="form-label">فكرة المشروع</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="behalf_about" id="about" ></textarea>
