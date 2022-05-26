@@ -20,10 +20,10 @@
 </div>
 
 <form method="POST" enctype="multipart/form-data" action="{{ route('first.corporation.form') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form1 ">
-111111111111111111111111
+form 1
 </form>
 <form method="POST" enctype="multipart/form-data" action="{{ route('second.corporation.form') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form2 d-none">
-2222222222222222
+form 2
 </form>
 
 
@@ -135,5 +135,6 @@ $("input[type=radio]").change(function(){
         $('.individual-form2').removeClass('d-none');
         $('.individual-form1').addClass('d-none');
     }
+});
 });
  </script>
