@@ -120,7 +120,6 @@
                             <!-- <img src="{{asset('/assets/icons/arrow-white.png')}}" alt=""> -->
                             <!--<i class="rotate-arrow-1 fa-solid fa-angle-left"></i> -->
                         </a>
-
                         <div class="dropdown-main-link-div">
                             <ul class="">
                                 <li><a class="dropdown-items" href="{{ route('university.students') }}">- مسابقة طلبة
@@ -131,10 +130,18 @@
                                 <ul>
                         </div>
                     </li>
-
-                    <ul>
+                    <li>
+                        <a class="dropdown-items" href="{{ route('university.students') }}">مسابقة طلبة
+                            الجامعات</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-items" href="{{ route('Prince.Abdullah.Al.Faisal.Competition') }}">مسابقة طلبة
+                            الثانوية</a>
+                    </li>
+                </ul>
             </div>
         </li>
+
         <!-- <li>
             <a href="{{route('Prince.AboutPrinceCompetition')}}">عن
                 الأمير
@@ -162,7 +169,7 @@
                     <li><a class="dropdown-items" href="{{route('user.season019')}}"> الموسم الأول ٢٠١٩</a></li>
                     <li><a class="dropdown-items" href="{{route('user.season020')}}"> الموسم الثاني ٢٠٢٠</a></li>
                     <li><a class="dropdown-items" href="{{route('user.season021')}}"> الموسم الثالث ٢٠٢١</a></li>
-                <ul>
+                    <ul>
             </div>
         </li>
         <li>

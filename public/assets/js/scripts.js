@@ -34,6 +34,11 @@ $(document).ready(function () {
         $(".dropdown-main-link-4 .rotate-arrow").toggleClass("fa-angle-down fa-angle-left");
     });
 
+    $(".dropdown-main-5 .aljwise").click(function () {
+        $(".dropdown-div-5").toggleClass("d-block");
+        $(".dropdown-main-link-5 .rotate-arrow").toggleClass("fa-angle-down fa-angle-left");
+    });
+
     //  $(".dropdown-main-link-5").click(function () {
     //     console.log("main")
     //     $(".dropdown-main-link-div ").toggleClass("d-block");
