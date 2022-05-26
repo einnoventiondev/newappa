@@ -779,8 +779,8 @@
 		 var add= `<div class="row">
             <div class="col-md-6">
     <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">تحمیل السیرة الذاتیة</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required  name="candidateImage`+ count +`" id="candidateImage">
+        <label for="candidateImage" class="form-label">جهة الشهادة Pdf, jpg, png</label>
+        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" required  name="candidateImage`+ count +`" id="candidateImage">
         <span class="upload-file-img download-cv">
             ارفاق ملف <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
         </span>
@@ -790,8 +790,8 @@
 
 <div class="col-md-6">
     <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">تحمیل السیرة الذاتیة</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required  name="candidateImage`+ count +`" id="candidateImage">
+        <label for="candidateImage" class="form-label">جهة الشهادة Pdf, jpg, png</label>
+        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" required  name="candidateImage`+ count +`" id="candidateImage">
         <span class="upload-file-img download-cv">
             ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
         </span>
@@ -801,8 +801,8 @@
 
 <div class="col-md-6">
     <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">تحمیل السیرة الذاتیة</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required  name="candidateImage`+ count +`" id="candidateImage">
+        <label for="candidateImage" class="form-label">جهة الشهادة Pdf, jpg, png</label>
+        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" required  name="candidateImage`+ count +`" id="candidateImage">
         <span class="upload-file-img download-cv">
             ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
         </span>
@@ -812,8 +812,8 @@
 
 <div class="col-md-6">
     <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">تحمیل السیرة الذاتیة</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="candidateImage`+ count +`"  id="candidateImage">
+        <label for="candidateImage" class="form-label">جهة الشهادة Pdf, jpg, png</label>
+        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" required name="candidateImage`+ count +`"  id="candidateImage">
         <span class="upload-file-img download-cv">
             ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
         </span>
@@ -833,7 +833,7 @@
         todayHighlight: true,
         locale: 'en'
   }).datepicker('update', new Date());
-
+ });
     </script>
 </body>
 
