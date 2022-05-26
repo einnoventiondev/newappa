@@ -141,11 +141,4 @@ $(document).ready(function () {
         duration: 1000
     });
 
-    $('body').click(function() {
-        $('.mobile-menu').removeClass('d-block');
-    })
-
 });
-
-
-
