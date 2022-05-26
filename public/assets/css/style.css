@@ -2102,7 +2102,19 @@ a:hover {
 	}
 }
 @media(max-width:767px){
-
+    .content-container.coprate-section .form-group input, .content-container.coprate-section .form-group select, .content-container.coprate-section .upload-file-img, .content-container.coprate-section .form-control{
+        min-height: 45px !important;
+    }
+    .coprate-section .candidate-form h2,.coprate-section .corporate-form .upload-file .upload-file-img, .add-more-btn-main .btn, .content-container.coprate-section .candidate-form label , .content-container.coprate-section label, .content-container.coprate-section label{
+        font-size: 14px !important;
+    }
+    .add-more-btn-main .btn img{
+        margin-left: 15px !important;
+        width: 20px !important;
+    }
+    .coprate-section .corporate-form .upload-file .upload-file-img img{
+        width: 20px !important;
+    }
 	.time-plan-section table th, .time-plan-section table td {
 		padding-right: 5px !important;
 		font-size: 13px;
@@ -2134,13 +2146,12 @@ a:hover {
         padding: 0px;
     }
 
-    .coprate-section .submit-btn {
+    .coprate-section .corporate-form .submit-btn {
         width: 100% !important;
         padding: 0px !important;
+        height: 48px !important;
+        font-size: 18px !important;
     }
-    /* .coprate-section form .row ,.coprate-section form .col-md-6 ,.coprate-section form .col-md-8 .coprate-section form .col-md-4{
-        padding: 0px !important;
-    } */
 
     .coprate-section .partic-txt {
         padding-right: 5px;

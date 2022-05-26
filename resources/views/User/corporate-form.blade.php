@@ -265,11 +265,10 @@
                         </div>
                     </div>
 
-                    <form method="POST" enctype="multipart/form-data" action="{{ route('first.corporation.form') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form1 ">
+                    <form method="POST" enctype="multipart/form-data" action="{{ route('first.corporation.form') }}" class="row candidate-form corporate-form corporate-form1 ">
                         @csrf
                         <input type="text" required name="form" value="third" hidden>
                         <input type="text" required name="type" value="2" hidden>
-                        <div class="click-hide row">
 
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -316,7 +315,6 @@
                                 </div>
                             </div>
 
-                        </div>
                         <div>
                             <h2>بيانات المؤسسة</h1>
                         </div>
@@ -527,13 +525,12 @@
 
 
                       {{-- coperete form 2 start here --}}
-                    <form method="POST" enctype="multipart/form-data" action="{{ route('second.corporation.form') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form2 d-none">
+                    <form method="POST" enctype="multipart/form-data" action="{{ route('second.corporation.form') }}" class="row candidate-form corporate-form corporate-form2 d-none">
 
 
                         @csrf
                         <input type="text" required name="form" value="third" hidden>
                         <input type="text" required name="type" value="2" hidden>
-                        <div class="click-hide row">
 
 
                             <div class="col-md-6">
@@ -586,7 +583,6 @@
                                 </div>
                             </div>
 
-                        </div>
                         <div>
                             <h2>بيانات المؤسسة</h1>
                         </div>
