@@ -354,7 +354,7 @@ footer p {
 
 .title-right span {
     color: #153056;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -560,7 +560,7 @@ span {
 
 .title-diwan span {
     color: #00514c;
-    font-size: 40px;
+    /* font-size: 40px; */
     font-weight: 700;
     padding-right: 0;
 }
@@ -596,7 +596,6 @@ span {
 .title-poetry span {
     color: #959595;
     font-weight: 700;
-    font-size: 38px;
     z-index: 9999;
     position: relative;
 }
@@ -986,7 +985,7 @@ td {
 }
 
 .partic-txt {
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 
 .partic-txt .h1,
@@ -1917,6 +1916,9 @@ a:hover {
 }
 .table-h{
 	width: 200px;
+}
+.main-form-btn{
+    margin: auto;
 }
 /* asim css end here */
 .accordians-mobile {

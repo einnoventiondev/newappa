@@ -32,12 +32,10 @@
                         <li><a class="dropdown-item" href="{{route('Prince.singingpoem')}}">جائزة الأمير عبدالله الفيصل للقصيدة المغناة</a>
                         </li>
                         <li><a class="dropdown-item" href="{{route('Prince.ArabicPoetry')}}">جائزة الأمير عبدالله الفيصل لأفضل مشروع في خدمة الشعر العربي</a></li>
-                        <li><a class="dropdown-item" href="{{route('award')}}">جائزة الأمير عبدالله الفيصل للشاعر الواعد</a></li>
                         <li class="dropdown-submenu dropdown-award ">
-                            <a class="dropdown-item dropdown-award-txt" href="{{route('award')}}" id=" navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                                جائزة الشاعر الواعد
+                            <a class="dropdown-item dropdown-award-txt" href="{{route('award')}}" id=" navbarDropdown" role="button" aria-expanded="true">
+                            جائزة الأمير عبدالله الفيصل للشاعر الواعد
                             </a>
-
                             <ul class="dropdown-award-inner">
                                 <li><a class="dropdown-item" href="{{ route('university.students') }}">مسابقة طلبة
                                         الجامعات</a></li>
@@ -60,11 +58,9 @@
 
                     </ul>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="{{route('Prince.awardwinners')}}">الفائزون</a>
-                </li>
-
-
+                </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link rotate-arrow-click" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         الشروط والأحكام
@@ -172,11 +168,9 @@
                     <ul>
             </div>
         </li>
-        <li>
+        <!-- <li>
             <a class="nav-link" href="{{route('Prince.awardwinners')}}">الفائزون</a>
-        </li>
-
-
+        </li> -->
         <li class="dropdown-main-2 drop-main">
             <a class="dropdown-main-link-2 aljwise" href='javascript:void(0);'>
                 الشروط والأحكام

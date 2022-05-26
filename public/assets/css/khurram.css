@@ -82,7 +82,8 @@ html {
 }
 
 .title-right h1 {
-    font-size: 60px;
+    font-size: 36px;
+    padding-left: 50px;
 }
 
 .award-winners table td {
@@ -125,11 +126,11 @@ html {
 }
 
 .title span {
-    font-size: 28px;
+    font-size: 35px;
 }
 
 .title h1 {
-    font-size: 65px;
+    font-size: 36px;
 }
 
 .diwan .title-box h1 {
@@ -149,7 +150,6 @@ html {
 
 .arabic-sec .title-box h1 {
     margin-top: 60px;
-    font-size: 54px;
 }
 
 .theatrical-sec .title-box h1 {
