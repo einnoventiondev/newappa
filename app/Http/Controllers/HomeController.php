@@ -9,6 +9,8 @@ use App\Models\Competition4;
 use App\Models\User;
 use App\Models\Corporate1;
 use App\Models\Corporate2;
+use App\Models\individual1;
+use App\Models\individual2;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -82,12 +84,9 @@ class HomeController extends Controller
     }
     public function individuale3()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 1)->where('form', 'third')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 1)->where('form', 'third')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.individuale', compact('data'));
+       $individual1=individual1::all();
+       $individual2=individual2::all();
+        return view('admin.individuale', compact('individual1','individual2'));
     }
     public function institute5()
     {

@@ -26,38 +26,31 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($data as $dat)
+                @foreach ($individual1 as $individual)
                 <tr>
-                    @if(auth()->user()->role == 'admin1')
-                    @if($dat->accept == 0)
-                    <td>ريثما</td>
-                    @else
-                    <td style="background-color: grean; color:green">وافق</td>
-                    @endif
-                    @endif
-                    @if(auth()->user()->role == 'admin2')
-                    @if($dat->accept == 1)
-                    <td>ريثما</td>
-                    @else
-                    <td style="background-color: grean; color:green">وافق</td>
-                    @endif
-                    @endif
-                    <td>{{ $dat->inputName }}</td>
-                    <td>{{ $dat->inputNationality }}</td>
-                    <td>{{ $dat->idNumber }}</td>
-                    <td>{{ $dat->about }}</td>
-                    <td>{{ $dat->title }}</td>
-                    <td>{{ $dat->place }}</td>
-                    <td>{{ $dat->release }}</td>
 
+                    <td>{{ $individual->authentic_name }}</td>
+                    <td>{{ $individual->authentic_type }}</td>
+                    <td>{{ $individual->authentic_date }}</td>
+                    <td>{{ $individual->authentic_project }}</td>
+                    <td>{{ $individual->authentic_company }}</td>
+
+                    <td>{{ $individual->authentic_options }}</td>
+                    <td>{{ $individual->authentic_contact }}</td>
+
+                    <td>{{ $individual->authentic_email }}</td>
+                    <td>{{ $individual->authentic_condition }}</td>
+                    <td>{{ $individual->authentic_choose }}</td>
+                    <td>{{ $individual->authentic_country }}</td>
+                    <td>{{ $individual->authentic_city }}</td>
+                    <td>{{ $individual->authentic_idea }}</td>
+                    <td>{{ $individual->authentic_program }}</td>
+                    <td>{{ $individual->authentic_history }}</td>
+                    <td>{{ $individual->authentic_place }}</td>
+                    <td>{{ $individual->authentic_history1 }}</td>
                     <td>
-                        <form method="POST" action="{{ route('delete') }}">
-                            @csrf
-                            <input type="text" name="id" value="{{ $dat->id }}" hidden>
-                            <button type="submit" class="btn btn-danger">حذف</button>
-
-                            <a class="btn btn-info" href="{{ route('show', $dat->id) }}">يعرض</a>
-
+                        <a href="" class="view-btn"> <i class="fa fa-eye"></i></a>
+                        <a href="" class="delete-btn"><i class="far fa-trash-alt"></i></a>
 
                         </form>
                     </td>
