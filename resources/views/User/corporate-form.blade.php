@@ -668,9 +668,6 @@
         locale: 'en'
   }).datepicker('update', new Date());
 
-
-        });
-
     </script>
 </body>
 
