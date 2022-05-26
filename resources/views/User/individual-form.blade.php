@@ -241,35 +241,35 @@
                 <div class="col-md-4 padd-l-20">
                     <div class="form-group">
                         <label for="authentic_program" class="form-label">اسم البرنامج</label>
-                        <input type="text" class="form-control" required name="authentic_program[]" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_program" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-4 padd-l-20 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_history" class="form-label">تاريخه</label>
-                        <input type="text" class="form-control" required name="authentic_history[]" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_history" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-4 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_place" class="form-label">مكان إقامته</label>
-                        <input type="text" class="form-control" required name="authentic_place[]" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_place" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-6 padd-l-20">
                     <div class="form-group">
                         <label for="city" class="form-label">الهدف</label>
-                        <input type="text" class="form-control" required name="authentic_history1[]" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_history1" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-6 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_target" class="form-label"> الشريحة المستهدفة</label>
-                        <input type="text" class="form-control" required name="authentic_target[]" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_target" id="idNumber">
                     </div>
                 </div>
 

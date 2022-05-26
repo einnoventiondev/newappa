@@ -11,5 +11,14 @@ class individual2 extends Model
     protected $table='individual2s';
     protected $fillable=[
         'behalf_site',
+        'behalf_candidate_name',
+        'behalf_options',
+        'behalf_name',
+        'behalf_type',
+        'behalf_date',
+        'behalf_country',
+        'behalf_city',
+        'behalf_about',
+        'behalf_site',
     ];
 }

@@ -12,6 +12,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Corporate1;
 use App\Models\Corporate2;
+use App\Models\individual1;
+use App\Models\individual2;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
@@ -69,73 +71,36 @@ class CompetitionController extends Controller
       $corporate->authentic_history1=$request->authentic_history1;
       $corporate->authentic_target=$request->authentic_target;
       $corporate->check=$request->check;
-    //   foreach($request->authentic_program as $program)
-    //         {
 
-    //             $corporate->authentic_program= $program;
+      if($request->hasfile('authentic_cv')){
+        $file= $request->file('authentic_cv');
+        $extenstion= $file->getClientOriginalExtension();
+        $filename=time().'.'.$extenstion;
+        $file->move('authentic/image/', $filename);
+        $corporate->authentic_cv=$filename;
+    }
+    if($request->hasfile('authentic_cv1')){
+        $file= $request->file('authentic_cv1');
+        $extenstion= $file->getClientOriginalExtension();
+        $filename=time().'.'.$extenstion;
+        $file->move('authentic/image/', $filename);
+        $corporate->authentic_cv1=$filename;
+    }
+    if($request->hasfile('authentic_cv2')){
+        $file= $request->file('authentic_cv2');
+        $extenstion= $file->getClientOriginalExtension();
+        $filename=time().'.'.$extenstion;
+        $file->move('authentic/image/', $filename);
+        $corporate->authentic_cv2=$filename;
+    }
+    if($request->hasfile('authentic_cv3')){
+        $file= $request->file('authentic_cv3');
+        $extenstion= $file->getClientOriginalExtension();
+        $filename=time().'.'.$extenstion;
+        $file->move('authentic/image/', $filename);
+        $corporate->authentic_cv3=$filename;
+    }
 
-    //         }
-    //         foreach($request->authentic_history as $history)
-    //         {
-    //             $corporate->authentic_history= $history;
-
-    //         }
-    //         foreach($request->authentic_place as $place)
-    //         {
-    //             $corporate->authentic_place= $place;
-
-    //         }
-    //         foreach($request->authentic_history1 as $history1)
-    //         {
-    //             $corporate->authentic_history1= $history1;
-
-    //         }
-    //         foreach($request->authentic_target as $target)
-    //         {
-    //             $corporate->authentic_target= $target;
-
-    //         }
-
-      if($request->hasfile('authentic_cv'))
-         {
-            foreach($request->file('authentic_cv') as $image)
-            {
-                $name=$image->getClientOriginalName();
-                $image->move(public_path().'authentic/images/', $name);
-                $data[] = $name;
-            }
-         }
-         if($request->hasfile('authentic_cv1'))
-         {
-            foreach($request->file('authentic_cv1') as $image)
-            {
-                $name=$image->getClientOriginalName();
-                $image->move(public_path().'authentic/images/', $name);
-                $data1[] = $name;
-            }
-         }
-         if($request->hasfile('authentic_cv2'))
-         {
-            foreach($request->file('authentic_cv2') as $image)
-            {
-                $name=$image->getClientOriginalName();
-                $image->move(public_path().'authentic/images/', $name);
-                $data2[] = $name;
-            }
-         }
-         if($request->hasfile('authentic_cv3'))
-         {
-            foreach($request->file('authentic_cv3') as $image)
-            {
-                $name=$image->getClientOriginalName();
-                $image->move(public_path().'authentic/images/', $name);
-                $data3[] = $name;
-            }
-         }
-    $corporate->authentic_cv=json_encode($data);
-    $corporate->authentic_cv1=json_encode($data1);
-    $corporate->authentic_cv2=json_encode($data2);
-    $corporate->authentic_cv3=json_encode($data3);
     // $corporate->authentic_program=json_encode($program);
     // $corporate->authentic_place=json_encode($place);
     // $corporate->authentic_history=json_encode($history);
@@ -163,14 +128,14 @@ class CompetitionController extends Controller
         return redirect()->back();
       }
       public function individual1(Request $request){
-        $corporate=new Corporate2;
+        $corporate=new individual1;
         $corporate->authentic_name=$request->authentic_name;
         $corporate->authentic_type=$request->authentic_type;
         $corporate->authentic_date=$request->authentic_date;
         $corporate->authentic_project=$request->authentic_project;
         $corporate->authentic_company=$request->authentic_company;
         $corporate->authentic_options=$request->authentic_options;
-        $corporate->authentic_manager_name=$request->authentic_manager_name;
+       
         $corporate->authentic_email=$request->authentic_email;
         $corporate->authentic_country=$request->authentic_country;
         $corporate->authentic_idea=$request->authentic_idea;
@@ -183,73 +148,37 @@ class CompetitionController extends Controller
         $corporate->authentic_history1=$request->authentic_history1;
         $corporate->authentic_target=$request->authentic_target;
         $corporate->check=$request->check;
-      //   foreach($request->authentic_program as $program)
-      //         {
 
-      //             $corporate->authentic_program= $program;
+        if($request->hasfile('authentic_cv')){
+            $file= $request->file('authentic_cv');
+            $extenstion= $file->getClientOriginalExtension();
+            $filename=time().'.'.$extenstion;
+            $file->move('authentic/image/', $filename);
+            $corporate->authentic_cv=$filename;
+        }
+        if($request->hasfile('authentic_cv1')){
+            $file= $request->file('authentic_cv1');
+            $extenstion= $file->getClientOriginalExtension();
+            $filename=time().'.'.$extenstion;
+            $file->move('authentic/image/', $filename);
+            $corporate->authentic_cv1=$filename;
+        }
+        if($request->hasfile('authentic_cv2')){
+            $file= $request->file('authentic_cv2');
+            $extenstion= $file->getClientOriginalExtension();
+            $filename=time().'.'.$extenstion;
+            $file->move('authentic/image/', $filename);
+            $corporate->authentic_cv2=$filename;
+        }
+        if($request->hasfile('authentic_cv3')){
+            $file= $request->file('authentic_cv3');
+            $extenstion= $file->getClientOriginalExtension();
+            $filename=time().'.'.$extenstion;
+            $file->move('authentic/image/', $filename);
+            $corporate->authentic_cv3=$filename;
+        }
 
-      //         }
-      //         foreach($request->authentic_history as $history)
-      //         {
-      //             $corporate->authentic_history= $history;
 
-      //         }
-      //         foreach($request->authentic_place as $place)
-      //         {
-      //             $corporate->authentic_place= $place;
-
-      //         }
-      //         foreach($request->authentic_history1 as $history1)
-      //         {
-      //             $corporate->authentic_history1= $history1;
-
-      //         }
-      //         foreach($request->authentic_target as $target)
-      //         {
-      //             $corporate->authentic_target= $target;
-
-      //         }
-
-        if($request->hasfile('authentic_cv'))
-           {
-              foreach($request->file('authentic_cv') as $image)
-              {
-                  $name=$image->getClientOriginalName();
-                  $image->move(public_path().'authentic/images/', $name);
-                  $data[] = $name;
-              }
-           }
-           if($request->hasfile('authentic_cv1'))
-           {
-              foreach($request->file('authentic_cv1') as $image)
-              {
-                  $name=$image->getClientOriginalName();
-                  $image->move(public_path().'authentic/images/', $name);
-                  $data1[] = $name;
-              }
-           }
-           if($request->hasfile('authentic_cv2'))
-           {
-              foreach($request->file('authentic_cv2') as $image)
-              {
-                  $name=$image->getClientOriginalName();
-                  $image->move(public_path().'authentic/images/', $name);
-                  $data2[] = $name;
-              }
-           }
-           if($request->hasfile('authentic_cv3'))
-           {
-              foreach($request->file('authentic_cv3') as $image)
-              {
-                  $name=$image->getClientOriginalName();
-                  $image->move(public_path().'authentic/images/', $name);
-                  $data3[] = $name;
-              }
-           }
-      $corporate->authentic_cv=json_encode($data);
-      $corporate->authentic_cv1=json_encode($data1);
-      $corporate->authentic_cv2=json_encode($data2);
-      $corporate->authentic_cv3=json_encode($data3);
       // $corporate->authentic_program=json_encode($program);
       // $corporate->authentic_place=json_encode($place);
       // $corporate->authentic_history=json_encode($history);
@@ -259,7 +188,7 @@ class CompetitionController extends Controller
         return redirect()->back();
       }
       public function individual2(Request $request){
-        $corporate=new Corporate2;
+        $corporate=new individual2;
         $corporate->behalf_candidate_name=$request->behalf_candidate_name;
         $corporate->behalf_options=$request->behalf_options;
         $corporate->behalf_name=$request->behalf_name;

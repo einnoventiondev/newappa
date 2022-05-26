@@ -10,7 +10,19 @@ class individual1 extends Model
     use HasFactory;
     protected $table='individual1s';
     protected $fillable=[
+        'authentic_type',
+'authentic_name',
+'authentic_date',
+'authentic_project',
 'authentic_company',
+'authentic_options',
+'authentic_manager_name',
+'authentic_email',
+'authentic_country',
+'authentic_idea',
+'authentic_link',
+'authentic_contact',
+'authentic_city',
 'authentic_cv',
 'authentic_cv1',
 'authentic_cv2',

@@ -36,11 +36,6 @@ class HomeController extends Controller
     }
     public function institute()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 2)->where('form', 'first')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 2)->where('form', 'first')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
         return view('admin.institute', compact('data'));
     }
     public function individuale()
@@ -172,7 +167,7 @@ class HomeController extends Controller
             'name' => 'required',
         ]);
         if (Hash::check($request->password, auth()->user()->password)) {
-            // dd($request->all()); 
+            // dd($request->all());
             if ($request->hasFile('profile')) {
                 if (isset($request->profile) && !empty($request->profile)) {
                     if (!empty(auth()->user()->profile)) {
