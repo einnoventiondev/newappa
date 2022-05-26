@@ -405,35 +405,35 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="authentic_program" class="form-label">اسم البرنامج</label>
-                                <input type="text" class="form-control" required name="authentic_program" id="idNumber">
+                                <input type="text" class="form-control" required name="authentic_program[]" id="idNumber">
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="authentic_history" class="form-label">تاريخه</label>
-                                <input type="text" class="form-control" required name="authentic_history" id="idNumber">
+                                <input type="text" class="form-control" required name="authentic_history[]" id="idNumber">
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="authentic_place" class="form-label">مكان إقامته</label>
-                                <input type="text" class="form-control" required name="authentic_place" id="idNumber">
+                                <input type="text" class="form-control" required name="authentic_place[]" id="idNumber">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="city" class="form-label">الهدف</label>
-                                <input type="text" class="form-control" required name="authentic_history1" id="idNumber">
+                                <input type="text" class="form-control" required name="authentic_history1[]" id="idNumber">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="authentic_target" class="form-label"> الشريحة المستهدفة</label>
-                                <input type="text" class="form-control" required name="authentic_target" id="idNumber">
+                                <input type="text" class="form-control" required name="authentic_target[]" id="idNumber">
                             </div>
                         </div>
 
@@ -461,7 +461,7 @@
                     <div class="col-md-6">
                         <div class="form-group upload-file">
                             <label for="authentic_cv"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv" id="candidateImage">
+                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv[]" id="candidateImage">
                             <span class="upload-file-img download-cv">
                                 ارفاق ملف <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
                             </span>
@@ -472,7 +472,7 @@
                     <div class="col-md-6">
                         <div class="form-group upload-file">
                             <label for="authentic_cv1"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv1" id="candidateImage">
+                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv1[]" id="candidateImage">
                             <span class="upload-file-img download-cv">
                                 ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
                             </span>
@@ -483,7 +483,7 @@
                     <div class="col-md-6">
                         <div class="form-group upload-file">
                             <label for="authentic_cv2"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv2" id="candidateImage">
+                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv2[]" id="candidateImage">
                             <span class="upload-file-img download-cv">
                                 ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
                             </span>
@@ -494,7 +494,7 @@
                     <div class="col-md-6">
                         <div class="form-group upload-file">
                             <label for="authentic_cv3"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv3" id="candidateImage">
+                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="authentic_cv3[]" id="candidateImage">
                             <span class="upload-file-img download-cv">
                                 ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
                             </span>
@@ -511,7 +511,7 @@
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="'checked' ? 1 :0" required name="check2" id="check2">
+                        <input class="form-check-input" type="checkbox" value="1" required name="check2" id="check2">
                         <label class="form-check-label check-label" for="check2">نملك جميع الحقوق الفكرية للمشروع المرشح، وجميع المعلومات المدونة والمرفقة في هذا النموذج صحيحة ودقيقة ونتحمل مسؤولية ما يخالف ذلك.
                         </label>
                     </div>
@@ -527,7 +527,7 @@
 
 
                       {{-- coperete form 2 start here --}}
-                    <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form2 d-none">
+                    <form method="POST" enctype="multipart/form-data" action="{{ route('second.corporation.form') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form2 d-none">
 
 
                         @csrf
@@ -735,35 +735,35 @@
     <div class="col-md-4">
         <div class="form-group">
             <label for="city" class="form-label">اسم البرنامج</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_program[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-4">
         <div class="form-group">
             <label for="date" class="form-label">تاريخه</label>
-            <input type="text" class="form-control" required name="date`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_history[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-4">
         <div class="form-group">
             <label for="city" class="form-label">مكان إقامته</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_place[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-6">
         <div class="form-group">
             <label for="city" class="form-label">الهدف</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_history1[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-6">
         <div class="form-group">
             <label for="city" class="form-label"> الشريحة المستهدفة</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_target[]`+ count +`" id="idNumber">
         </div>
     </div>
 </div>`;

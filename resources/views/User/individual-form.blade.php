@@ -24,7 +24,7 @@
 
         @include('layouts.User.nav')
 
-     
+
 {{--- - - - - - - - - - -    individual section form start here   - - - - - - - - - - - - - - - - - - - - - - - ---}}
 
 <section class="content-container coprate-section">
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form corporate-form individual-form1 ">
+            <form method="POST" enctype="multipart/form-data" action="{{ route('first.individual2.form') }}" class="row gx-5 gy-3 candidate-form corporate-form individual-form1 ">
                 @csrf
                 <input type="text" required name="form" value="third" hidden>
                 <input type="text" required name="type" value="2" hidden>
@@ -165,7 +165,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="authentic_contact" class="form-label">رقم التواصل</label>
-                        <input type="number" class="form-control" required name="authentic_contact" id="idNumber">
+                        <input type="number" class="form-control" required name="authentic_contact1" id="idNumber">
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -243,35 +243,35 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="authentic_program" class="form-label">اسم البرنامج</label>
-                        <input type="text" class="form-control" required name="authentic_program" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_program[]" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="authentic_history" class="form-label">تاريخه</label>
-                        <input type="text" class="form-control" required name="authentic_history" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_history[]" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="authentic_place" class="form-label">مكان إقامته</label>
-                        <input type="text" class="form-control" required name="authentic_place" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_place[]" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="city" class="form-label">الهدف</label>
-                        <input type="text" class="form-control" required name="authentic_history" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_history1[]" id="idNumber">
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="authentic_target" class="form-label"> الشريحة المستهدفة</label>
-                        <input type="text" class="form-control" required name="authentic_target" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_target[]" id="idNumber">
                     </div>
                 </div>
 
@@ -367,7 +367,7 @@
 
 
               {{-- individual form 2 start here --}}
-            <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form corporate-form individual-form2 d-none">
+            <form method="POST" enctype="multipart/form-data" action="{{ route('second.individual2.form') }}" class="row gx-5 gy-3 candidate-form corporate-form individual-form2 d-none">
 
 
                 @csrf
@@ -534,35 +534,35 @@
     <div class="col-md-4">
         <div class="form-group">
             <label for="city" class="form-label">اسم البرنامج</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_program[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-4">
         <div class="form-group">
             <label for="date" class="form-label">تاريخه</label>
-            <input type="text" class="form-control" required name="date`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_history[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-4">
         <div class="form-group">
             <label for="city" class="form-label">مكان إقامته</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_place[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-6">
         <div class="form-group">
             <label for="city" class="form-label">الهدف</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_history1[]`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-6">
         <div class="form-group">
             <label for="city" class="form-label"> الشريحة المستهدفة</label>
-            <input type="text" class="form-control" required name="city`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_target[]`+ count +`" id="idNumber">
         </div>
     </div>
 </div>`;
