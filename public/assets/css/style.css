@@ -2277,6 +2277,7 @@ a:hover {
     padding-left: 50px !important;
     color: #00514C !important;
     font-size: 26px !important;
+    text-align: left;
 }
 .corporate-form .upload-file .upload-file-img img{
     width: 34px !important;
