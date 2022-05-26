@@ -58,11 +58,9 @@
 
                     </ul>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="{{route('Prince.awardwinners')}}">الفائزون</a>
-                </li>
-
-
+                </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link rotate-arrow-click" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         الشروط والأحكام
@@ -170,11 +168,9 @@
                     <ul>
             </div>
         </li>
-        <li>
+        <!-- <li>
             <a class="nav-link" href="{{route('Prince.awardwinners')}}">الفائزون</a>
-        </li>
-
-
+        </li> -->
         <li class="dropdown-main-2 drop-main">
             <a class="dropdown-main-link-2 aljwise" href='javascript:void(0);'>
                 الشروط والأحكام
