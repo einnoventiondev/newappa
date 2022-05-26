@@ -18,11 +18,9 @@
 </head>
 
 <body>
-  <div class="bg-light-img mobile-show">
-    <img src="{{asset('/assets/images/mobile-img/index-bg-m.png')}}" class="img-fluid" alt="bg-img">
-  </div>
-  <div class="content-wrapper">
-    @include('layouts.User.nav')
+    <img src="{{ asset('assets/images/bg-img.png') }}" class="img-fluid bg-img" alt="bg-img">
+    <div class="content-wrapper">
+        @include('layouts.User.nav')
         <section class="tc">
             <div class="container">
                 <h1 class="t-heading">المسؤولية القانونية</h1>

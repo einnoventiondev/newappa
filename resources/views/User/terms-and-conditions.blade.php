@@ -13,16 +13,14 @@
   <link rel="stylesheet" href="{{asset('./assets/css/khurram.css')}}">
   <link rel="stylesheet" href="{{asset('/assets/css/responsive.css')}}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 
 <body>
-  <div class="bg-light-img mobile-show">
-    <img src="{{asset('/assets/images/mobile-img/index-bg-m.png')}}" class="img-fluid" alt="bg-img">
-  </div>
-  <div class="content-wrapper">
-    @include('layouts.User.nav')
+    <img src="{{ asset('assets/images/bg-img.png') }}" class="img-fluid bg-img" alt="bg-img">
+    <div class="content-wrapper">
+        @include('layouts.User.nav')
         <section class="tc">
             <div class="container">
                 <h1 class="t-heading">الشروط والأحكام</h1>

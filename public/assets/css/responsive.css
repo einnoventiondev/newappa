@@ -39,6 +39,9 @@
         .title-index{
             margin-bottom:23px
         }
+        .tc {
+            padding-bottom: 5rem;
+        }
         .submit-content{
             padding-left: 0px !important;
             display: block;
@@ -672,10 +675,12 @@
 
     .candidate-form {
         padding-bottom: 80px;
-        padding-right: 50px;
+        padding-right: 0px;
         padding-left: 0px;
     }
-
+    .partic-txt{
+        padding-right: 0;
+    }
     .footer-img-show {
         display: block !important;
     }
@@ -715,6 +720,7 @@
     .submit-btn {
         padding: 6px 14px;
         line-height: 2;
+        width: 150px;
     }
 
     .datepicker.datepicker-dropdown {
@@ -1530,6 +1536,18 @@
 
     .mobile-menu .dropdown-main-4:focus .dropdown-main-link {
         background: #b79b66 !important;
+    }
+
+    .dropdown-div-5 {
+        display: none;
+    }
+
+    .mobile-menu .dropdown-main-5:focus .dropdown-main-link {
+        background: #b79b66 !important;
+    }
+    .content-award-table td {
+        padding: 5px !important;
+        font-size: 13px;
     }
 }
 
