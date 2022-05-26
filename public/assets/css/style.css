@@ -2119,6 +2119,28 @@ a:hover {
 		font-size: 22px;
 		margin-bottom: 25px;
 	}
+
+    /* asim */
+    .coprate-section h1 {
+        font-size: 37px !important;
+        width: 100% !important;
+    }
+    .coprate-section  .form-check {
+        align-items: center;
+    }
+    .coprate-section .content {
+        padding-left: 0px;
+    }
+
+    .coprate-section .submit-btn {
+        width: 100% !important;
+        padding: 0px !important;
+    }
+    .coprate-section form .row ,.coprate-section form .col-md-6 ,.coprate-section form .col-md-8 .coprate-section form .col-md-4{
+        padding: 0px !important;
+    }
+
+
 }
 
 
@@ -2154,9 +2176,32 @@ a:hover {
 .coprate-section label{
     font-size: 26px;
 }
-.coprate-section .form-group input ,.coprate-section .form-group select , .coprate-section .upload-file-img {
+.coprate-section .form-group input ,.coprate-section .form-group select , .coprate-section .upload-file-img,.coprate-section .form-control {
     min-height: 68px !important;
+    color: #00514c;
 }
+
+.padd-l-20{
+    padding-left: 20px;
+}
+.padd-r-20{
+    padding-right: 20px;
+}
+
+.add-more-btn-main{
+    margin-top: 37px;
+}
+.add-more-btn-main .btn{
+    padding-right: 0px !important;
+}
+.add-more-btn-main .btn img{
+    margin-left: 23px;
+}
+
+.coprate-section form .form-check{
+    align-items: baseline;
+}
+
 .coprate-section .submit-btn{
     width: 524px;
     height: 79px;
@@ -2197,4 +2242,7 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none !important;
 }
-
+.form-check-input:checked {
+    background-color: #00514C !important;
+    border-color: #00514C !important;
+}
