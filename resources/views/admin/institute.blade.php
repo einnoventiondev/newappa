@@ -40,19 +40,18 @@
                         <!-- candidtae -->
                         <th>خيارات  </th>
                         <!-- relation -->
-                        <th>مسوغات الترشیح:</th>
+                        <th>اسم مدير المشروع :</th>
                         <!-- title -->
-                        <th>عنوان الدیوان</th>
+                        <th>رقم التواصل </th>
                         <!-- place -->
-                        <th>دار النشر</th>
+                        <th> البريد الالكتروني</th>
                         <!-- release -->
-                        <th>سنة الإصدار</th>
+                        <th>الدولة </th>
 
-                        <th>اسم المرشح الرباعي</th>
-                        <th>العمر</th>
-                        <th>الرقم الجامعي</th>
-                        <th>الإيميل الجامعي</th>
-                        <th>رقم التواصل</th>
+                        <th>  المدينة</th>
+                        <th>فكرة المشروع</th>
+                        <th> اسم البرنامج</th>
+                        <th> تاريخه</th>
                         {{-- delete --}}
                         <th>عمل</th>
 
@@ -98,31 +97,30 @@
                     <tr>
 
                         <!-- candidtae -->
-                        <th>حالة</th>
+                        <th> اسم المرشح</th>
                         <!-- candidtae -->
                         <!-- orgnization name  -->
-                        <th>اسم الجھة</th>
+                        <th> خيارات</th>
                         <!-- state -->
-                        <th>المدينة </th>
+                        <th> اسم المشروع </th>
                         <!-- phone -->
-                        <th>رقم التواصل</th>
+                        <th> نوعه</th>
                         <!-- emial -->
-                        <th>الإیمیل الرسمي</th>
+                        <th>  تاريخ الانطلاق</th>
                         <!-- candidtae -->
-                        <th>اسم المرشح الرباعي</th>
+                        <th>  اسم المؤسسة</th>
                         <!-- relation -->
-                        <th>مسوغات الترشیح:</th>
+                        <th>  خيارات</th>
                         <!-- title -->
-                        <th>عنوان الدیوان</th>
+                        <th> اسم مدير المشروع</th>
                         <!-- place -->
-                        <th>دار النشر</th>
+                        <th> رقم التواصل</th>
                         <!-- release -->
-                        <th>سنة الإصدار</th>
+                        <th> البريد الالكتروني</th>
 
-                        <th>اسم المرشح الرباعي</th>
-                        <th>العمر</th>
-                        <th>الرقم الجامعي</th>
-                        <th>الإيميل الجامعي</th>
+                        <th>  الدولة</th>
+                        
+
                         <th>رقم التواصل</th>
                         {{-- delete --}}
                         <th>عمل</th>
@@ -147,7 +145,6 @@
                         <td>{{ $corporate->behalf_options1 }}</td>
                         <td>{{ $corporate->behalf_project }}</td>
                         <td>{{ $corporate->behalf_number }}</td>
-
                         <td>{{ $corporate->behalf_email }} </td>
                         <td>{{ $corporate->behalf_country}}</td>
                         <td>{{ $corporate->behalf_city }}</td>
