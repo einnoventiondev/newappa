@@ -119,7 +119,7 @@
                         <th> البريد الالكتروني</th>
 
                         <th>  الدولة</th>
-                        
+
 
                         <th>رقم التواصل</th>
                         {{-- delete --}}
@@ -134,8 +134,6 @@
                     @foreach ($corporate2 as $corporate)
 
                     <tr>
-
-
                         <td>{{ $corporate->behalf_candidate_name }}</td>
                         <td>{{ $corporate->behalf_options }}</td>
                         <td>{{ $corporate->behalf_name }}</td>
@@ -148,6 +146,7 @@
                         <td>{{ $corporate->behalf_email }} </td>
                         <td>{{ $corporate->behalf_country}}</td>
                         <td>{{ $corporate->behalf_city }}</td>
+                        <td>{{ $corporate->behalf_about }}</td>
 
                         <td>
                             <a href="" class="view-btn"> <i class="fa fa-eye"></i></a>
