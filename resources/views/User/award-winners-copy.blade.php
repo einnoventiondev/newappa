@@ -97,10 +97,10 @@
                 </p>
 			  
 
-                <a href="{{ route('university.students') }}" class="btn btn-green mt-4 apply-nomination-btn issue-btn">  جائزة طلبة
+                <a href="{{ route('university.students') }}" class="btn btn-green mt-4 apply-nomination-btn issue-btn issue-btn1">  جائزة طلبة
                                         الجامعات <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>&nbsp;&nbsp;
 			       
-                <a href="{{ route('Prince.Abdullah.Al.Faisal.Competition') }}" class="btn btn-green mt-4 apply-nomination-btn issue-btn">جائزة طلبة
+                <a href="{{ route('Prince.Abdullah.Al.Faisal.Competition') }}" class="btn btn-green mt-4 apply-nomination-btn issue-btn issue-btn2">جائزة طلبة
                                         الثانوية <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
 
               </div>
