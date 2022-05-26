@@ -1130,6 +1130,9 @@
     .award-winners .content-award-table {
         padding-top: 0;
     }
+    .content-award-table .paragraph li {
+        word-break: break-word;
+    }
 
     /* .award-winner-heading{
             padding-right: 35px;
