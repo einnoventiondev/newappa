@@ -1537,6 +1537,18 @@
     .mobile-menu .dropdown-main-4:focus .dropdown-main-link {
         background: #b79b66 !important;
     }
+
+    .dropdown-div-5 {
+        display: none;
+    }
+
+    .mobile-menu .dropdown-main-5:focus .dropdown-main-link {
+        background: #b79b66 !important;
+    }
+    .content-award-table td {
+        padding: 5px !important;
+        font-size: 13px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
