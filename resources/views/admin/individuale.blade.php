@@ -25,32 +25,40 @@
             <table class="display" id="example">
                 <thead>
                     <tr>
+                        <!-- state -->
+                        <th> اسم المشروع </th>
+                        <!-- phone -->
+                        <th> نوعه</th>
+                        <!-- emial -->
+                        <th>  تاريخ الانطلاق</th>
                         <!-- candidtae -->
-                        <th>اسم المشروع</th>
+                        <th>   ادارة المشروع</th>
+                        <!-- relation -->
+                        <th>  الاسم</th>
+                        <!-- title -->
+                        <!-- release -->
+                        <th>  الجنسية</th>
+                        <!-- place -->
+                        <th>   رقم التواصل</th>
+
+
+
+                        <th>  البريد الالكتروني</th>
+
                         <!-- candidtae -->
                         <!-- orgnization name  -->
-                        <th> نوعه </th>
-                        <!-- state -->
-                        <th>تاريخ الانطلاق </th>
-                        <!-- phone -->
-                        <th> ادارة المشروع</th>
-                        <!-- emial -->
-                        <th> اسم المؤسسة</th>
-                        <!-- candidtae -->
-                        <th>خيارات  </th>
-                        <!-- relation -->
-                        <th>اسم مدير المشروع :</th>
-                        <!-- title -->
-                        <th>رقم التواصل </th>
-                        <!-- place -->
-                        <th> البريد الالكتروني</th>
-                        <!-- release -->
-                        <th>الدولة </th>
+                        <th> الدولة</th>
+                        <th> المدينة</th>
 
-                        <th>  المدينة</th>
-                        <th>فكرة المشروع</th>
-                        <th> اسم البرنامج</th>
+                        <th>   فكرة المشروع</th>
+                        <th>  اسم البرنامج</th>
                         <th> تاريخه</th>
+                        <!-- candidtae -->
+                        <th>   مكان إقامته    </th>
+                        <!-- candidtae -->
+                        <!-- orgnization name  -->
+                        <th> الهدف</th>
+                       
                         {{-- delete --}}
                         <th>عمل</th>
                     </tr>
@@ -67,8 +75,7 @@
                         <td>{{ $individual->authentic_options }}</td>
                         <td>{{ $individual->authentic_contact }}</td>
                         <td>{{ $individual->authentic_email }}</td>
-                        <td>{{ $individual->authentic_condition }}</td>
-                        <td>{{ $individual->authentic_choose }}</td>
+
                         <td>{{ $individual->authentic_country }}</td>
                         <td>{{ $individual->authentic_city }}</td>
                         <td>{{ $individual->authentic_idea }}</td>
@@ -96,11 +103,7 @@
             <table class="display" id="example">
                 <thead>
                     <tr>
-                        <!-- candidtae -->
-                        <th> اسم المرشح</th>
-                        <!-- candidtae -->
-                        <!-- orgnization name  -->
-                        <th> خيارات</th>
+
                         <!-- state -->
                         <th> اسم المشروع </th>
                         <!-- phone -->
@@ -108,21 +111,36 @@
                         <!-- emial -->
                         <th>  تاريخ الانطلاق</th>
                         <!-- candidtae -->
-                        <th>  اسم المؤسسة</th>
+                        <th>   ادارة المشروع</th>
                         <!-- relation -->
-                        <th>  خيارات</th>
+                        <th>  الاسم</th>
                         <!-- title -->
-                        <th> اسم مدير المشروع</th>
+
                         <!-- place -->
-                        <th> رقم التواصل</th>
+                        <th>  رقم الهوية</th>
                         <!-- release -->
+                        <th>  الجنسية</th>
+
+                        <th>  رقم التواصل</th>
                         <th> البريد الالكتروني</th>
-
-                        <th>  الدولة</th>
+                        <th>  الحالة</th>
+                        <!-- candidtae -->
+                        <th>  في حال اختيار أخرى يرجى ذكرها</th>
+                        <!-- candidtae -->
+                        <!-- orgnization name  -->
+                        <th> الدولة</th>
                         <th> المدينة</th>
-                        <th> فكرة المشروع</th>
 
-                        <th>رقم التواصل</th>
+                        <th>   فكرة المشروع</th>
+                        <th>  اسم البرنامج</th>
+                        <th> تاريخه</th>
+                        <!-- candidtae -->
+                        <th>   مكان إقامته    </th>
+                        <!-- candidtae -->
+                        <!-- orgnization name  -->
+                        <th> الهدف</th>
+                        <th> الشريحة المستهدفة</th>
+                        <th>رابط الموقع الإلكتروني للتعريف بالمشروع وأنشطته</th>
                         {{-- delete --}}
                         <th>عمل</th>
 
