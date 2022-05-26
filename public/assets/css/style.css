@@ -1872,8 +1872,8 @@ a:hover {
     border: 1px solid lightgray;
 }
 .image-box-season{
-    height: 400px;
     border: 1px solid lightgray;
+    margin-bottom: 30px;
 }
 .img-submit , .img-submit:hover ,.img-submit:focus{
 	background-color: #00514c;
@@ -2311,7 +2311,6 @@ input::-webkit-inner-spin-button {
     background-color: #00514C !important;
     border-color: #00514C !important;
 }
-
 
 
 
