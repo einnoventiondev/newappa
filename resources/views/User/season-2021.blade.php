@@ -19,52 +19,167 @@
 <body>
   <div class="content-wrapper">
   @include('layouts.User.nav')
-  
+
 <!-- season images page start -->
 		<section id="season-view">
 			<div class="container">
-				<form action="">
+
+                <form action="">
 					<div class="row">
 						<div class="season-title col-md-12 title-video">
-							<h1  class="animate__animated animate__fadeInRight animate_slower">الموسم الثالث </h1>
-							<h2  class="animate__animated animate__fadeInRight animate_slower">٢٠٢١</h2>
+							<h1 class="animate__animated animate__fadeInRight animate_slower">المحتوى المرئي للحفل الموسم الثالث                            </h1>
+							<h2 class="animate__animated animate__fadeInRight animate_slower">٢٠٢١</h2>
 						</div>
 						<div class="col-md-12">
-							<label for="video" class="video-box">Video</label>
-							
+							<label for="video" class="video-box">
+                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/3Zg7lVYdZ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
 						</div>
 
 						<div class="col-md-6">
-							<label for="img-1" class="image-box-season">Images</label>
-							
+
+                            <h4 class="video-heading">حفل الجائزة للموسم الأول كاملاً	</h4>
+							<label for="img-1" class="image-box-season">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/drVoOD9fy4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </label>
+
 						</div>
 						<div class="col-md-6">
-							<label for="img-2" class="image-box-season">Images</label>
-							
+                            <h4 class="video-heading">السلام الملكي	</h4>
+
+							<label for="img-2" class="image-box-season">
+                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/CnWQSD4v1vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
 						</div>
 
 						<div class="col-md-6">
-							<label for="img-3" class="image-box-season">Images</label>
-							
+                            <h4 class="video-heading">القرآن الكريم	</h4>
+							<label for="img-3" class="image-box-season">
+
+                            <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/4Dc1BaD8hNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
 						</div>
 						<div class="col-md-6">
-							<label for="img-4" class="image-box-season">Images</label>
-							
+                             <h4 class="video-heading">كلمة الأمير خالد الفيصل	</h4>
+
+							<label for="img-4" class="image-box-season">
+                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/3Zg7lVYdZ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
 						</div>
 
 						<div class="col-md-6">
-							<label for="img-5" class="image-box-season">Images</label>
-							
+                            <h4 class="video-heading">كلمة أمين الجائزة	</h4>
+
+							<label for="img-5" class="image-box-season">
+                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/EVFNbwUUhCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
 						</div>
 						<div class="col-md-6">
-							<label for="img-6" class="image-box-season">Images</label>
-							
+                            <h4 class="video-heading">كلمة مستشار رئيس مجلس الأمناء	</h4>
+
+							<label for="img-6" class="image-box-season">
+                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/oHVyTm1-P_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
 						</div>
-						<!-- <div class="col-md-12">
-							<button class="btn btn-primary img-submit"> Submit</button>
-					</div> -->
+
+                        <div class="col-md-6">
+                            <h4 class="video-heading">تدشين موسوعة الشعر العربي	</h4>
+							<label for="img-6" class="image-box-season">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6dK0UdXZ_ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
+						</div>
+
+
+                        <div class="col-md-6">
+                            <h4 class="video-heading">العمل النثري	</h4>
+							<label for="img-6" class="image-box-season">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ty8_-dfHz_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
+						</div>
+
+                        <div class="col-md-6">
+                            <h4  class="video-heading">الفاصل الغنائي	</h4>
+							<label for="img-6" class="image-box-season">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TUuWr16IV0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
+						</div>
+
+                        <div class="col-md-6">
+                            <h4 class="video-heading">الفائزين</h4>
+							<label for="img-6" class="image-box-season">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fxfSFb_RNzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
+						</div>
+
+                        <div class="col-md-6">
+                            <h4  class="video-heading">المكرمين	</h4>
+							<label for="img-6" class="image-box-season">
+                                 <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/Vse6yywXvWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </label>
+
+						</div>
+                    <div class="col-md-12 season-table">
+                        <div class="content-award-table">
+                            <h2>الدورة الثالثة (٢٠٢١)</h2>
+                            <table class="award-tbody last-table-award">
+                              <tr>
+                                <th>فرع الجائزة</th>
+                                <th>الفائز</th>
+                                <th>الجنسية</th>
+                                <th>الجائزة</th>
+                              </tr>
+                              <tr>
+                                <td>التجربة الشعرية</td>
+                                <td>عارف حمود الساعدي </td>
+                                <td>السعودية </td>
+                                <td>٥٠٠ ألف ريال سعودي</td>
+
+                              </tr>
+                              <tr>
+                                <td>الشعر المسرحي </td>
+                                <td>جيهان بركات </td>
+                                <td>مصر</td>
+                                <td>٢٠٠ ألف ريال سعودي</td>
+                              </tr>
+                              <tr>
+                                <td>القصيدة المغناة</td>
+                                <td>ابراهيم حلوش </td>
+                                <td>السعودية</td>
+                                <td>٢٠٠ ألف ريال سعودي</td>
+                              </tr>
+                              <tr>
+                                <td>أفضل مبادرة في خدمة الشعر العربي </td>
+                                <td>جامعة أم القرى عن موسوعة الشعر العربي</td>
+                                <td>السعودية</td>
+                                <td>١٠٠ ألف ريال سعودي</td>
+                              </tr>
+                            </table>
+                          </div>
+                      </div>
 					</div>
 				</form>
+
 
 			</div>
 		</section>
@@ -79,7 +194,7 @@
   <script src="{{asset('assets/js/scripts.js')}}"> </script>
 
 
-  
+
 </body>
 
 </html>

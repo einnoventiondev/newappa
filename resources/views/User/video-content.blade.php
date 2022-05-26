@@ -20,7 +20,7 @@
   <div class="content-wrapper">
   @include('layouts.User.nav')
     <section class="content-container video-content-container">
-     
+
       <div class="container-fluid">
         <div class="row g-0">
           <div class="col-md-12 title-video">
@@ -31,7 +31,7 @@
           <div class="content-video">
             <div class="row tbody-video">
               <div class="col-md-6">
-                
+
                 <div class="iframe">
                 <h4>حفل الجائزة للموسم الأول كاملاً	</h4>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/drVoOD9fy4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -88,10 +88,10 @@
                  <h4>المكرمين	</h4>
                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Vse6yywXvWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          </div>
               </div>
-              
+
             </div>
 
-          
+
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
   <script src="{{asset('assets/js/scripts.js')}}"> </script>
 
 
-  
+
 </body>
 
 </html>

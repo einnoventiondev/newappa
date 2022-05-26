@@ -2298,3 +2298,20 @@ input::-webkit-inner-spin-button {
     background-color: #00514C !important;
     border-color: #00514C !important;
 }
+
+
+
+
+
+
+
+
+.video-heading {
+    color: #b79b66;
+    font-size: 20px;
+    margin: 26px;
+    margin-right: 0px !important;
+}
+.season-table .content-award-table{
+    margin-top: 30px;
+}
