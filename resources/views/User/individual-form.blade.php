@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <form method="POST" enctype="multipart/form-data" action="{{ route('first.individual2.form') }}" class="row candidate-form corporate-form individual-form1 ">
+            <form method="POST" enctype="multipart/form-data" action            <form method="POST" enctype="multipart/form-data" action="{{ route('first.individual2.form') }}" class="row candidate-form corporate-form individual-form1 ">
                 @csrf
                 <input type="text" required name="form" value="third" hidden>
                 <input type="text" required name="type" value="2" hidden>
@@ -559,47 +559,7 @@
         <div class="form-group">
             <label for="city" class="form-label"> الشريحة المستهدفة</label>
             <input type="text" class="form-control" required name="authentic_target[]`+ count +`" id="idNumber">
-        </div>
-    </div>
-</div>`;
-        $(".add-more").append(add);
-
- });
-
-
- // upload file
-
-
- $(".add-more-upload-btn").click(function () {
-		 var add= `<div class="row">
-            <div class="col-md-6">
-    <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">تحمیل السیرة الذاتیة</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required  name="candidateImage`+ count +`" id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-        </span>
-    </div>
-</div>
-
-
-<div class="col-md-6">
-    <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">تحمیل السیرة الذاتیة</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required  name="candidateImage`+ count +`" id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-        </span>
-    </div>
-</div>
-
-
-<div class="col-md-6">
-    <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">تحمیل السیرة الذاتیة</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required  name="candidateImage`+ count +`" id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
+      ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
         </span>
     </div>
 </div>
