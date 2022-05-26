@@ -19,12 +19,15 @@
     </div>
 </div>
 
-<form method="POST" enctype="multipart/form-data"  class="row gx-5 gy-3 candidate-form corporate-form corporate-form1 ">
+<div  class="candidate-form corporate-form corporate-form1 ">
     <div class="card-body">
+
         <div class="table-responsive product-table">
+
             <table class="display" id="example">
                 <thead>
                     <tr>
+
                         <!-- state -->
                         <th> اسم المشروع </th>
                         <!-- phone -->
@@ -40,16 +43,11 @@
                         <th>  الجنسية</th>
                         <!-- place -->
                         <th>   رقم التواصل</th>
-
-
-
                         <th>  البريد الالكتروني</th>
-
                         <!-- candidtae -->
                         <!-- orgnization name  -->
                         <th> الدولة</th>
                         <th> المدينة</th>
-
                         <th>   فكرة المشروع</th>
                         <th>  اسم البرنامج</th>
                         <th> تاريخه</th>
@@ -58,9 +56,10 @@
                         <!-- candidtae -->
                         <!-- orgnization name  -->
                         <th> الهدف</th>
-                       
-                        {{-- delete --}}
                         <th>عمل</th>
+
+
+
                     </tr>
                 </thead>
                 <tbody>
@@ -95,15 +94,22 @@
             </table>
         </div>
     </div>
-</form>
-<div class=" candidate-form corporate-form corporate-form2 d-none">
+</div>
 
+<div class="candidate-form corporate-form corporate-form2 d-none">
     <div class="card-body">
+
         <div class="table-responsive product-table">
-            <table class="display" id="example">
+
+            <table class="display" id="datatable2">
                 <thead>
                     <tr>
 
+                        <!-- candidtae -->
+                        <th> اسم المرشح</th>
+                        <!-- candidtae -->
+                        <!-- orgnization name  -->
+                        <th> خيارات</th>
                         <!-- state -->
                         <th> اسم المشروع </th>
                         <!-- phone -->
@@ -111,38 +117,16 @@
                         <!-- emial -->
                         <th>  تاريخ الانطلاق</th>
                         <!-- candidtae -->
-                        <th>   ادارة المشروع</th>
+                        <th>   الدولة</th>
                         <!-- relation -->
-                        <th>  الاسم</th>
+                        <th>  المدينة</th>
                         <!-- title -->
-
-                        <!-- place -->
-                        <th>  رقم الهوية</th>
-                        <!-- release -->
-                        <th>  الجنسية</th>
-
-                        <th>  رقم التواصل</th>
-                        <th> البريد الالكتروني</th>
-                        <th>  الحالة</th>
-                        <!-- candidtae -->
-                        <th>  في حال اختيار أخرى يرجى ذكرها</th>
-                        <!-- candidtae -->
-                        <!-- orgnization name  -->
-                        <th> الدولة</th>
-                        <th> المدينة</th>
-
                         <th>   فكرة المشروع</th>
-                        <th>  اسم البرنامج</th>
-                        <th> تاريخه</th>
-                        <!-- candidtae -->
-                        <th>   مكان إقامته    </th>
-                        <!-- candidtae -->
-                        <!-- orgnization name  -->
-                        <th> الهدف</th>
-                        <th> الشريحة المستهدفة</th>
-                        <th>رابط الموقع الإلكتروني للتعريف بالمشروع وأنشطته</th>
-                        {{-- delete --}}
+                         <th> رابط الموقع الإلكتروني للتعريف بالمشروع وأنشطته</th>
                         <th>عمل</th>
+
+
+
 
 
                     </tr>
@@ -159,6 +143,7 @@
                         <td>{{ $individual->behalf_country }}</td>
                         <td>{{ $individual->behalf_city }}</td>
                         <td>{{ $individual->behalf_about }}</td>
+                        <td>{{ $individual->behalf_site }}</td>
 
                         <td>
                             <a href="" class="view-btn"> <i class="fa fa-eye"></i></a>
@@ -174,47 +159,53 @@
     </div>
 </div>
 
-
-
 @endsection
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
- </script>
-
-  <script src="{{ asset('assets/js/jquery.min.js') }}"> </script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
- <script src="{{asset('assets/js/scripts.js')}}"> </script>
-
- <script>
-    $(document).ready(function () {
 
 
-$("input[type=radio]").change(function(){
-    if( $('.authentic-radio').is(":checked") ){
 
-        $('.corporate-form1').removeClass('d-none');
-        $('.corporate-form2').addClass('d-none');
-    }
-    if( $('.behalf-radio').is(":checked") ){
 
-        $('.corporate-form2').removeClass('d-none');
-        $('.corporate-form1').addClass('d-none');
-    }
-});
 
-$("input[type=radio]").change(function(){
-    if( $('.authentic-individual-radio').is(":checked") ){
 
-        $('.individual-form1').removeClass('d-none');
-        $('.individual-form2').addClass('d-none');
-    }
-    if( $('.behalf-individual-radio').is(":checked") ){
 
-        $('.individual-form2').removeClass('d-none');
-        $('.individual-form1').addClass('d-none');
-    }
-});
-});
- </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

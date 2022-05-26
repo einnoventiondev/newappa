@@ -88,6 +88,15 @@ class HomeController extends Controller
        $individual2=individual2::all();
         return view('admin.individuale', compact('individual1','individual2'));
     }
+    public function showcorporate($id){
+        $data = Corporate1::find($id);
+        return view('admin.corporateshow', compact('data'));
+    }
+    public function destroy_data($id)
+    {
+        Corporate1::destroy($id);
+     return redirect()->route('institute3')->with('success','FileExtention Delete Successfully');
+    }
     public function institute5()
     {
         if (auth()->user()->role == 'admin1') {

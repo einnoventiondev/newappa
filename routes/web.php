@@ -126,8 +126,8 @@ Route::post('first/corporation', [CompetitionController::class, 'corporation1'])
 Route::post('second/corporation', [CompetitionController::class, 'corporation2'])->name('second.corporation.form');
 Route::post('first/individual', [CompetitionController::class, 'individual1'])->name('first.individual2.form');
 Route::post('second/individual', [CompetitionController::class, 'individual2'])->name('second.individual2.form');
-
-
+Route::get('corporate/show/{id}', [HomeController::class, 'showcorporate'])->name('show.corporate');
+Route::delete('corporate/delete/{id}',[HomeController::class, 'destrop_data'])->name('delete.corporate');
 
 Auth::routes(['register' => false]);
 
