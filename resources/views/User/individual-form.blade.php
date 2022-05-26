@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <form method="POST" enctype="multipart/form-data" action            <form method="POST" enctype="multipart/form-data" action="{{ route('first.individual2.form') }}" class="row candidate-form corporate-form individual-form1 ">
+            <form method="POST" enctype="multipart/form-data" action="{{ route('first.individual2.form') }}" class="row candidate-form corporate-form individual-form1 ">
                 @csrf
                 <input type="text" required name="form" value="third" hidden>
                 <input type="text" required name="type" value="2" hidden>
