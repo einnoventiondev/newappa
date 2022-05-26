@@ -770,6 +770,46 @@
         $(".add-more").append(add);
 
  });
+  $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+      });
+
+
+      $('#submit').click(function(){
+           $.ajax({
+                url:postURL,
+                method:"POST",
+                data:$('#add_name').serialize(),
+                type:'json',
+                success:function(data)
+                {
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        i=1;
+                        $('.dynamic-added').remove();
+                        $('#add_name')[0].reset();
+                        $(".print-success-msg").find("ul").html('');
+                        $(".print-success-msg").css('display','block');
+                        $(".print-error-msg").css('display','none');
+                        $(".print-success-msg").find("ul").append('<li>Record Inserted Successfully.</li>');
+                    }
+                }
+           });
+      });
+
+
+      function printErrorMsg (msg) {
+         $(".print-error-msg").find("ul").html('');
+         $(".print-error-msg").css('display','block');
+         $(".print-success-msg").css('display','none');
+         $.each( msg, function( key, value ) {
+            $(".print-error-msg").find("ul").append('<li>'+value+'</li>');
+         });
+      }
+    });  
 
 
  // upload file
