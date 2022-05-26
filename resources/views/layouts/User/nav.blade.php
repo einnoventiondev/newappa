@@ -32,12 +32,10 @@
                         <li><a class="dropdown-item" href="{{route('Prince.singingpoem')}}">جائزة الأمير عبدالله الفيصل للقصيدة المغناة</a>
                         </li>
                         <li><a class="dropdown-item" href="{{route('Prince.ArabicPoetry')}}">جائزة الأمير عبدالله الفيصل لأفضل مشروع في خدمة الشعر العربي</a></li>
-                        <li><a class="dropdown-item" href="{{route('award')}}">جائزة الأمير عبدالله الفيصل للشاعر الواعد</a></li>
                         <li class="dropdown-submenu dropdown-award ">
-                            <a class="dropdown-item dropdown-award-txt" href="{{route('award')}}" id=" navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                                جائزة الشاعر الواعد
+                            <a class="dropdown-item dropdown-award-txt" href="{{route('award')}}" id=" navbarDropdown" role="button" aria-expanded="true">
+                            جائزة الأمير عبدالله الفيصل للشاعر الواعد
                             </a>
-
                             <ul class="dropdown-award-inner">
                                 <li><a class="dropdown-item" href="{{ route('university.students') }}">مسابقة طلبة
                                         الجامعات</a></li>
