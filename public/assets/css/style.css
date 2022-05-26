@@ -986,7 +986,7 @@ td {
 }
 
 .partic-txt {
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 
 .partic-txt .h1,
@@ -1917,6 +1917,9 @@ a:hover {
 }
 .table-h{
 	width: 200px;
+}
+.main-form-btn{
+    margin: auto;
 }
 /* asim css end here */
 .accordians-mobile {

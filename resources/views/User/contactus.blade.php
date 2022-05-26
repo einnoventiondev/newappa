@@ -25,25 +25,25 @@
                 <div class="row justify-content-center">
                     <div class="col-md-12 title-uni-stnd ">
                         <div class="row">
-                            <div class="col-md-2 mob-order-1">
+                            {{-- <div class="col-md-2 mob-order-1">
                                 <!-- <div class="top-prize">
                                     <img src="{{ asset('assets/images/prize4.svg') }}" alt="top">
                                 </div> -->
-                            </div>
-                            <div class="col-md-10">
+                            </div> --}}
+                            <div class="col-md-12">
                                 <div class="uni-stnd-txt partic-txt">
-                                    <span class="sub-title animate__animated animate__fadeInRight animate_slower d-block"></span>
-                                    <h2 class="animate__animated animate__fadeInRight animate_slower">جائزة الأمير عبدالله الفيصل</h2>
-                                    <h1 class="animate__animated animate__fadeInRight animate_slower">ابق على تواصل معنا</h1>
+                                    {{-- <span class="sub-title animate__animated animate__fadeInRight animate_slower d-block"></span> --}}
+                                    <h2 class="animate__animated animate__fadeInRight text-center animate_slower">جائزة الأمير عبدالله الفيصل</h2>
+                                    <h1 class="animate__animated animate__fadeInRight text-center  animate_slower mb-4">ابق على تواصل معنا</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <form action="{{route('sendemail')}}" method="POST" class="row candidate-form">
+                    <form action="{{route('sendemail')}}" method="POST" class="row justify-content-center candidate-form">
                         @csrf
-                        <h2>اتصل بنا</h2>
-                        <div class="col-md-6">
+                        <h2 class="text-center">اتصل بنا</h2>
+                        <div class="col-md-6 ">
                             <div class="form-group">
                                 <label for="exampleInputUsername" class="form-label">اسمك</label>
                                 <input type="text" name="name" class="form-control" id="" placeholder=" أدخل الاسم">
@@ -61,9 +61,9 @@
                                 <label for="description" class="form-label">رسالة</label>
                                 <textarea class="form-control" rows="4" name="description" id="description" placeholder="اكتب رسالتك"></textarea>
                             </div>
-							 <div class="content">
+							 <div class="content justify-content-center">
 
-                            <button type="submit" class="btn btn-green submit-btn mt-4">أرسل رسالة<img src="{{ asset('/assets/icons/arrow-back.png')}}" alt=""></button>
+                            <button type="submit" class="btn btn-green main-form-btn submit-btn mt-4">أرسل رسالة<img src="{{ asset('/assets/icons/arrow-back.png')}}" alt=""></button>
                         </div>
 
 
