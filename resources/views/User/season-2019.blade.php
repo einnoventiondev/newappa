@@ -31,147 +31,70 @@
 						</div>
 						<div class="col-md-12">
 							<label for="video" class="video-box">
-                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/3Zg7lVYdZ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
+                  <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/3Zg7lVYdZ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </label>
 						</div>
 
 						<div class="col-md-6">
-
-                            <h4 class="video-heading">حفل الجائزة للموسم الأول كاملاً	</h4>
-							<label for="img-1" class="image-box-season">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/drVoOD9fy4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </label>
-
+              {{-- <h4 class="video-heading">حفل الجائزة للموسم الأول كاملاً	</h4> --}}
+              <img src="{{asset('/assets/images/2019/one.png')}}" alt="" class="image-box-season">
 						</div>
 						<div class="col-md-6">
-                            <h4 class="video-heading">السلام الملكي	</h4>
-
-							<label for="img-2" class="image-box-season">
-                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/CnWQSD4v1vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
-						</div>
-
-						<div class="col-md-6">
-                            <h4 class="video-heading">القرآن الكريم	</h4>
-							<label for="img-3" class="image-box-season">
-
-                            <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/4Dc1BaD8hNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
+              {{-- <h4 class="video-heading">السلام الملكي	</h4> --}}
+              <img src="{{asset('/assets/images/2019/two.png')}}" alt="" class="image-box-season">
 						</div>
 						<div class="col-md-6">
-                             <h4 class="video-heading">كلمة الأمير خالد الفيصل	</h4>
-
-							<label for="img-4" class="image-box-season">
-                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/3Zg7lVYdZ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
+              {{-- <h4 class="video-heading">القرآن الكريم	</h4> --}}
+              <img src="{{asset('/assets/images/2019/three.png')}}" alt="" class="image-box-season">
+						</div>
+						<div class="col-md-6">
+              {{-- <h4 class="video-heading">كلمة الأمير خالد الفيصل	</h4> --}}
+              <img src="{{asset('/assets/images/2019/four.png')}}" alt="" class="image-box-season">
 						</div>
 
 						<div class="col-md-6">
-                            <h4 class="video-heading">كلمة أمين الجائزة	</h4>
-
-							<label for="img-5" class="image-box-season">
-                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/EVFNbwUUhCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
+              {{-- <h4 class="video-heading">كلمة أمين الجائزة	</h4> --}}
+              <img src="{{asset('/assets/images/2019/five.png')}}" alt="" class="image-box-season">
 						</div>
-						<div class="col-md-6">
-                            <h4 class="video-heading">كلمة مستشار رئيس مجلس الأمناء	</h4>
-
-							<label for="img-6" class="image-box-season">
-                                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/oHVyTm1-P_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
+            <div class="col-md-6">
+              {{-- <h4 class="video-heading">كلمة مستشار رئيس مجلس الأمناء	</h4> --}}
+              <img src="{{asset('/assets/images/2019/six.png')}}" alt="" class="image-box-season">
 						</div>
+		
+            <div class="col-md-12 season-table">
+              <div class="content-award-table">
+                <h2>الدورة الأولى (٢٠١٩)
+                </h2>
+                <table class="award-tbody">
+                  <tr>
+                    <th>فرع الجائزة</th>
+                    <th>الفائز</th>
+                    <th>الجنسية</th>
+                    <th>الجائزة</th>
+                  </tr>
+                  <tr>
+                    <td>الشعر العربي الفصيح </td>
+                    <td>محمد عبد الله عبد الباري</td>
+                    <td>السودان</td>
+                    <td>٥٠٠ ألف ريال سعودي</td>
 
-                        <div class="col-md-6">
-                            <h4 class="video-heading">تدشين موسوعة الشعر العربي	</h4>
-							<label for="img-6" class="image-box-season">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6dK0UdXZ_ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
-						</div>
-
-
-                        <div class="col-md-6">
-                            <h4 class="video-heading">العمل النثري	</h4>
-							<label for="img-6" class="image-box-season">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ty8_-dfHz_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
-						</div>
-
-                        <div class="col-md-6">
-                            <h4  class="video-heading">الفاصل الغنائي	</h4>
-							<label for="img-6" class="image-box-season">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TUuWr16IV0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
-						</div>
-
-                        <div class="col-md-6">
-                            <h4 class="video-heading">الفائزين</h4>
-							<label for="img-6" class="image-box-season">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fxfSFb_RNzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
-						</div>
-
-                        <div class="col-md-6">
-                            <h4  class="video-heading">المكرمين	</h4>
-							<label for="img-6" class="image-box-season">
-                                 <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/Vse6yywXvWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            </label>
-
-						</div>
-                    <div class="col-md-12 season-table">
-                        <div class="content-award-table">
-                          <h2>الدورة الأولى (٢٠١٩)
-                          </h2>
-                          <table class="award-tbody">
-                            <tr>
-                              <th>فرع الجائزة</th>
-                              <th>الفائز</th>
-                              <th>الجنسية</th>
-                              <th>الجائزة</th>
-                            </tr>
-                            <tr>
-                              <td>الشعر العربي الفصيح </td>
-                              <td>محمد عبد الله عبد الباري</td>
-                              <td>السودان</td>
-                              <td>٥٠٠ ألف ريال سعودي</td>
-
-                            </tr>
-                            <tr>
-                              <td>الشعر المسرحي</td>
-                              <td>فوزي خضر</td>
-                              <td>مصر</td>
-                              <td>٣٠٠ ألف ريال سعودي
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>الشعر المغنى </td>
-                              <td>كريم عودة لعيبي</td>
-                              <td>العراق</td>
-                              <td>٢٠٠ ألف ريال سعودي</td>
-                            </tr>
-                          </table>
-                        </div>
-                      </div>
+                  </tr>
+                  <tr>
+                    <td>الشعر المسرحي</td>
+                    <td>فوزي خضر</td>
+                    <td>مصر</td>
+                    <td>٣٠٠ ألف ريال سعودي
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>الشعر المغنى </td>
+                    <td>كريم عودة لعيبي</td>
+                    <td>العراق</td>
+                    <td>٢٠٠ ألف ريال سعودي</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
 					</div>
 				</form>
 
