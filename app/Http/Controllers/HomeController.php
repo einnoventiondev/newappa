@@ -34,6 +34,58 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    public function institute3()
+    {
+        $corporate1=Corporate1::all();
+        $corporate2=Corporate2::all();
+
+        return view('admin.institute', compact('corporate1','corporate2'));
+    }
+    public function individuale3()
+    {
+       $individual1=individual1::all();
+       $individual2=individual2::all();
+        return view('admin.individuale', compact('individual1','individual2'));
+    }
+    public function showcorporate($id){
+        $data = Corporate1::find($id);
+        return view('admin.corporateshow', compact('data'));
+    }
+    public function destroy_data($id)
+    {
+        Corporate1::destroy($id);
+     return redirect()->route('institute3')->with('success','FileExtention Delete Successfully');
+    }
+    public function showcorporate2($id){
+        $data = Corporate2::find($id);
+        return view('admin.showcorporate2', compact('data'));
+    }
+    public function destroy_data2($id)
+    {
+        Corporate2::destroy($id);
+     return redirect()->route('institute3')->with('success','FileExtention Delete Successfully');
+    }
+    public function showindividual($id){
+        $data = individual1::find($id);
+        return view('admin.individualshow', compact('data'));
+    }
+    public function destroy_data_individual($id)
+    {
+        individual1::destroy($id);
+     return redirect()->route('individual3')->with('success','FileExtention Delete Successfully');
+    }
+    public function showindividual2($id){
+        $data = individual2::find($id);
+        return view('admin.showindividual2', compact('data'));
+    }
+    public function destroy_data_individual2($id)
+    {
+        individual2::destroy($id);
+     return redirect()->route('individual3')->with('success','FileExtention Delete Successfully');
+    }
+
+
+
     public function index()
     {
         return view('home');
@@ -75,19 +127,7 @@ class HomeController extends Controller
         }
         return view('admin.individuale', compact('data'));
     }
-    public function institute3()
-    {
-        $corporate1=Corporate1::all();
-        $corporate2=Corporate2::all();
-
-        return view('admin.institute', compact('corporate1','corporate2'));
-    }
-    public function individuale3()
-    {
-       $individual1=individual1::all();
-       $individual2=individual2::all();
-        return view('admin.individuale', compact('individual1','individual2'));
-    }
+   
     public function institute5()
     {
         if (auth()->user()->role == 'admin1') {

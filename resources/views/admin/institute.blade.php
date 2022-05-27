@@ -19,122 +19,141 @@
     </div>
 </div>
 
-<form method="POST" enctype="multipart/form-data" action="{{ route('first.corporation.form') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form1 ">
-form 1
-</form>
-<form method="POST" enctype="multipart/form-data" action="{{ route('second.corporation.form') }}" class="row gx-5 gy-3 candidate-form corporate-form corporate-form2 d-none">
-form 2
-</form>
+<div  class="candidate-form corporate-form corporate-form1 ">
+    <div class="card-body">
+
+        <div class="table-responsive product-table">
+
+            <table class="display" id="example">
+                <thead>
+                    <tr>
+
+                        <!-- candidtae -->
+                        <th>اسم المشروع</th>
+                        <!-- candidtae -->
+                        <!-- orgnization name  -->
+                        <th> نوعه </th>
+                        <!-- state -->
+                        <th>تاريخ الانطلاق </th>
+                        <!-- phone -->
+                        <th> ادارة المشروع</th>
+                        <!-- emial -->
+                        <th> اسم المؤسسة</th>
+                        <!-- candidtae -->
+                        <th>خيارات  </th>
+                        <!-- relation -->
+                        <th>اسم مدير المشروع :</th>
+                        <!-- title -->
+                        <th>رقم التواصل </th>
+                        <!-- place -->
+                        <th> البريد الالكتروني</th>
+                        <!-- release -->
 
 
-<div class="card-body">
-    <div class="table-responsive product-table">
-        <table class="display" id="example">
-            <thead>
-                <tr>
 
-                    <!-- candidtae -->
-                    <th>حالة</th>
-                    <!-- candidtae -->
-                    <!-- orgnization name  -->
-                    <th>اسم الجھة</th>
-                    <!-- state -->
-                    <th>المدينة </th>
-                    <!-- phone -->
-                    <th>رقم التواصل</th>
-                    <!-- emial -->
-                    <th>الإیمیل الرسمي</th>
-                    <!-- candidtae -->
-                    <th>اسم المرشح الرباعي</th>
-                    <!-- relation -->
-                    <th>مسوغات الترشیح:</th>
-                    <!-- title -->
-                    <th>عنوان الدیوان</th>
-                    <!-- place -->
-                    <th>دار النشر</th>
-                    <!-- release -->
-                    <th>سنة الإصدار</th>
-
-					<th>اسم المرشح الرباعي</th>
-					<th>العمر</th>
-					<th>الرقم الجامعي</th>
-					<th>الإيميل الجامعي</th>
-					<th>رقم التواصل</th>
-                    {{-- delete --}}
-                    <th>عمل</th>
+                        {{-- delete --}}
+                        <th>عمل</th>
 
 
 
 
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($corporate1 as $corporate)
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($corporate1 as $corporate)
 
-                <tr>
+                    <tr>
+                        <td>{{ $corporate->authentic_name }}</td>
+                        <td>{{ $corporate->authentic_type }}</td>
+                        <td>{{ $corporate->authentic_date }}</td>
+                        <td>{{ $corporate->authentic_project }}</td>
+                        <td>{{ $corporate->authentic_options }}</td>
+                        <td>{{ $corporate->authentic_manager_name }}</td>
+                        <td>{{ $corporate->authentic_contact }}</td>
+                        <td>{{ $corporate->authentic_email }}</td>
+                        <td>{{ $corporate->authentic_country }}</td>
 
 
-                    <td>{{ $corporate->authentic_name }}</td>
-                    <td>{{ $corporate->authentic_type }}</td>
-                    <td>{{ $corporate->authentic_date }}</td>
-                    <td>{{ $corporate->authentic_project }}</td>
-                    <td>{{ $corporate->authentic_options }}</td>
-                    <td>{{ $corporate->authentic_manager_name }}</td>
-                    <td>{{ $corporate->authentic_contact }}</td>
-                    <td>{{ $corporate->authentic_email }}</td>
-                    <td>{{ $corporate->authentic_country }}</td>
-
-					<td>{{ $corporate->authentic_city }} </td>
-					<td>{{ $corporate->authentic_idea}}</td>
-					<td>{{ $corporate->authentic_program }}</td>
-					<td>{{ $corporate->authentic_history }}</td>
-					<td>{{ $corporate->authentic_place }}</td>
-                    <td>
-                        <a href="" class="view-btn"> <i class="fa fa-eye"></i></a>
-                        <a href="" class="delete-btn"><i class="far fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
+                        <td>
+                            <a href="{{ route('show.corporate',$corporate) }}" class="view-btn"> <i class="fa fa-eye"></i></a>
+                            {{--  <a href="{{ route('delete.corporate', $corporate)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>  --}}
+                            <form action="{{ route('delete.corporate', $corporate)}}" method="post"  accept-charset="UTF-8" style="display:inline">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Contact" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                             </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
+
+<div class="candidate-form corporate-form corporate-form2 d-none">
+    <div class="card-body">
+
+        <div class="table-responsive product-table">
+
+            <table class="display" id="datatable2">
+                <thead>
+                    <tr>
+
+                        <th> اسم المرشح</th>
+                        <th> خيارات</th>
+                        <th> اسم المشروع </th>
+                        <th> نوعه</th>
+                        <th>  تاريخ الانطلاق</th>
+                        <th>  اسم المؤسسة</th>
+                        <th>  خيارات</th>
+                        <th> اسم مدير المشروع</th>
+                        <th> رقم التواصل</th>
+
+
+
+                        <th>عمل</th>
+
+
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($corporate2 as $corporate)
+
+                    <tr>
+                        <td>{{ $corporate->behalf_candidate_name }}</td>
+                        <td>{{ $corporate->behalf_options }}</td>
+                        <td>{{ $corporate->behalf_name }}</td>
+                        <td>{{ $corporate->behalf_type }}</td>
+                        <td>{{ $corporate->behalf_date }}</td>
+                        <td>{{ $corporate->behalf_company_name }}</td>
+                        <td>{{ $corporate->behalf_options1 }}</td>
+                        <td>{{ $corporate->behalf_project }}</td>
+                        <td>{{ $corporate->behalf_number }}</td>
+
+
+
+
+                        <td>
+                            <a href="{{ route('show.corporate2',$corporate) }}" class="view-btn"> <i class="fa fa-eye"></i></a>
+                            {{--  <a href="{{ route('delete.corporate2', $corporate)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>  --}}
+                            <form action="{{ route('delete.corporate2', $corporate)}}" method="post"  accept-charset="UTF-8" style="display:inline">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Contact" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                             </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
 @endsection
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
- </script>
-
-  <script src="{{ asset('assets/js/jquery.min.js') }}"> </script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
- <script src="{{asset('assets/js/scripts.js')}}"> </script>
-
- <script>
-    $(document).ready(function () {
-
-
-$("input[type=radio]").change(function(){
-    if( $('.authentic-radio').is(":checked") ){
-
-        $('.corporate-form1').removeClass('d-none');
-        $('.corporate-form2').addClass('d-none');
-    }
-    if( $('.behalf-radio').is(":checked") ){
-
-        $('.corporate-form2').removeClass('d-none');
-        $('.corporate-form1').addClass('d-none');
-    }
-});
-
-$("input[type=radio]").change(function(){
-    if( $('.authentic-individual-radio').is(":checked") ){
-
-        $('.individual-form1').removeClass('d-none');
-        $('.individual-form2').addClass('d-none');
-    }
-    if( $('.behalf-individual-radio').is(":checked") ){
-
-        $('.individual-form2').removeClass('d-none');
-        $('.individual-form1').addClass('d-none');
-    }
-});
-});
- </script>
