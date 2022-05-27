@@ -46,16 +46,8 @@
                         <th>  البريد الالكتروني</th>
                         <!-- candidtae -->
                         <!-- orgnization name  -->
-                        <th> الدولة</th>
-                        <th> المدينة</th>
-                        <th>   فكرة المشروع</th>
-                        <th>  اسم البرنامج</th>
-                        <th> تاريخه</th>
-                        <!-- candidtae -->
-                        <th>   مكان إقامته    </th>
-                        <!-- candidtae -->
-                        <!-- orgnization name  -->
-                        <th> الهدف</th>
+
+
                         <th>عمل</th>
 
 
@@ -75,17 +67,14 @@
                         <td>{{ $individual->authentic_contact }}</td>
                         <td>{{ $individual->authentic_email }}</td>
 
-                        <td>{{ $individual->authentic_country }}</td>
-                        <td>{{ $individual->authentic_city }}</td>
-                        <td>{{ $individual->authentic_idea }}</td>
-                        <td>{{ $individual->authentic_program }}</td>
-                        <td>{{ $individual->authentic_history }}</td>
-                        <td>{{ $individual->authentic_place }}</td>
-                        <td>{{ $individual->authentic_history1 }}</td>
                         <td>
-                            <a href="" class="view-btn"> <i class="fa fa-eye"></i></a>
-                            <a href="" class="delete-btn"><i class="far fa-trash-alt"></i></a>
-
+                            <a href="{{ route('show.individual',$individual) }}" class="view-btn"> <i class="fa fa-eye"></i></a>
+                            {{--  <a href="{{ route('delete.individual', $individual)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>  --}}
+                            <form action="{{ route('delete.individual', $individual)}}" method="post"  accept-charset="UTF-8" style="display:inline">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Contact" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                             </form>
                             </form>
                         </td>
                     </tr>
@@ -119,9 +108,7 @@
                         <!-- candidtae -->
                         <th>   الدولة</th>
                         <!-- relation -->
-                        <th>  المدينة</th>
-                        <!-- title -->
-                        <th>   فكرة المشروع</th>
+
                          <th> رابط الموقع الإلكتروني للتعريف بالمشروع وأنشطته</th>
                         <th>عمل</th>
 
@@ -141,14 +128,17 @@
                         <td>{{ $individual->behalf_type }}</td>
                         <td>{{ $individual->behalf_date }}</td>
                         <td>{{ $individual->behalf_country }}</td>
-                        <td>{{ $individual->behalf_city }}</td>
-                        <td>{{ $individual->behalf_about }}</td>
+
                         <td>{{ $individual->behalf_site }}</td>
 
                         <td>
-                            <a href="" class="view-btn"> <i class="fa fa-eye"></i></a>
-                            <a href="" class="delete-btn"><i class="far fa-trash-alt"></i></a>
-
+                            <a href="{{ route('show.individual2',$individual) }}" class="view-btn"> <i class="fa fa-eye"></i></a>
+                            {{--  <a href="{{ route('delete.individual2', $individual)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>  --}}
+                            <form action="{{ route('delete.individual2', $individual)}}" method="post"  accept-charset="UTF-8" style="display:inline">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Contact" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                             </form>
                             </form>
                         </td>
                     </tr>

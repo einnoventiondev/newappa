@@ -127,7 +127,13 @@ Route::post('second/corporation', [CompetitionController::class, 'corporation2']
 Route::post('first/individual', [CompetitionController::class, 'individual1'])->name('first.individual2.form');
 Route::post('second/individual', [CompetitionController::class, 'individual2'])->name('second.individual2.form');
 Route::get('corporate/show/{id}', [HomeController::class, 'showcorporate'])->name('show.corporate');
-Route::delete('corporate/delete/{id}',[HomeController::class, 'destrop_data'])->name('delete.corporate');
+Route::delete('corporate/delete/{id}',[HomeController::class, 'destroy_data'])->name('delete.corporate');
+Route::get('individual/show/{id}', [HomeController::class, 'showindividual'])->name('show.individual');
+Route::delete('individual/delete/{id}',[HomeController::class, 'destroy_data_indvidual'])->name('delete.individual');
+Route::get('corporate2/show/{id}', [HomeController::class, 'showcorporate2'])->name('show.corporate2');
+Route::delete('corporate2/delete/{id}',[HomeController::class, 'destroy_data2'])->name('delete.corporate2');
+Route::get('individual2/show/{id}', [HomeController::class, 'showindividual2'])->name('show.individual2');
+Route::delete('individual2/delete/{id}',[HomeController::class, 'destroy_data_indvidual2'])->name('delete.individual2');
 
 Auth::routes(['register' => false]);
 

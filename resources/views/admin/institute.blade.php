@@ -48,12 +48,9 @@
                         <!-- place -->
                         <th> البريد الالكتروني</th>
                         <!-- release -->
-                        <th>الدولة </th>
 
-                        <th>  المدينة</th>
-                        <th>فكرة المشروع</th>
-                        <th> اسم البرنامج</th>
-                        <th> تاريخه</th>
+
+
                         {{-- delete --}}
                         <th>عمل</th>
 
@@ -75,19 +72,16 @@
                         <td>{{ $corporate->authentic_contact }}</td>
                         <td>{{ $corporate->authentic_email }}</td>
                         <td>{{ $corporate->authentic_country }}</td>
-                        <td>{{ $corporate->authentic_city }} </td>
-                        <td>{{ $corporate->authentic_idea}}</td>
-                        <td>{{ $corporate->authentic_program }}</td>
-                        <td>{{ $corporate->authentic_history }}</td>
-                        <td>{{ $corporate->authentic_place }}</td>
+
+
                         <td>
                             <a href="{{ route('show.corporate',$corporate) }}" class="view-btn"> <i class="fa fa-eye"></i></a>
-                            <a href="{{ route('delete.corporate', $corporate)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>
-                            {{--  <form action="{{ route('delete.corporate', $corporate)}}" method="post"  accept-charset="UTF-8" style="display:inline">
+                            {{--  <a href="{{ route('delete.corporate', $corporate)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>  --}}
+                            <form action="{{ route('delete.corporate', $corporate)}}" method="post"  accept-charset="UTF-8" style="display:inline">
                                 @method('DELETE')
                                 @csrf
                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete Contact" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
-                             </form>  --}}
+                             </form>
                         </td>
                     </tr>
                     @endforeach
@@ -115,10 +109,9 @@
                         <th>  خيارات</th>
                         <th> اسم مدير المشروع</th>
                         <th> رقم التواصل</th>
-                        <th> البريد الالكتروني</th>
-                        <th>  الدولة</th>
-                        <th> المدينة</th>
-                        <th>فكرة المشروع</th>
+
+
+
                         <th>عمل</th>
 
 
@@ -139,14 +132,18 @@
                         <td>{{ $corporate->behalf_options1 }}</td>
                         <td>{{ $corporate->behalf_project }}</td>
                         <td>{{ $corporate->behalf_number }}</td>
-                        <td>{{ $corporate->behalf_email }} </td>
-                        <td>{{ $corporate->behalf_country}}</td>
-                        <td>{{ $corporate->behalf_city }}</td>
-                        <td>{{ $corporate->behalf_about }}</td>
+
+
+
 
                         <td>
-                            <a href="" class="view-btn"> <i class="fa fa-eye"></i></a>
-                            <a href="" class="delete-btn"><i class="far fa-trash-alt"></i></a>
+                            <a href="{{ route('show.corporate2',$corporate) }}" class="view-btn"> <i class="fa fa-eye"></i></a>
+                            {{--  <a href="{{ route('delete.corporate2', $corporate)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>  --}}
+                            <form action="{{ route('delete.corporate2', $corporate)}}" method="post"  accept-charset="UTF-8" style="display:inline">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Contact" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                             </form>
                         </td>
                     </tr>
                     @endforeach
