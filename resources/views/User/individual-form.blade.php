@@ -774,35 +774,35 @@ let count=0;
     <div class="col-md-4">
         <div class="form-group">
             <label for="city" class="form-label">اسم البرنامج</label>
-            <input type="text" class="form-control" required name="authentic_program[]`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_program`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-4">
         <div class="form-group">
             <label for="date" class="form-label">تاريخه</label>
-            <input type="text" class="form-control" required name="authentic_history[]`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_history`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-4">
         <div class="form-group">
             <label for="city" class="form-label">مكان إقامته</label>
-            <input type="text" class="form-control" required name="authentic_place[]`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_place`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-6">
         <div class="form-group">
             <label for="city" class="form-label">الهدف</label>
-            <input type="text" class="form-control" required name="authentic_history1[]`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_history1`+ count +`" id="idNumber">
         </div>
     </div>
 
     <div class="col-md-6">
         <div class="form-group">
             <label for="city" class="form-label"> الشريحة المستهدفة</label>
-            <input type="text" class="form-control" required name="authentic_target[]`+ count +`" id="idNumber">
+            <input type="text" class="form-control" required name="authentic_target`+ count +`" id="idNumber">
         </div>
     </div>
 </div>`;
