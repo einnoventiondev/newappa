@@ -73,7 +73,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="idNumber" class="form-label">رقم الهوية</label>
-                                <input type="text" class="form-control" required name="idNumber" id="idNumber">
+                                <input type="number" class="form-control" required name="idNumber" id="idNumber">
                             </div>
                         </div>
  <div class="col-md-12">

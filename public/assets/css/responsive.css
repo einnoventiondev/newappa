@@ -3,6 +3,9 @@
         .content .reset-con{
             padding-right:0px !important;
         }
+		.m-d-none{
+			display:none !important;
+		}
         .prince-abd-comp-inner-heading .reset-img img{
                 top: -205px !important;
         }
@@ -10,6 +13,10 @@
             margin-bottom: 30px;
             height: 300px;
         }
+		.rules-std-container .heading-reset,.prince-comp-container .content h2{
+			color: #585858;
+			margin-bottom:20px !important;
+		}
         .hding-reset{
             padding-top:90px !important;
         }
@@ -401,7 +408,7 @@
     }
 
     .poetic-sec {
-        background-image: url('../images/mobile-img/gray-side-m.png') !important;
+        background-image: url('../images/mobile-img/green.png') !important;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 92%;
@@ -467,20 +474,37 @@
         font-weight: 700 !important;
     }
 
-    .blue-bg {
+    
+
+    .green-bg {
         background-image: url('../images/mobile-img/blue-side-m.png') !important;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-
-    .green-bg {
-        background-image: url('../images/mobile-img/green.png') !important;
+	.light-green-bg {
+        background-image: url('../images/mobile-img/light-green.png') !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+		width: 92%;
+    	margin-bottom: 80px;
+	}
+.light-green-bg .content p {
+		color:#fff !important;
+		}
+		.light-green-bg .content-award-table .paragraph li {
+		color:#fff !important;
+		}
+.light-green-bg .title {
+     margin-bottom: 60px;
+	margin-top:60px;
+}
+    .brown-bg {
+        background-image: url('../images/mobile-img/brown-side-bg.png') !important;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-
-    .brown-bg {
-        background-image: url('../images/mobile-img/brown-side-bg.png') !important;
+		.dark-gray-side-m {
+        background-image: url('../images/mobile-img/dark-gray-side-m.png') !important;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
@@ -497,7 +521,11 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-
+	.blue-bg {
+        background-image: url('../images/mobile-img/brown-side-bg.png') !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
     /* .blue-bg {
             height: 140vh;
             background-image: url(/assets/images/blue-bg.png) !important;
@@ -562,7 +590,9 @@
         padding-top: 20px;
         margin-bottom: 20px;
     }
-
+		.poetic-sec .content-mobile h2{
+			color:#fff;
+		}
     .content-mobile .prize-value-txt {
         padding-top: 0;
     }
@@ -1005,7 +1035,25 @@
     .content-container.diwan {
         /* padding-right: 35px; */
         /* padding-left: 10px; */
+		    background-image: url(../images/mobile-img/gray-side-m.png) !important;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			width: 92%;
+			margin-bottom:80px;
     }
+		
+		.content h2{
+			color:#fff;
+		}
+		.m-d-gray{
+			color: #585858 !important;
+		}
+		.diwan .paragraph li{
+			color:#fff;
+		}
+		.diwan .prize{
+			color:#fff;
+		}
     .apply-nomination-btn-2{
         margin-bottom: 70px;
     }

@@ -24,7 +24,7 @@
   <div class="content-wrapper">
     @include('layouts.User.nav')
 
-    <section class="poetic-sec arabic-sec brown-bg content-container">
+    <section class="poetic-sec arabic-sec dark-gray-side-m  content-container">
       <div class="container">
         <div class="row g-0">
           <div class="col-md-4 title-poetry title-right title-hide-mobile">
@@ -33,10 +33,10 @@
                 جائزة الأمير <br>عبدالله الفيصل
 
               </span>
-              <h1 class="animate__animated animate__fadeInRight animate_slower">جائزة الأمير عبدالله الفيصل لأفضل مشروع في خدمة</h1>
+              <h1 class="animate__animated animate__fadeInRight animate_slower">لأفضل مشروع <br>في خدمة الشعر العربي</h1>
             </div>
             <div class="box-theatrical">
-              <img src="{{asset('./assets/images/red.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="red-diamond">
+              <img src="{{asset('./assets/images/gray.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="red-diamond">
               <img src="{{asset('./assets/images/creme-diamond.png')}}" class="animate__animated animate__shakeY animate__infinite animate_slowest" alt="creme-diamond">
               <!-- <img src="./assets/images/red-group.png" alt="red"> -->
             </div>
@@ -80,9 +80,9 @@
             <h2 class="prize-value-txt">قيمة الجائزة</h2>
             <span class="prize">(١٠٠,٠٠٠) مائة ألف ريال</span>
 
-            <a href="{{ route('third') }}" class="btn btn-green mt-4 apply-nomination-btn"> ترشيح مؤسسي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
+            <a href="{{ route('corporate') }}" class="btn btn-green mt-4 apply-nomination-btn"> ترشيح مؤسسي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
 
-           <a href="{{ route('thirdb') }}" class="btn btn-green mt-4 apply-nomination-btn-2"> ترشيح فردي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
+           <a href="{{ route('individual') }}" class="btn btn-green mt-4 apply-nomination-btn-2"> ترشيح فردي <img src="{{asset('./assets/icons/arrow-back.png')}}" alt=""></a>
           </div>
 
           <div class="col-md-6 desk-content">

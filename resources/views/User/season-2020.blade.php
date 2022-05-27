@@ -26,12 +26,12 @@
                 <form action="">
 					<div class="row">
 						<div class="season-title col-md-12 title-video">
-							<h1 class="animate__animated animate__fadeInRight animate_slower">المحتوى المرئي للحفل الموسم الثاني                            </h1>
-							<h2 class="animate__animated animate__fadeInRight animate_slower">٢٠٢٠</h2>
+							<h1 class="animate__animated animate__fadeInRight animate_slower">المحتوى المرئي للحفل الموسم الثاني٢٠٢٠                            </h1>
+							<h2 class="animate__animated animate__fadeInRight animate_slower"></h2>
 						</div>
             <div class="col-md-12">
 							<label for="video" class="video-box">
-                  <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/3Zg7lVYdZ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5O_9CTOcxK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </label>
 						</div>
 

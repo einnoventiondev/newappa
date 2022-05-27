@@ -42,7 +42,7 @@
 
                     <form action="{{route('sendemail')}}" method="POST" class="row justify-content-center candidate-form">
                         @csrf
-                        <h2 class="text-center">اتصل بنا</h2>
+                        <h2 class="text-center"> </h2>
                         <div class="col-md-6 ">
                             <div class="form-group">
                                 <label for="exampleInputUsername" class="form-label">اسمك</label>

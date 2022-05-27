@@ -20,7 +20,7 @@
   <div class="content-wrapper">
     
   @include('layouts.User.nav')
-    <section class="content-container">
+    <section class="content-container light-green-bg">
       <div class="container award-winners">
         <div class="row g-0">
           <div class="col-md-4 title-advance award-winner-heading">

@@ -73,7 +73,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phoneNumber1" class="form-label"> رقم التواصل</label>
-                                    <input type="phone" class="form-control" required name="phoneNumber" id="phoneNumber">
+                                    <input type="number" class="form-control" required name="phoneNumber" id="phoneNumber">
                                 </div>
                             </div>
 
@@ -110,7 +110,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="idNumber" class="form-label">رقم الهوية</label>
-                                <input type="text" class="form-control" required name="idNumber" id="idNumber">
+                                <input type="number" class="form-control" required name="idNumber" id="idNumber">
                             </div>
                         </div>
 
@@ -790,7 +790,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="authentic_age" class="form-label">العمر</label>
-                        <input type="text" class="form-control" required name="authentic_age" id="idNumber">
+                        <input type="number" class="form-control" required name="authentic_age" id="idNumber">
                     </div>
                 </div>
 

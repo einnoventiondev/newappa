@@ -75,7 +75,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phoneNumber1" class="form-label"> رقم التواصل</label>
-                                    <input type="phone" class="form-control" required name="phoneNumber" id="phoneNumber">
+                                    <input type="number" class="form-control" required name="phoneNumber" id="phoneNumber">
                                 </div>
                             </div>
 
@@ -135,7 +135,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="idNumber" class="form-label">رقم الهوية (للسعودي) والجواز لغير السعودي</label>
-                                <input type="text" class="form-control" required name="idNumber" id="idNumber">
+                                <input type="number" class="form-control" required name="idNumber" id="idNumber">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -153,7 +153,7 @@
                         <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phoneNumber2" class="form-label"> رقم التواصل</label>
-                                    <input type="phone" class="form-control" required name="phoneNumber2" id="phoneNumber2">
+                                    <input type="number" class="form-control" required name="phoneNumber2" id="phoneNumber2">
                                 </div>
                             </div>
 

@@ -69,7 +69,7 @@
                         <li><a class="dropdown-item" href="{{url('terms-and-conditions')}}">الأحكام العامة</a>
                         <li><a class="dropdown-item" href="{{url('legal-policy')}}"> المسؤولية القانونية</a>
                         <li><a class="dropdown-item" href="{{url('privacy-policy')}}">الملكية الفكرية</a>
-                        <li><a class="dropdown-item" href="{{url('faqs')}}">أسئلة شائعة</a></li>
+                        <li><a class="dropdown-item" href="{{url('faqs')}}">الأسئلة الشائعة</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -116,7 +116,7 @@
                             <!-- <img src="{{asset('/assets/icons/arrow-white.png')}}" alt=""> -->
                             <!--<i class="rotate-arrow-1 fa-solid fa-angle-left"></i> -->
                         </a>
-                        <div class="dropdown-main-link-div">
+                        <div class="dropdown-main-link-div m-d-none">
                             <ul class="">
                                 <li><a class="dropdown-items" href="{{ route('university.students') }}">- مسابقة طلبة
                                         الجامعات</a></li>
@@ -126,11 +126,11 @@
                                 <ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="m-d-none">
                         <a class="dropdown-items" href="{{ route('university.students') }}">مسابقة طلبة
                             الجامعات</a>
                     </li>
-                    <li>
+                    <li class="m-d-none">
                         <a class="dropdown-items" href="{{ route('Prince.Abdullah.Al.Faisal.Competition') }}">مسابقة طلبة
                             الثانوية</a>
                     </li>
@@ -183,7 +183,7 @@
                     <li><a class="dropdown-items" href="{{url('legal-policy')}}">المسؤولية القانونية</a></li>
                     <li><a class="dropdown-items" href="{{url('privacy-policy')}}">الملكية الفكرية</a>
                     </li>
-                    <li><a class="dropdown-items" href="{{url('faqs')}}">أسئلة شائعة</a>
+                    <li><a class="dropdown-items" href="{{url('faqs')}}">الأسئلة الشائعة</a>
                     </li>
                     <ul>
             </div>

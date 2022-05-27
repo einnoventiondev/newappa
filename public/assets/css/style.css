@@ -2182,9 +2182,9 @@ a:hover {
         padding: 0px;
     }
 
-    .add-more-btn-main .btn:hover {
-        color: #00514c !important;
-    }
+    .add-more-btn-main .add-more-program-btn:hover , .add-more-btn-main .add-more-upload-btn:hover {
+    color: #00514c !important;
+}
     .add-more-btn-main .btn:focus {
         box-shadow: none;
     }
@@ -2200,7 +2200,7 @@ a:hover {
 
 /* asim */
 
-.add-more-btn-main .btn:hover {
+.add-more-btn-main .add-more-program-btn:hover , .add-more-btn-main .add-more-upload-btn:hover {
     color: #00514c !important;
 }
 .candidate-form h2 {
@@ -2252,7 +2252,7 @@ a:hover {
 .add-more-btn-main{
     margin-top: 37px;
 }
-.add-more-btn-main .btn{
+.add-more-btn-main .add-more-program-btn , .add-more-btn-main .add-more-upload-btn{
     padding-right: 0px !important;
 }
 .add-more-btn-main .btn img{
@@ -2318,6 +2318,7 @@ input::-webkit-inner-spin-button {
 
 
 
+
 .video-heading {
     color: #b79b66;
     font-size: 20px;
@@ -2326,4 +2327,16 @@ input::-webkit-inner-spin-button {
 }
 .season-table .content-award-table{
     margin-top: 30px;
+}
+.poetic-sec .title-box >span> h1{
+    color: #571B24 !important;
+}
+.green-bg .title-right span{
+	color:#b79b66 !important;
+}
+.green-bg .singing-sec .title-box h1{
+	color:#b79b66 !important;
+}
+.diwan .title-diwan h1{
+	color: #571B24 !important;
 }

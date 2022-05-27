@@ -35,7 +35,7 @@
               <h1 class="animate__animated animate__fadeInRight animate_slower">للشعر المسرحي</h1>
             </div>
             <div class="box-theatrical">
-              <img src="{{asset('./assets/images/dark-green.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="blue-diamond">
+              <img src="{{asset('./assets/images/red.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="blue-diamond">
               <img src="{{asset('./assets/images/creme-diamond.png')}}" class="animate__animated animate__shakeY animate__infinite animate_slowest" alt="creme-diamond">
               <!-- <img src="./assets/images/blue-group.png" alt="blue"> -->
             </div>

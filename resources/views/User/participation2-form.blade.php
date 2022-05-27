@@ -71,7 +71,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phoneNumber1" class="form-label"> رقم التواصل</label>
-                                    <input type="phone" class="form-control" required name="phoneNumber" id="phoneNumber">
+                                    <input type="number" class="form-control" required name="phoneNumber" id="phoneNumber">
                                 </div>
                             </div>
 

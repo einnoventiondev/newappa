@@ -27,13 +27,13 @@
         <div class="row g-0">
           <div class="col-md-4 title-right title-hide-mobile">
             <div class="title-box">
-              <span class="sub-title color-green animate__animated animate__fadeInRight animate_slower d-block">
+              <span class="sub-title color-silver animate__animated animate__fadeInRight animate_slower d-block">
                 جائزة الأمير <br>عبدالله الفيصل
               </span>
               <h1 class="animate__animated animate__fadeInRight animate_slower">للقصيدة المغناة</h1>
             </div>
             <div class="box-theatrical">
-              <img src="{{asset('./assets/images/gray.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="green-diamond">
+              <img src="{{asset('./assets/images/blue.svg')}}" class="animate__animated animate__pulse animate__infinite animate_slowy" alt="gold-diamond">
               <img src="{{asset('./assets/images/creme-diamond.png')}}" class="animate__animated animate__shakeY animate__infinite animate_slowest" alt="creme-diamond">
               <!-- <img src="./assets/images/green-group.png" alt="green"> -->
             </div>

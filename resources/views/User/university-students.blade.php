@@ -36,7 +36,7 @@
             </div>
             <div class="title">
               <span class="sub-title animate__animated animate__fadeInRight animate_slower d-block">
-                جائزة الأمير عبدالله الفيصل
+                جائزة الأمير عبدالله <br> الفيصل
               </span>
               <h1 class="animate__animated animate__fadeInRight animate_slower">لطلبة الجامعات</h1>
             </div>
@@ -60,7 +60,7 @@
                
               </ul>  
               <p>
-              <h2>شروط التقدم للجائزة لطلبة وطالبات الجامعات</h2>
+              <h2  class="m-d-gray">شروط التقدم للجائزة لطلبة وطالبات الجامعات</h2>
               <p>
                 <ul class="paragraph">
                   <li>أن يكون الطالب مقيدًا بإحدى جامعات المملكة.</li>
@@ -72,7 +72,7 @@
 
             <div class="col-md-12 rules-std">
 				<div class="content rules-std-content paragraph-signing"> <p>
-              <h2>قيمة جائزة الأمير عبد الله الفيصل في الشعر العربي لطلاب وطالبات الجامعات</h2>
+              <h2 class="m-d-gray">قيمة جائزة الأمير عبد الله الفيصل في الشعر العربي لطلاب وطالبات الجامعات</h2>
               <p>
 				 
 				   <ul class="paragraph">
@@ -83,7 +83,7 @@
 					            </div>
             <div class="col-md-12 rules-std">
 				<div class="content rules-std-content paragraph-signing"> <p>
-              <h2>آلية المشاركة في المسابقة:</h2>
+              <h2 class="m-d-gray">آلية المشاركة في المسابقة:</h2>
               <p>
 				   <ul class="paragraph">
                   	<li>يتم مراسلة الجامعات السعودية عن الجائزة عبر وسائل التواصل الرسمية.</li>

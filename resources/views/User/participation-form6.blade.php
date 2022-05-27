@@ -35,7 +35,7 @@
                                     <span class="sub-title animate__animated animate__fadeInRight animate_slower d-block">
 
                                     </span>
-                                    <h2 class="animate__animated animate__fadeInRight animate_slower">استمارة ترشيح قصيدة الشاعراستمارة ترشيح قصيدة الشاعر الواعد لطلبة الجامعات </h2>
+                                    <h2 class="animate__animated animate__fadeInRight animate_slower">استمارة ترشيح قصيدة الشاعر الواعد لطلبة الجامعات </h2>
                                     <h1 class="animate__animated animate__fadeInRight animate_slower"> ترشيح مؤسسي </h1>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phoneNumber1" class="form-label"> رقم التواصل</label>
-                                    <input type="phone" class="form-control" required name="phoneNumber" id="phoneNumber">
+                                    <input type="number" class="form-control" required name="phoneNumber" id="phoneNumber">
                                 </div>
                             </div>
 
@@ -132,7 +132,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="idNumber" class="form-label">رقم الهوية (للسعودي) والجواز لغير السعودي </label>
-                                <input type="text" class="form-control" required name="idNumber" id="idNumber">
+                                <input type="number" class="form-control" required name="idNumber" id="idNumber">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -150,7 +150,7 @@
                         <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phoneNumber2" class="form-label"> رقم التواصل</label>
-                                    <input type="phone" class="form-control" required name="phoneNumber2" id="phoneNumber2">
+                                    <input type="number" class="form-control" required name="phoneNumber2" id="phoneNumber2">
                                 </div>
                             </div>
 
@@ -179,7 +179,7 @@
 
                         <div class="col-md-12">
                             <div class="form-group upload-file">
-                                <label for="candidateImage" class="form-label">تتضمن صورة شخصية حديثة للمرشح</label>
+                                <label for="candidateImage" class="form-label">تحميل السيرة الذاتية</label>
                                 <input class="form-control" accept="image/*" type="file" id="download-cv-file-name" required name="candidateImage" id="candidateImage">
                                 <span class="upload-file-img download-cv">
                                     <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
@@ -202,15 +202,15 @@
 
 
                         <div>
-                            <h2>تحمیل أعمال المرشح</h2>
+                            <h2>تحمیل القصيدة الشعرية</h2>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
+                      <!--  <div class="col-md-6">
+                            <div class="form-group"> 
                                 <label for="title" class="form-label">عنوان الدیوان</label>
                                 <input type="text" class="form-control" required name="title" id="title">
                             </div>
-                        </div>
+                        </div> 
 
                         <div class="col-md-6">
                             <div class="form-group">
@@ -224,7 +224,7 @@
                                 <label for="release" class="form-label">سنة الإصدار</label>
                                 <input type="date" class="form-control" required name="release" id="release">
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-md-6">
                             <div class="form-group upload-file">
