@@ -163,6 +163,34 @@
         $(document).ready(function() {
             $('#example').DataTable();
             responsive: true
+
+
+
+$("input[type=radio]").change(function(){
+    if( $('.authentic-radio').is(":checked") ){
+
+        $('.corporate-form1').removeClass('d-none');
+        $('.corporate-form2').addClass('d-none');
+    }
+    if( $('.behalf-radio').is(":checked") ){
+
+        $('.corporate-form2').removeClass('d-none');
+        $('.corporate-form1').addClass('d-none');
+    }
+});
+
+$("input[type=radio]").change(function(){
+    if( $('.authentic-individual-radio').is(":checked") ){
+
+        $('.individual-form1').removeClass('d-none');
+        $('.individual-form2').addClass('d-none');
+    }
+    if( $('.behalf-individual-radio').is(":checked") ){
+
+        $('.individual-form2').removeClass('d-none');
+        $('.individual-form1').addClass('d-none');
+    }
+});
         });
     </script>
 </body>
