@@ -672,7 +672,7 @@
                 <div class="col-md-4 padd-l-20 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_history" class="form-label">تاريخه</label>
-                        <input type="text" class="form-control" required name="authentic_history" id="idNumber">
+                        <input type="text" class="form-control date" required name="authentic_history" id="idNumber">
                     </div>
                 </div>
 
@@ -1205,7 +1205,7 @@ let count=0;
     <div class="col-md-4">
         <div class="form-group">
             <label for="date" class="form-label">تاريخه</label>
-            <input type="text" class="form-control" name="authentic_history`+ count +`" id="idNumber">
+            <input type="text" class="form-control date" name="authentic_history`+ count +`" id="idNumber">
         </div>
     </div>
 
