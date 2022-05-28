@@ -221,30 +221,61 @@ class CompetitionController extends Controller
 
     public function index2(Request $request)
     {
+
       $compitition=new Competition;
       $compitition->type = $request->type;
-      $compitition->form => $request->form;
-                  'letter' => $letter,
-                  'publishedWorks' => $publishedWorks,
-                  'candidateImage' => $candidateImage,
-                  'passportimages' => $passportimages,
-                  'release' => $request->release,
-                  'place' => $request->place,
-                  'title' => $request->title,
-                  'relation' => $request->relation,
-                  'about' => $request->about,
-                  'idNumber' => $request->idNumber,
-                  'inputNationality' => $request->inputNationality,
-                  'inputName' => $request->inputName,
-                  'inputEmail' => $request->inputEmail,
-                  'phoneNumber' => $request->phoneNumber,
-                  'state' => $request->state,
-                  'orgniztionName' => $request->orgniztionName,
-      			'phone_number2'  => $phone_number2,
-      			'age'   => $age,
-      			'uni_number' => $uni_number,
-      			'uni_email' => $uni_email,
-      			'fieldname'  => $fieldname,
+      $compitition->form = $request->form;
+      $compitition->release = $request->release;
+      $compitition->     place = $request->place;
+      $compitition->     title = $request->title;
+      $compitition->     relation = $request->relation;
+      $compitition->     about = $request->about;
+      $compitition->    idNumber = $request->idNumber;;
+      $compitition->    inputNationality = $request->inputNationality;
+      $compitition->    inputName = $request->inputName;
+      $compitition->    inputEmail = $request->inputEmail;
+      $compitition->    phoneNumber = $request->phoneNumber;
+      $compitition->      state = $request->state;
+      $compitition->       orgniztionName = $request->orgniztionName;
+      if($request->hasfile('letter')){
+        $file= $request->file('letter');
+        $extenstion= $file->getClientOriginalExtension();
+        $filename=time().'.'.$extenstion;
+        $file->move('uploads/letter/', $filename);
+        $compitition->letter=$filename;
+    }
+    if($request->hasfile('publishedWorks')){
+        $file= $request->file('publishedWorks');
+        $extenstion= $file->getClientOriginalExtension();
+        $filename=time().'.'.$extenstion;
+        $file->move('uploads/publishedWorks/', $filename);
+        $compitition->publishedWorks=$filename;
+    }
+    if($request->hasfile('candidateImage')){
+        $file= $request->file('candidateImage');
+        $extenstion= $file->getClientOriginalExtension();
+        $filename=time().'.'.$extenstion;
+        $file->move('uploads/candidateImage/', $filename);
+        $compitition->candidateImage=$filename;
+    }
+    if($request->hasfile('passportimages')){
+        $file= $request->file('passportimages');
+        $extenstion= $file->getClientOriginalExtension();
+        $filename=time().'.'.$extenstion;
+        $file->move('uploads/passportimages/', $filename);
+        $compitition->passportimages=$filename;
+    }
+
+
+    //   $compitition->	phone_number2  = $request->phone_number2;
+
+$compitition->save();
+return redirect('/');
+
+      //   $compitition->	age   = $request->age;
+    //   $compitition->	uni_number =$request-> uni_number;
+    //   $compitition->	uni_email = $request->uni_email;
+    //  $compitition->	fieldname  = $request->fieldname;
 
 
 
