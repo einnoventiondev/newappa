@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 
+
 class HomeController extends Controller
 {
     /**
@@ -92,87 +93,61 @@ class HomeController extends Controller
     }
     public function institute()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 2)->where('form', 'third')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 2)->where('form', 'third')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
+        $corporate1=Corporate1::all();
+        $corporate2=Corporate2::all();
 
-        return view('admin.institute', compact('data'));
+        return view('admin.institute', compact('corporate1','corporate2'));
     }
     public function individuale()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 1)->where('form', 'first')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 1)->where('form', 'first')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.individuale', compact('data'));
+        $individual1=individual1::all();
+        $individual2=individual2::all();
+         return view('admin.individuale', compact('individual1','individual2'));
     }
     public function institute2()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 2)->where('form', 'second')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 2)->where('form', 'second')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.institute', compact('data'));
+        $corporate1=Corporate1::all();
+        $corporate2=Corporate2::all();
+
+        return view('admin.institute', compact('corporate1','corporate2'));
     }
     public function individuale2()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 1)->where('form', 'second')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 1)->where('form', 'second')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.individuale', compact('data'));
+        $individual1=individual1::all();
+        $individual2=individual2::all();
+         return view('admin.individuale', compact('individual1','individual2'));
     }
-   
+
     public function institute5()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 2)->where('form', 'five')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 2)->where('form', 'five')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.institute', compact('data'));
+        $corporate1=Corporate1::all();
+        $corporate2=Corporate2::all();
+        return view('admin.institute', compact('corporate1','corporate2'));
     }
     public function individuale5()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 1)->where('form', 'five')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 1)->where('form', 'five')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.individuale', compact('data'));
+        $individual1=individual1::all();
+        $individual2=individual2::all();
+         return view('admin.individuale', compact('individual1','individual2'));
     }
     public function institute6()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 2)->where('form', 'six')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 2)->where('form', 'six')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.institute', compact('data'));
+        $corporate1=Corporate1::all();
+        $corporate2=Corporate2::all();
+        return view('admin.institute', compact('corporate1','corporate2'));
     }
     public function institute7()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 2)->where('form', 'seven')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 2)->where('form', 'seven')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.institute', compact('data'));
+        $corporate1=Corporate1::all();
+        $corporate2=Corporate2::all();
+        return view('admin.institute', compact('corporate1','corporate2'));
     }
 
        public function institute8()
     {
-        if (auth()->user()->role == 'admin1') {
-            $data = Competition::where('type', 2)->where('form', 'eight')->where('accept', 0)->orWhere('accept', 1)->get();
-        } else {
-            $data = Competition::where('type', 2)->where('form', 'eight')->where('accept', 1)->orWhere('accept', 2)->get();
-        }
-        return view('admin.institute', compact('data'));
+        $corporate1=Corporate1::all();
+        $corporate2=Corporate2::all();
+        return view('admin.institute', compact('corporate1','corporate2'));
     }
 
     public function destroy(Request $request)
