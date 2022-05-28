@@ -393,7 +393,7 @@
                     <div class="form-group">
                         <label for="authentic_country" class="form-label">الدولة</label>
                         <select required name="authentic_country" id="inputNationality" class="form-select">
-                            <option selected disabled>اختارالدولة</option>
+                            <option selected disabled></option>
                            <option value="AW">آروبا</option>
 	<option value="AZ">أذربيجان</option>
 	<option value="AM">أرمينيا</option>
@@ -857,7 +857,7 @@
                     <div class="form-group">
                         <label for="behalf_country" class="form-label">الدولة</label>
                         <select required name="behalf_country" id="inputNationality" class="form-select">
-                            <option selected disabled>اختارالدولة</option>
+                            <option selected disabled></option>
                             <option value="AW">آروبا</option>
                             <option value="AZ">أذربيجان</option>
                             <option value="AM">أرمينيا</option>
