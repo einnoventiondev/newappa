@@ -393,7 +393,7 @@
                     <div class="form-group">
                         <label for="authentic_country" class="form-label">الدولة</label>
                         <select required name="authentic_country" id="inputNationality" class="form-select">
-                            <option selected disabled></option>
+                            <option selected disabled>اختارالدولة</option>
                            <option value="AW">آروبا</option>
 	<option value="AZ">أذربيجان</option>
 	<option value="AM">أرمينيا</option>
@@ -672,7 +672,7 @@
                 <div class="col-md-4 padd-l-20 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_history" class="form-label">تاريخه</label>
-                        <input type="text" class="form-control" required name="authentic_history" id="idNumber">
+                        <input type="text" class="form-control date" required name="authentic_history" id="idNumber">
                     </div>
                 </div>
 
@@ -857,7 +857,7 @@
                     <div class="form-group">
                         <label for="behalf_country" class="form-label">الدولة</label>
                         <select required name="behalf_country" id="inputNationality" class="form-select">
-                            <option selected disabled></option>
+                            <option selected disabled>اختارالدولة</option>
                             <option value="AW">آروبا</option>
                             <option value="AZ">أذربيجان</option>
                             <option value="AM">أرمينيا</option>
@@ -1205,7 +1205,7 @@ let count=0;
     <div class="col-md-4">
         <div class="form-group">
             <label for="date" class="form-label">تاريخه</label>
-            <input type="text" class="form-control" name="authentic_history`+ count +`" id="idNumber">
+            <input type="text" class="form-control date" name="authentic_history`+ count +`" id="idNumber">
         </div>
     </div>
 
