@@ -135,7 +135,7 @@ class CompetitionController extends Controller
         $corporate->authentic_project=$request->authentic_project;
         $corporate->authentic_company=$request->authentic_company;
         $corporate->authentic_options=$request->authentic_options;
-       
+
         $corporate->authentic_email=$request->authentic_email;
         $corporate->authentic_country=$request->authentic_country;
         $corporate->authentic_idea=$request->authentic_idea;
@@ -221,120 +221,144 @@ class CompetitionController extends Controller
 
     public function index2(Request $request)
     {
-        //  dd($request->all());
-        $request->validate([
-            'type' => 'required',
-        ]);
-
-        if ($request->type == 2) {
-
-            $request->validate([
-
-                'release' => 'required',
-                'place' => 'required',
-                'title' => 'required',
-                'relation' => 'required',
-                'about' => 'required',
-                'idNumber' => 'required',
-                'state' => 'required',
-                'inputName' => 'required',
-                'inputEmail' => 'required',
-                'phoneNumber' => 'required',
-                'state' => 'required',
-                'orgniztionName' => 'required',
-            ]);
-        }
-
-
-
-
-        if (isset($request->letter) && !empty($request->letter)) {
-
-         //   $letter  = Storage::disk('public')->put('upload/', $request->letter);
-			$letter  = $request->letter->getClientOriginalName();
-			$path = $request->file('letter')->storeAs(
-    'public/upload', $letter
-);
-        // $letter = null ;
-		} else {
-            $letter  = null;
-        }
-        if (isset($request->candidateImage) && !empty($request->candidateImage)) {
-        $candidateImage  = $request->candidateImage->getClientOriginalName();
-			$path = $request->file('candidateImage')->storeAs(
-    'public/upload', $candidateImage
-);
-			// dd($path);
-		// $candidateImage  = null;
-        } else {
-            $candidateImage  = null;
-        }
-        if (isset($request->passportimages) && !empty($request->passportimages)) {
-            // $passportimages  = Storage::disk('public')->put('upload/', $request->passportimages);
-			$passportimages  = $request->passportimages->getClientOriginalName();
-			$path = $request->file('passportimages')->storeAs(
-    'public/upload', $candidateImage
-);
-           //  $passportimages = null;
-		} else {
-            $passportimages  = null;
-        }
-        if (isset($request->publishedWorks) && !empty($request->publishedWorks)) {
-        //     $publishedWorks  = Storage::disk('public')->put('upload/', $request->publishedWorks);
-			$publishedWorks  = $request->publishedWorks->getClientOriginalName();
-			$path = $request->file('publishedWorks')->storeAs(
-    'public/upload', $publishedWorks
-);
-      //   $publishedWorks = null;
-		} else {
-            $publishedWorks  = null;
-        }
-		$prev = url()->previous();
-		$link_array = explode('/',$prev);
-		$segment = end($link_array);
-		if($segment == 'six' || $segment == 'seven')
-		{
-			$fieldname = $request->fieldname;
-			$age = $request->age;
-			$uni_number = $request->uniNumber;
-			$uni_email = $request->uniEmail;
-			$phone_number2 = $request->phoneNumber2;
+      $compitition=new Competition;
+      $compitition->type = $request->type;
+      $compitition->form => $request->form;
+                  'letter' => $letter,
+                  'publishedWorks' => $publishedWorks,
+                  'candidateImage' => $candidateImage,
+                  'passportimages' => $passportimages,
+                  'release' => $request->release,
+                  'place' => $request->place,
+                  'title' => $request->title,
+                  'relation' => $request->relation,
+                  'about' => $request->about,
+                  'idNumber' => $request->idNumber,
+                  'inputNationality' => $request->inputNationality,
+                  'inputName' => $request->inputName,
+                  'inputEmail' => $request->inputEmail,
+                  'phoneNumber' => $request->phoneNumber,
+                  'state' => $request->state,
+                  'orgniztionName' => $request->orgniztionName,
+      			'phone_number2'  => $phone_number2,
+      			'age'   => $age,
+      			'uni_number' => $uni_number,
+      			'uni_email' => $uni_email,
+      			'fieldname'  => $fieldname,
 
 
-		}
-		else{
-		$fieldname =  'null';
-			$age = 'null';
-			$uni_number = 'null';
-			$uni_email = 'null';
-			$phone_number2 ='null';
-		}
-        Competition::create([
-            'type' => $request->type,
-            'form' => $request->form,
-            'letter' => $letter,
-            'publishedWorks' => $publishedWorks,
-            'candidateImage' => $candidateImage,
-            'passportimages' => $passportimages,
-            'release' => $request->release,
-            'place' => $request->place,
-            'title' => $request->title,
-            'relation' => $request->relation,
-            'about' => $request->about,
-            'idNumber' => $request->idNumber,
-            'inputNationality' => $request->inputNationality,
-            'inputName' => $request->inputName,
-            'inputEmail' => $request->inputEmail,
-            'phoneNumber' => $request->phoneNumber,
-            'state' => $request->state,
-            'orgniztionName' => $request->orgniztionName,
-			'phone_number2'  => $phone_number2,
-			'age'   => $age,
-			'uni_number' => $uni_number,
-			'uni_email' => $uni_email,
-			'fieldname'  => $fieldname,
-        ]);
-        return redirect('/');
+
+
+//         $request->validate([
+//             'type' => 'required',
+//         ]);
+
+//         if ($request->type == 2) {
+
+//             $request->validate([
+
+//                 'release' => 'required',
+//                 'place' => 'required',
+//                 'title' => 'required',
+//                 'relation' => 'required',
+//                 'about' => 'required',
+//                 'idNumber' => 'required',
+//                 'state' => 'required',
+//                 'inputName' => 'required',
+//                 'inputEmail' => 'required',
+//                 'phoneNumber' => 'required',
+//                 'state' => 'required',
+//                 'orgniztionName' => 'required',
+//             ]);
+//         }
+//       if (isset($request->letter) && !empty($request->letter)) {
+
+//          //   $letter  = Storage::disk('public')->put('upload/', $request->letter);
+// 			$letter  = $request->letter->getClientOriginalName();
+// 			$path = $request->file('letter')->storeAs(
+//     'public/upload', $letter
+// );
+//         // $letter = null ;
+// 		} else {
+//             $letter  = null;
+//         }
+//         if (isset($request->candidateImage) && !empty($request->candidateImage)) {
+//         $candidateImage  = $request->candidateImage->getClientOriginalName();
+// 			$path = $request->file('candidateImage')->storeAs(
+//     'public/upload', $candidateImage
+// );
+// 			// dd($path);
+// 		// $candidateImage  = null;
+//         } else {
+//             $candidateImage  = null;
+//         }
+//         if (isset($request->passportimages) && !empty($request->passportimages)) {
+//             // $passportimages  = Storage::disk('public')->put('upload/', $request->passportimages);
+// 			$passportimages  = $request->passportimages->getClientOriginalName();
+// 			$path = $request->file('passportimages')->storeAs(
+//     'public/upload', $candidateImage
+// );
+//            //  $passportimages = null;
+// 		} else {
+//             $passportimages  = null;
+//         }
+//         if (isset($request->publishedWorks) && !empty($request->publishedWorks)) {
+//         //     $publishedWorks  = Storage::disk('public')->put('upload/', $request->publishedWorks);
+// 			$publishedWorks  = $request->publishedWorks->getClientOriginalName();
+// 			$path = $request->file('publishedWorks')->storeAs(
+//     'public/upload', $publishedWorks
+// );
+//       //   $publishedWorks = null;
+// 		} else {
+//             $publishedWorks  = null;
+//         }
+// 		$prev = url()->previous();
+// 		$link_array = explode('/',$prev);
+// 		$segment = end($link_array);
+// 		if($segment == 'six' || $segment == 'seven')
+// 		{
+// 			$fieldname = $request->fieldname;
+// 			$age = $request->age;
+// 			$uni_number = $request->uniNumber;
+// 			$uni_email = $request->uniEmail;
+// 			$phone_number2 = $request->phoneNumber2;
+
+
+// 		}
+// 		else{
+// 		$fieldname =  'null';
+// 			$age = 'null';
+// 			$uni_number = 'null';
+// 			$uni_email = 'null';
+// 			$phone_number2 ='null';
+// 		}
+
+//     Competition::create([
+//             'type' => $request->type,
+//             'form' => $request->form,
+//             'letter' => $letter,
+//             'publishedWorks' => $publishedWorks,
+//             'candidateImage' => $candidateImage,
+//             'passportimages' => $passportimages,
+//             'release' => $request->release,
+//             'place' => $request->place,
+//             'title' => $request->title,
+//             'relation' => $request->relation,
+//             'about' => $request->about,
+//             'idNumber' => $request->idNumber,
+//             'inputNationality' => $request->inputNationality,
+//             'inputName' => $request->inputName,
+//             'inputEmail' => $request->inputEmail,
+//             'phoneNumber' => $request->phoneNumber,
+//             'state' => $request->state,
+//             'orgniztionName' => $request->orgniztionName,
+// 			'phone_number2'  => $phone_number2,
+// 			'age'   => $age,
+// 			'uni_number' => $uni_number,
+// 			'uni_email' => $uni_email,
+// 			'fieldname'  => $fieldname,
+//         ]);
+//         return redirect('/');
     }
 
     public function dropdownCompetition()
