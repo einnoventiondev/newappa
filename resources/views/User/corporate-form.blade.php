@@ -505,38 +505,6 @@
                     </div>
 
 
-                    <div class="col-md-6">
-                        <div class="form-group upload-file">
-                            <label for="download-cv-file-name-second"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name-second" name="authentic_cv1" id="candidateImage">
-                            <span class="upload-file-img download-cv">
-                                ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <div class="form-group upload-file">
-                            <label for="download-cv-file-name-third"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name-third" name="authentic_cv2" id="candidateImage">
-                            <span class="upload-file-img download-cv">
-                                ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <div class="form-group upload-file">
-                            <label for="download-cv-file-name-fourth"  class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-                            <input class="form-control" accept="image/*" type="file" id="download-cv-file-name-fourth" name="authentic_cv3" id="candidateImage">
-                            <span class="upload-file-img download-cv">
-                                ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-                            </span>
-                        </div>
-                    </div>
-
 
                     <div class="add-more-upload">
 
@@ -1059,39 +1027,6 @@
         <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`"  name="candidateImage`+ count +`" id="candidateImage">
         <span class="upload-file-img download-cv">
             ارفاق ملف <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-        </span>
-    </div>
-</div>
-
-
-<div class="col-md-6">
-    <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">جهة الشهادة Pdf, jpg, png</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`"  name="candidateImage`+ count +`" id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-        </span>
-    </div>
-</div>
-
-
-<div class="col-md-6">
-    <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">جهة الشهادة Pdf, jpg, png</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`"  name="candidateImage`+ count +`" id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-        </span>
-    </div>
-</div>
-
-
-<div class="col-md-6">
-    <div class="form-group upload-file">
-        <label for="candidateImage" class="form-label">جهة الشهادة Pdf, jpg, png</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" name="candidateImage`+ count +`"  id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
         </span>
     </div>
 </div>

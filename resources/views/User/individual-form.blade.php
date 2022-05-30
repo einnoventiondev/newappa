@@ -138,7 +138,7 @@
                 <div class="col-md-4 padd-r-20">
                     <div class="form-group">
                         <label for="authentic_contact" class="form-label">رقم الهوية</label>
-                        <input type="number" class="form-control" required name="authentic_contact" id="idNumber">
+                        <input type="text" class="form-control" required name="authentic_contact" id="idNumber">
                     </div>
                 </div>
 
@@ -730,7 +730,7 @@
             </div>
 
 
-            <div class="col-md-6 padd-r-20">
+            <!-- <div class="col-md-6 padd-r-20">
                 <div class="form-group upload-file">
                     <label for="download-cv-file-name-second" class="form-label" > جهة الشهادة Pdf, jpg, png</label>
                     <input class="form-control" accept="image/*" type="file" id="download-cv-file-name-second" name="authentic_cv1" id="candidateImage">
@@ -760,7 +760,7 @@
                         ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
                     </span>
                 </div>
-            </div>
+            </div> -->
 
 
             <div class="add-more-upload">
@@ -1244,39 +1244,6 @@ let count=0;
         <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" name="authentic_cv`+ count +`" id="candidateImage">
         <span class="upload-file-img download-cv">
             ارفاق ملف <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-        </span>
-    </div>
-</div>
-
-
-<div class="col-md-6 padd-r-20">
-    <div class="form-group upload-file">
-        <label for="authentic_cv1`+ count +`" class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" name="authentic_cv1`+ count +`" id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-        </span>
-    </div>
-</div>
-
-
-<div class="col-md-6 padd-r-20">
-    <div class="form-group upload-file">
-        <label for="authentic_cv2`+ count +`" class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" name="authentic_cv2`+ count +`" id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
-        </span>
-    </div>
-</div>
-
-
-<div class="col-md-6 padd-r-20">
-    <div class="form-group upload-file">
-        <label for="authentic_cv3`+ count +`" class="form-label" > جهة الشهادة Pdf, jpg, png</label>
-        <input class="form-control" accept="image/*" type="file" id="download-cv-file-name`+ count +`" name="authentic_cv3`+ count +`" id="candidateImage">
-        <span class="upload-file-img download-cv">
-            ارفاق ملف  <img src="{{ asset('assets/images/cloud-upload-alt.png') }}" class="img-fluid" alt="">
         </span>
     </div>
 </div>
