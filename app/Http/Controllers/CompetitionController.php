@@ -102,7 +102,7 @@ class CompetitionController extends Controller
     $corporate->authentic_target = json_encode($authentic_targets);
 
     $corporate->save();
-    return redirect('/');
+    return redirect('/')->with('success', 'Your Form has been submitted successfully');
     }
     public function corporation2(Request $request){
         $corporate=new Corporate2;
@@ -121,7 +121,7 @@ class CompetitionController extends Controller
         $corporate->behalf_about=$request->behalf_about;
         $corporate->accept=0;
         $corporate->save();
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Your Form has been submitted successfully');
       }
       public function individual1(Request $request){
         //   dd($request->all());
@@ -164,7 +164,7 @@ class CompetitionController extends Controller
 
  }
         $corporate->save();
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Your Form has been submitted successfully');
       }
       public function individual2(Request $request){
         $corporate=new individual2;
@@ -181,7 +181,7 @@ class CompetitionController extends Controller
         $corporate->behalf_site=$request->behalf_site;
         $corporate->accept=0;
         $corporate->save();
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Your Form has been submitted successfully');
       }
 
     public function sendemail(Request $request)
@@ -302,7 +302,7 @@ class CompetitionController extends Controller
 
 
 
-        return redirect('/');
+        return redirect('/')->with('success', 'Your Form has been submitted successfully');
 
         //   $compitition->	age   = $request->age;
     //   $compitition->	uni_number =$request-> uni_number;
@@ -514,7 +514,7 @@ class CompetitionController extends Controller
             'state' => $request->state,
             'orgniztionName' => $request->orgniztionName,
         ]);
-        return redirect('/');
+        return redirect('/')->with('success', 'Your Form has been submitted successfully');
     }
 
     public function index4(Request $request)
@@ -596,7 +596,7 @@ class CompetitionController extends Controller
             'state' => $request->state,
             'orgniztionName' => $request->orgniztionName,
         ]);
-        return redirect('/');
+        return redirect('/')->with('success', 'Your Form has been submitted successfully');
     }
 
     public function indexnew(Request $request)
@@ -726,7 +726,7 @@ class CompetitionController extends Controller
 
 
         ]);
-        return redirect('/');
+        return redirect('/')->with('success', 'Your Form has been submitted successfully');
     }
     /**
      * Show the form for creating a new resource.
@@ -887,7 +887,7 @@ class CompetitionController extends Controller
       }
 
 
-      return redirect('/');
+      return redirect('/')->with('success', 'Your Form has been submitted successfully');
 
     }
 
