@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,7 +122,7 @@
                                 <div class="form-group">
                                    <label for="about" class="form-label">نبذة عن المرشح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
                             </div>
@@ -160,6 +160,7 @@
                                 <div class="form-group">
                                     <label for="relation" class="form-label">الترشیح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="relation" id="relation" ></textarea>
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
                             </div>
@@ -167,7 +168,7 @@
 
 
                         <div>
-                            <h2>تحمیل أعمال المرشح</h2> 
+                            <h2>تحمیل أعمال المرشح</h2>
                         </div>
 
                         <div class="col-md-6">
@@ -234,7 +235,7 @@
                                         <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
                                     </span>
                                 </div>
-                            </div> 
+                            </div>
 
 						 <div class="add-more">
 
@@ -256,7 +257,7 @@
                                         <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
                                     </span>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="1" required name="check2" id="check2">

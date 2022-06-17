@@ -542,6 +542,7 @@
                                 </div>
                                 <div class="form-group">
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about_us" id="about-us" placeholder="نص الرسالة"></textarea>
+                                <span class="text-count">300 / 0</span>
                                 </div>
                                 <div class="content-btn">
                                     <button type="submit" class="btn about-btn">ارسال</button>

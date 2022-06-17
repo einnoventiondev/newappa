@@ -12,8 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/khurram.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}"> 
-</head> 
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+</head>
 
 <body>
     <img src="{{ asset('assets/images/bg-img.png') }}" class="img-fluid bg-img" alt="bg-img">
@@ -38,7 +38,7 @@
                                     </span>
                                     <h2 class="animate__animated animate__fadeInRight animate_slower">جائزة </h2>
                                     <h1 class="animate__animated animate__fadeInRight animate_slower">الديوان </h1>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                                 <div class="form-group">
                                    <label for="about" class="form-label">نبذة عن المرشح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
                             </div>
@@ -159,7 +159,7 @@
                             </div>
                         </div>
 												<div class="add-more">
-						
+
 							</div>
 						 <div class="content add-more-btn-main">
                             <button type="button" class="btn btn-green add-more-btn mt-4">أضف المزيد<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>

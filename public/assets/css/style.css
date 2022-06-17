@@ -2340,3 +2340,9 @@ input::-webkit-inner-spin-button {
 .diwan .title-diwan h1{
 	color: #571B24 !important;
 }
+
+.text-count{
+    display: block;
+    color: #00514c;
+    margin-top: 5px;
+}

@@ -81,7 +81,7 @@
                                 	<div class="form-group">
                                    <label for="about" class="form-label">نبذة عن المرشح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 	</div>
                            		 </div>

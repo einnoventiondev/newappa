@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta required name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عبدالله الفيصل الشعر العربي</title>
 	<link rel="icon" href="{{asset('/assets/icons/favicon-01.png')}}" type="image/x-icon">
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body> 
+<body>
     <img src="{{ asset('assets/images/bg-img.png') }}" class="img-fluid bg-img" alt="bg-img">
     <div class="content-wrapper">
         @include('layouts.User.nav')
@@ -37,13 +37,13 @@
                                     </h2>
                                     <h1 class="animate__animated animate__fadeInRight animate_slower"> الشعر المسرحي </h1>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
 
                     <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form">
                         @csrf
-  
+
 
                         <input type="text" required name="form" value="first" hidden>
 
@@ -123,7 +123,7 @@
                                 <div class="form-group">
                                    <label for="about" class="form-label">نبذة عن المرشح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
                             </div>
@@ -160,7 +160,7 @@
                                 <div class="form-group">
                                     <label for="relation" class="form-label">الترشیح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="relation" id="relation" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
                             </div>
@@ -201,7 +201,7 @@
                                 </span>
                             </div>
                         </div>
-						<div class="add-more"> 
+						<div class="add-more">
 
 							</div>
 						 <div class="content add-more-btn-main">

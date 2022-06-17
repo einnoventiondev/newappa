@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta required name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta required name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عبدالله الفيصل الشعر العربي</title>
 	<link rel="icon" href="{{asset('/assets/icons/favicon-01.png')}}" type="image/x-icon">
     <link rel="shortcut icon" href="{{asset('/assets/icons/favicon-01.png')}}" type="image/x-icon">
@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body> 
+<body>
     <img src="{{ asset('assets/images/bg-img.png') }}" class="img-fluid bg-img" alt="bg-img">
 
     <div class="content-wrapper">
@@ -654,6 +654,7 @@
                     <div class="form-group">
                        <label for="authentic_idea" class="form-label">فكرة المشروع</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="authentic_idea" id="about" ></textarea>
+                        <span class="text-count">300 / 0</span>
                     </div>
                 </div>
 
@@ -1102,6 +1103,7 @@
                     <div class="form-group">
                        <label for="behalf_about" class="form-label">فكرة المشروع</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="behalf_about" id="about" ></textarea>
+                        <span class="text-count">300 / 0</span>
                     </div>
                 </div>
                 <div class="col-md-6 padd-l-20">

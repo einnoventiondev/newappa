@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl"> 
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -96,7 +96,7 @@
                                 <div class="form-group">
                                    <label for="about" class="form-label">نبذة عن المرشح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
                         <div class="col-md-12">
                             <div class="form-group upload-file">
                                 <label for="passportimages" class="form-label">
-                                    رفع صورة جواز السفر أو ال ھوی ة 
+                                    رفع صورة جواز السفر أو ال ھوی ة
                                 </label>
                                 <input class="form-control" accept="image/*" type="file" id="passport-id-file-name" required name="passportimages" id="passportimages">
                                 <span class="upload-file-img passport-id">
@@ -144,7 +144,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6"> 
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="release" class="form-label">سنة الإصدار</label>
                                 <input type="date" class="form-control" required name="release[]" id="release">
@@ -161,7 +161,7 @@
                             </div>
                         </div>
 
-                        
+
 
                         <div class="col-md-6">
                             <div class="form-group">
@@ -180,7 +180,7 @@
                                     <input type="text" class="form-control" required name="composer_name" id="composer_name">
                                 </div>
                             </div>
-                            <div class="col-md-6"> 
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="date_of_registration" class="form-label"> تاريخ التسجيل: </label>
                                     <input type="date" class="form-control" required name="date_of_registration" id="date_of_registration">
@@ -196,15 +196,15 @@
                                         <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
                                     </span>
                                 </div>
-                            </div> 
+                            </div>
 
 
 							<div class="add-more">
-						
+
 							</div>
 						<!-- <div class="content add-more-btn-main">
                             <button type="button" class="btn btn-green add-more-btn mt-4">أضف المزيد<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>
-                        </div> 
+                        </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="1" id="check2">
                             <label class="form-check-label" for="check2">ترفق الجھة خطاب الترشیح على ورق رسمي

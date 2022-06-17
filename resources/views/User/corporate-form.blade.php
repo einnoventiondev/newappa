@@ -444,6 +444,7 @@
                                 <label for="authentic_idea" class="form-label">فكرة المشروع</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required
                                     name="authentic_idea" id="about"></textarea>
+                                    <span class="text-count">300 / 0</span>
                             </div>
                         </div>
 
@@ -667,7 +668,7 @@
                                 <input type="email" class="form-control" required name="behalf_email" id="idNumber">
                             </div>
                         </div>
- 
+
 
                         <div>
                             <h2>مكان تفعيل المشروع</h2>
@@ -941,6 +942,7 @@
                                 <label for="behalf_about" class="form-label">فكرة المشروع</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required
                                     name="behalf_about" id="about"></textarea>
+                                    <span class="text-count">300 / 0</span>
                             </div>
                         </div>
 

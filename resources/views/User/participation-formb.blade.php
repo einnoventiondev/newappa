@@ -2,7 +2,7 @@
 <html lang="en" dir="rtl">
 
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta required name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عبدالله الفيصل الشعر العربي</title>
@@ -25,7 +25,7 @@
                 <div class="row g-0">
                     <div class="col-md-12 title-uni-stnd ">
                         <div class="row">
-                            <div class="col-md-2 mob-order-1"> 
+                            <div class="col-md-2 mob-order-1">
                                 <div class="top-prize">
                                     <img src="" alt="">
                                 </div>
@@ -36,15 +36,15 @@
                                     <h2 class="animate__animated animate__fadeInRight animate_slower">جائزة </h2>
                                     <h1 class="animate__animated animate__fadeInRight animate_slower"> الشعر المسرحي </h1>
                                 </div>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                     </div>
 
                     <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form">
                         @csrf
                         <input type="text" required name="form" value="first" hidden>
                         <div>
-                            <h2>معلومات المرشح</h1> 
+                            <h2>معلومات المرشح</h1>
                         </div>
                         <input type="text" required name="type" value="1" hidden>
                         <div class="col-md-6">
@@ -88,11 +88,11 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12"> 
+                        <div class="col-md-12">
                                 <div class="form-group">
                                    <label for="about" class="form-label">نبذة عن المرشح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                                     <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
                                 </span>
                             </div>
-                        </div> 
+                        </div>
 
 
 
@@ -156,7 +156,7 @@
                             </div>
                         </div>
 							<div class="add-more">
-						
+
 							</div>
 						 <div class="content add-more-btn-main">
                             <button type="button" class="btn btn-green add-more-btn mt-4">أضف المزيد<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>
@@ -180,7 +180,7 @@
 
         <img src="{{ asset('assets/images/top-side.png') }}" class="side-img" alt="close-up-hands">
 
-        @include('layouts.User.footer') 
+        @include('layouts.User.footer')
 
     </div>
 

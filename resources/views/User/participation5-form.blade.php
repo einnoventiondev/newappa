@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/khurram.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head> 
+</head>
 
 <body>
     <img src="{{ asset('assets/images/bg-img.png') }}" class="img-fluid bg-img" alt="bg-img">
@@ -46,7 +46,7 @@
 
                     <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form">
                         @csrf
-                        
+
                         <input type="text" required name="form" value="five" hidden>
                         <input type="text" required name="type" value="2" hidden>
                         <div class="click-hide row">
@@ -117,7 +117,7 @@
                                 <div class="form-group">
                                    <label for="about" class="form-label">نبذة عن المرشح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
                             </div>
@@ -154,6 +154,7 @@
                                 <div class="form-group">
                                     <label for="relation" class="form-label">الترشیح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="relation" id="relation" ></textarea>
+                                    <span class="text-count">300 / 0</span>
                                 </div>
                             </div>
                         </div>
@@ -194,7 +195,7 @@
                             </div>
                         </div>
 								<div class="add-more">
-						
+
 							</div>
 						 <div class="content add-more-btn-main">
                             <button type="button" class="btn btn-green add-more-btn mt-4">أضف المزيد<img src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>

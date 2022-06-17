@@ -44,7 +44,7 @@
                 <!-- For Success Message -->
                  @if ($message = Session::get('success'))
                     <div class="alert alert-success">
-                        <p>{{ $message }}</p>   
+                        <p>{{ $message }}</p>
                     </div>
                 @endif
                 <h2 class="text-center"> </h2>
@@ -65,6 +65,7 @@
                     <div class="form-group">
                         <label for="message" class="form-label">رسالة</label>
                         <textarea class="form-control" rows="4" name="message" id="message" placeholder="اكتب رسالتك"></textarea>
+                        <span class="text-count">300 / 0</span>
                     </div>
                     <div class="content justify-content-center">
 

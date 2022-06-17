@@ -169,6 +169,7 @@
                                 <label for="about" class="form-label">نبذة عن المرشح</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required
                                     name="about" id="about"></textarea>
+                                    <span class="text-count">300 / 0</span>
 
                                 <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                             </div>
@@ -209,6 +210,7 @@
                                     <label for="relation" class="form-label">الترشیح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required
                                         name="relation" id="relation"></textarea>
+                                        <span class="text-count">300 / 0</span>
                                 </div>
                             </div>
                         </div>
@@ -230,11 +232,11 @@
                         </div>
 
                         <!-- <div class="col-md-6">
-                            <div class="form-group"> 
+                            <div class="form-group">
                                 <label for="title" class="form-label"></label>
                                 <input type="text" class="form-control d-none"  name="title[]" id="title" value="">
                             </div>
-                        </div> 
+                        </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
