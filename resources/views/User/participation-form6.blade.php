@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta required name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبدالله الفيصل الشعر العربي</title>
+    <link rel="icon" href="{{asset('/assets/icons/favicon-01.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('/assets/icons/favicon-01.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/khurram.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <img src="{{ asset('assets/images/bg-img.png') }}" class="img-fluid bg-img" alt="bg-img">
+    <div class="content-wrapper">
+        @include('layouts.User.nav')
+        <section class="content-container">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-md-12 title-uni-stnd ">
+                        <div class="row">
+                            <div class="col-md-2 mob-order-1">
+                                <div class="top-prize">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="uni-stnd-txt partic-txt zhd-title">
+                                    <span
+                                        class="sub-title animate__animated animate__fadeInRight animate_slower d-block">
+
+                                    </span>
+                                    <h2 class="animate__animated animate__fadeInRight animate_slower">استمارة ترشيح
+                                        قصيدة الشاعر الواعد لطلبة الجامعات </h2>
+                                    <h1 class="animate__animated animate__fadeInRight animate_slower"> ترشيح مؤسسي </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form method="POST" enctype="multipart/form-data" action="{{route('university')}}"
+                        class="row gx-5 gy-3 candidate-form">
+                        @csrf
+                        <input type="text" required name="form" value="six" hidden>
+                        <input type="text" required name="type" value="2" hidden>
+                        <div class="click-hide row">
+                            <h2>معلومات الجھة المرشحة</h2>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName" class="form-label">اسم الجامعة</label>
+                                    <input type="text" class="form-control" required name="orgniztionName"
+                                        id="inputName">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="inputNationality" class="form-label">المدينة</label>
+                                    <input type="text" class="form-control" required name="state" id="state">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fieldname" class="form-label"> المنسق من قبل الجامعة </label>
+                                    <input type="fieldname" class="form-control" required name="fieldname"
+                                        id="fieldname">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phoneNumber1" class="form-label"> رقم التواصل</label>
+                                    <input type="number" class="form-control" required name="phoneNumber"
+                                        id="phoneNumber">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail" class="form-label">الإيميل الرسمي</label>
+                                    <input type="email" class="form-control" required name="inputEmail" id="inputEmail">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>معلومات المرشح</h1>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputName" class="form-label">اسم المرشح الرباعي</label>
+                                <input type="text" class="form-control" required name="inputName" id="inputName">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputNationality" class="form-label">الجنسية </label>
+                                <select required name="inputNationality" id="inputNationality" class="form-select">
+                                    <option selected disabled>اختارالجنسية</option>
+                                    @foreach ($nation as $nat)
+                                    <option value="{{$nat->name}}">{{$nat->name}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="age" class="form-label">العمر </label>
+                                <select required name="age" id="age" class="form-select">
+                                    <option selected disabled>اختر العمر من 18 إلى 30</option>
+
+                                    <option value="18" name="age18">18</option>
+                                    <option value="19" name="age19">19</option>
+                                    <option value="20" name="age20">20</option>
+                                    <option value="21" name="age21">21</option>
+                                    <option value="22" name="age22">22</option>
+                                    <option value="23" name="age23">23</option>
+                                    <option value="24" name="age24">24</option>
+                                    <option value="25" name="age25">25</option>
+                                    <option value="26" name="age26">26</option>
+                                    <option value="27" name="age27">27</option>
+                                    <option value="28" name="age28">28</option>
+                                    <option value="29" name="age29">29</option>
+                                    <option value="30" name="age30">30</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="idNumber" class="form-label">رقم الهوية (للسعودي) والجواز لغير السعودي
+                                </label>
+                                <input type="text" class="form-control" required name="idNumber" id="idNumber">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="uniNumber" class="form-label">الرقم الجامعي</label>
+                                <input type="text" class="form-control" required name="uniNumber" id="uniNumber">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="uniEmail" class="form-label">الإيميل الجامعي</label>
+                                <input type="email" class="form-control" required name="uniEmail" id="uniEmail">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="phoneNumber2" class="form-label"> رقم التواصل</label>
+                                <input type="number" class="form-control" required name="phoneNumber2"
+                                    id="phoneNumber2">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="about" class="form-label">نبذة عن المرشح</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required
+                                    name="about" id="about"></textarea>
+
+                                <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group upload-file">
+                                <label for="passportimages" class="form-label">رفع صورة جواز السفر أو
+                                    الھویة</label>
+                                <input class="form-control" accept="image/*" type="file" id="passport-id-file-name"
+                                    required name="passportimages" id="passportimages">
+                                <span class="upload-file-img passport-id">
+                                    <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
+                                </span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-12">
+                            <div class="form-group upload-file">
+                                <label for="candidateImage" class="form-label">تحميل السيرة الذاتية</label>
+                                <input class="form-control" accept="image/*" type="file" id="download-cv-file-name"
+                                    required name="candidateImage" id="candidateImage">
+                                <span class="upload-file-img download-cv">
+                                    <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="click-hide row">
+
+                            <div>
+                                <h2>مسوغات الترشیح</h2>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="relation" class="form-label">الترشیح</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required
+                                        name="relation" id="relation"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <h2>تحمیل القصيدة الشعرية</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group upload-file">
+                                <label for="publishedWorks" class="form-label">التحمیل</label>
+                                <input class="form-control" type="file" id="download-file-appends"
+                                    accept="application/pdf, application/vnd.ms-excel" required name="publishedWork"
+                                    id="publishedWorks">
+                                <span class="upload-file-img download-file-name">
+                                    <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid" alt="">
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-md-6">
+                            <div class="form-group"> 
+                                <label for="title" class="form-label"></label>
+                                <input type="text" class="form-control d-none"  name="title[]" id="title" value="">
+                            </div>
+                        </div> 
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="place" class="form-label"></label>
+                                <input type="text" class="form-control d-none"  name="place[]" id="place" value="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="release" class="form-label"></label>
+                                <input type="text" class="form-control d-none"  name="release[]" id="release" value="">
+                            </div>
+                        </div> -->
+
+
+
+                        <div class="add-more">
+
+                        </div>
+                   <!--     <div class="content add-more-btn-main">
+                            <button type="button" class="btn btn-green add-more-btn mt-4">أضف المزيد<img
+                                    src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>
+                        </div> -->
+
+                        <div class="click-hide row">
+                            <div class="content">
+                                <!-- <button type="button" class="btn btn-green submit-btn mt-4 show-letter"><i class="fa-solid fa-chevron-down"></i>								</button> -->
+                            </div>
+                            <div class="optional">
+                                <div>
+                                    <h2>إرفاق خطاب الجھة</h2>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group upload-file">
+                                        <label for="letter" class="form-label">ترفق الجهة خطاب الترشيح على ورق رسمي
+                                            باستخدام الماسح الضوئي مصدقا بالختم الرسمي للجهة</label>
+                                        <input class="form-control" type="file" id="authority-letter-file-name"
+                                            accept="application/pdf, application/vnd.ms-excel" name="letter"
+                                            id="letter">
+                                        <span class="upload-file-img authority-letter">
+                                            <img src="{{ asset('assets/images/file-icon.png') }}" class="img-fluid"
+                                                alt="">
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-check zhd-check">
+                                    <input class="form-check-input " type="checkbox" value="1" required name="check2"
+                                        id="check2">
+                                    <label class="form-check-label" for="check2">جميع المعلومات المدونة والمرفقة في هذا
+                                        النموذج صحيحة ودقيقة ونتحمل مسؤولية ما يخالف ذلك </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="content">
+                            <button type="submit" class="btn btn-green submit-btn mt-4">إرسال طلب الترشح<img
+                                    src="{{ asset('assets/icons/arrow-back.png') }}" alt=""></button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <img src="{{ asset('assets/images/top-side.png') }}" class="side-img" alt="close-up-hands">
+
+        @include('layouts.User.footer')
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <script src="{{ asset('assets/js/jquery.min.js') }}"> </script>
+    <script src="{{asset('assets/js/scripts.js')}}"> </script>
+
+
+</body>
+
+</html>
