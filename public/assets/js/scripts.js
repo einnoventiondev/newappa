@@ -185,7 +185,7 @@ $(document).ready(function() {
 
 
 	$('textarea').keyup(function(e) {
-		$('.text-count').html(300+' / '+$(this).val().length);
+		$(this).next('.text-count').html(300+' / '+$(this).val().length);
         if (e.which < 0x20) {
             // e.which < 0x20, then it's not a printable character
             // e.which === 0 - Not a character
@@ -197,7 +197,7 @@ $(document).ready(function() {
         else if (this.value.length > 300) {
             // Maximum exceeded
             this.value = this.value.substring(0, 300);
-            $('.text-count').html(300+' / '+300);
+            $(this).next('.text-count').html(300+' / '+300);
         }
     });
 
