@@ -22,7 +22,7 @@
 <body>
     @if (session()->has('success'))
     <div class="alert alert-success">
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#success_tic">Open Modal</button>
+        <h3>Your form has been submitted</h3>
 
         <!-- Modal -->
         <div id="success_tic" class="modal fade" role="dialog">
@@ -542,7 +542,6 @@
                                 </div>
                                 <div class="form-group">
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about_us" id="about-us" placeholder="نص الرسالة"></textarea>
-                                <span class="text-count">300 / 0</span>
                                 </div>
                                 <div class="content-btn">
                                     <button type="submit" class="btn about-btn">ارسال</button>
