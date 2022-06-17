@@ -200,6 +200,9 @@ $(document).ready(function() {
             $(this).next('.text-count').html(300+' / '+300);
         }
     });
+    $('body').click(function(){
+        $('#success_tic').addClass('close-modal');
+    })
 
     AOS.init({
         offset: 200,
