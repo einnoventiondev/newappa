@@ -2346,3 +2346,45 @@ input::-webkit-inner-spin-button {
     color: #00514c;
     margin-top: 5px;
 }
+
+
+
+#success_tic.close-modal{
+    display: none !important;
+    opacity: 0 !important;
+}
+
+#success_tic{
+    display: block !important;
+    z-index: 10000;
+    background-color: #00000052;
+}
+.fade:not(.show) {
+    opacity: 1;
+}
+
+.alert-success {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+.modal-content{
+    height: 200px;
+    border-radius: 15px;
+}
+.modal .close{
+    padding: 10px;
+    font-size: 40px;
+    color: #0f5132;
+}
+.modal .page-body{
+    text-align: center;
+}
+
+.modal-dialog{
+    top: 50%;
+    right: 0;
+    left: 0;
+}
+
+

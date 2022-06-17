@@ -22,7 +22,6 @@
 <body>
     @if (session()->has('success'))
     <div class="alert alert-success">
-        <h3>Your form has been submitted</h3>
 
         <!-- Modal -->
         <div id="success_tic" class="modal fade" role="dialog">
@@ -33,8 +32,8 @@
                     <a class="close" href="#" data-dismiss="modal">&times;</a>
                     <div class="page-body">
                         <div class="head">
-                            <h3 style="margin-top:5px;">Your form has been submitted</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <h3 style="margin-top:5px;">وقد قدم النموذج الخاص بك</h3>
+                            {{-- <h4>Lorem ipsum dolor sit amet</h4> --}}
                         </div>
 
                         <h1 style="text-align:center;">
