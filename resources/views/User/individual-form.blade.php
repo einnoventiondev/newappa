@@ -1103,6 +1103,7 @@
                     <div class="form-group">
                        <label for="behalf_about" class="form-label">فكرة المشروع</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="behalf_about" id="about" ></textarea>
+                        <span class="text-count">300 / 0</span>
                     </div>
                 </div>
                 <div class="col-md-6 padd-l-20">

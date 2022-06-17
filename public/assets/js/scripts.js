@@ -130,7 +130,7 @@ $(document).ready(function() {
                             </div>
                         </div>
 
-                        <div class="col-md-6"> 
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="place" class="form-label">دار النشر</label>
                                 <input type="text" class="form-control" required  name="place[]" id="place">
@@ -179,6 +179,26 @@ $(document).ready(function() {
         $(this).toggleClass('expand');
         $(this).find('.accBox-h2').toggleClass('accBoxToggle');
         $(this).find('.accBox-h').toggleClass('accBoxhToggle');
+    });
+
+// text count
+
+
+	$('textarea').keyup(function(e) {
+		$('.text-count').html(300+' / '+$(this).val().length);
+        if (e.which < 0x20) {
+            // e.which < 0x20, then it's not a printable character
+            // e.which === 0 - Not a character
+            return false;     // Do nothing
+        }
+        if (this.value.length == 300) {
+            e.preventDefault();
+        }
+        else if (this.value.length > 300) {
+            // Maximum exceeded
+            this.value = this.value.substring(0, 300);
+            $('.text-count').html(300+' / '+300);
+        }
     });
 
     AOS.init({
