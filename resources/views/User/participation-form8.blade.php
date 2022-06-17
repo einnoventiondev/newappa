@@ -2,7 +2,7 @@
 <html lang="en" dir="rtl">
 
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta required name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عبدالله الفيصل الشعر العربي</title>
@@ -42,10 +42,10 @@
                         </div>
                     </div>
 
-                    <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form"> 
+                    <form method="POST" enctype="multipart/form-data" action="{{ route('second.paricipation') }}" class="row gx-5 gy-3 candidate-form">
                         @csrf
 
-                        <input type="text" required name="form" value="eight" hidden> 
+                        <input type="text" required name="form" value="eight" hidden>
                         <input type="text" required name="type" value="2" hidden>
                         <div class="click-hide row">
                             <h2>معلومات الجھة المرشحة</h2>
@@ -123,10 +123,10 @@
                                 <div class="form-group">
                                    <label for="about" class="form-label">نبذة عن المرشح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="about" id="about" ></textarea>
-
+                                    <span class="text-count">300 / 0</span>
                                     <!-- <input type="text" class="form-control" required name="relation" id="relation"> -->
                                 </div>
-                            </div> 
+                            </div>
 
 
                         <div class="col-md-12">
@@ -163,6 +163,7 @@
                                 <div class="form-group">
                                     <label for="relation" class="form-label">الترشیح</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required name="relation" id="relation" ></textarea>
+                                    <span class="text-count">300 / 0</span>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +178,7 @@
                                 <label for="title" class="form-label">عنوان الدیوان</label>
                                 <input type="text" class="form-control" required name="title[]" id="title">
                             </div>
-                        </div> 
+                        </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
@@ -195,7 +196,7 @@
 
                         <div class="col-md-6">
 
-                            <div class="form-group upload-file"> 
+                            <div class="form-group upload-file">
                                 <label for="publishedWorks" class="form-label">التحمیل</label>
                                 <input class="form-control" type="file" accept="application/pdf, application/vnd.ms-excel"  name="publishedWorks[]" id="download-file-append">
                                 <span class="upload-file-img download-file-name">
