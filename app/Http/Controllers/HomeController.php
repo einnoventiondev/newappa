@@ -40,97 +40,112 @@ class HomeController extends Controller
      */
     public function institute3()
     {
-        $corporate1=Corporate1::all();
-        $corporate2=Corporate2::all();
+        $corporate1 = Corporate1::all();
+        $corporate2 = Corporate2::all();
 
-        return view('admin.institute', compact('corporate1','corporate2'));
+        return view('admin.institute', compact('corporate1', 'corporate2'));
     }
     public function individuale3()
     {
-       $individual1=individual1::all();
-       $individual2=individual2::all();
-        return view('admin.individuale', compact('individual1','individual2'));
+        $individual1 = individual1::all();
+        $individual2 = individual2::all();
+        return view('admin.individuale', compact('individual1', 'individual2'));
     }
-    public function showcorporate($id){
+    public function showcorporate($id)
+    {
         $data = Competition::find($id);
-        $field= FormField::where('competition_id',$id)->get();
-        return view('admin.corporateshow8', compact('data','field'));
+        $field = FormField::where('competition_id', $id)->get();
+        return view('admin.corporateshow8', compact('data', 'field'));
     }
-    public function showsinging($id){
+    public function showsinging($id)
+    {
         $data = Competition::find($id);
-        $field= FormField::where('competition_id',$id)->get();
-        return view('admin.corporateshow9', compact('data','field'));
+        $field = FormField::where('competition_id', $id)->get();
+        return view('admin.corporateshow9', compact('data', 'field'));
     }
-    public function showuniversity($id){
+    public function showuniversity($id)
+    {
 
         $data = University::find($id);
-        $field = University_field::where('university_id',$id)->get();
+        $field = University_field::where('university_id', $id)->get();
 
         // return $field;
-        return view('admin.universityshow', compact('data','field'));
+        return view('admin.universityshow', compact('data', 'field'));
     }
-    public function showcorporate1($id){
+    public function showcorporate1($id)
+    {
         $data = Competition::find($id);
-        $field= FormField::where('competition_id',$id)->get();
-        return view('admin.corporateshow1', compact('data','field'));
+        $field = FormField::where('competition_id', $id)->get();
+        return view('admin.corporateshow1', compact('data', 'field'));
     }
-	 public function showcorporate9($id){
+    public function showcorporate9($id)
+    {
         $data = Competition::find($id);
-        $field= FormField::where('competition_id',$id)->get();
-        return view('admin.individuale10', compact('data','field'));
+        $field = FormField::where('competition_id', $id)->get();
+        return view('admin.individuale10', compact('data', 'field'));
     }
     public function destroy_data($id)
     {
-       $competitions = Competition::destroy($id);
-       return back()->with('success','FileExtention Delete Successfully');
-
+        $competitions = Competition::destroy($id);
+        
+        return back()->with('success', 'FileExtention Delete Successfully');
     }
     public function destroy_data9($id)
     {
-       $corporate1 = Corporate1::destroy($id);
-       return back()->with('success','FileExtention Delete Successfully');
-
+        $corporate1 = Corporate1::destroy($id);
+        return back()->with('success', 'FileExtention Delete Successfully');
     }
-	public function destroy_data10($id)
+    public function destroy_data10($id)
     {
-       $university = University::destroy($id);
-       return back()->with('success','FileExtention Delete Successfully');
-
+        $university = University::destroy($id);
+        return back()->with('success', 'FileExtention Delete Successfully');
     }
-    public function showcorporate2($id){
+    public function showcorporate2($id)
+    {
         $data = Corporate2::find($id);
         return view('admin.showcorporate2', compact('data'));
     }
     public function destroy_data2($id)
     {
         Corporate2::destroy($id);
-     return redirect()->route('institute3')->with('success','FileExtention Delete Successfully');
+        return redirect()->route('institute3')->with('success', 'FileExtention Delete Successfully');
     }
-    public function showindividual($id){
-        $data = individual1::find($id);
+    public function showindividual($id)
+    {
 
-        return view('admin.individualshow', compact('data'));
+        $data = individual1::find($id);
+        if ($data == null) //For getting rid of the id issue in the view of the application
+        {
+            return "Record not Found";
+        } else {
+            return view('admin.individualshow', compact('data'));
+        }
     }
     public function destroy_data_individual($id)
     {
         individual1::destroy($id);
-     return back()->with('success','FileExtention Delete Successfully');
+        return back()->with('success', 'FileExtention Delete Successfully');
     }
-    public function showindividual2($id){
+    public function showindividual2($id)
+    {
         $data = individual2::find($id);
         return view('admin.showindividual2', compact('data'));
     }
-    public function showindividual3($id){
+    public function showindividual3($id)
+    {
+        // otherfile
         $data = Corporate1::find($id);
-        return view('admin.showindividual3', compact('data'));
+        if ($data == null) { //For getting rid of the issue of the ID showing in the different views of the application pagess
+            return "Record Not Found";
+        } else {
+            return view('admin.showindividual3', compact('data'));
+        }
     }
     public function destroy_data_individual2($id)
     {
         individual2::destroy($id);
-     return back()->with('success','FileExtention Delete Successfully');
+        return back()->with('success', 'FileExtension Delete Successfully');
     }
-
-
 
     public function index()
     {
@@ -140,7 +155,7 @@ class HomeController extends Controller
     {
         // $corporate1=Corporate1::all();
         // $corporate2=Corporate2::all();
-        $competitions = Competition::where([ ['type','=','2'], ['form','=','five'], ])->get();
+        $competitions = Competition::where([['type', '=', '2'], ['form', '=', 'five'],])->get();
 
         return view('admin.institute8', compact('competitions'));
     }
@@ -148,7 +163,7 @@ class HomeController extends Controller
     {
         // $corporate1=Corporate1::all();
         // $corporate2=Corporate2::all();
-        $competitions = Competition::where([ ['type','=','2'], ['form','=','first'], ])->get();
+        $competitions = Competition::where([['type', '=', '2'], ['form', '=', 'first'],])->get();
 
         return view('admin.institute8', compact('competitions'));
     }
@@ -156,52 +171,52 @@ class HomeController extends Controller
     {
         // $individual1=individual1::all();
         // $individual2=individual2::all();
-        $competitions = Competition::where([ ['type','=','1'], ['form','=','first'], ])->get();
+        $competitions = Competition::where([['type', '=', '1'], ['form', '=', 'first'],])->get();
         return view('admin.individuale8', compact('competitions'));
     }
     public function institute2()
     {
-        $competitions = Competition::where([ ['type','=','2'], ['form','=','second'], ])->get();
+        $competitions = Competition::where([['type', '=', '2'], ['form', '=', 'second'],])->get();
 
         return view('admin.institute9', compact('competitions'));
     }
     public function individuale2()
     {
-        $competitions = Competition::with('formfield')->where([ ['type','=','1'], ['form','=','second'], ])->get();
-         return view('admin.individuale9', compact('competitions'));
+        $competitions = Competition::with('formfield')->where([['type', '=', '1'], ['form', '=', 'second'],])->get();
+        return view('admin.individuale9', compact('competitions'));
     }
 
     public function institute5()
     {
 
-        $competitions = Competition::where([ ['type','=','2'], ['form','=','five'], ])->get();
+        $competitions = Competition::where([['type', '=', '2'], ['form', '=', 'five'],])->get();
         return view('admin.institute8', compact('competitions'));
     }
     public function individuale5()
     {
-        $competitions = Competition::with('formfield')->where([ ['type','=','1'], ['form','=','five'], ])->get();
+        $competitions = Competition::with('formfield')->where([['type', '=', '1'], ['form', '=', 'five'],])->get();
         return view('admin.individuale8', compact('competitions'));
     }
     public function institute6()
     {
-        $competitions = Competition::where([ ['type','=','1'], ['form','=','five'], ])->get();
+        $competitions = Competition::where([['type', '=', '1'], ['form', '=', 'five'],])->get();
         return view('admin.institute', compact('competitions'));
     }
     public function university()
     {
-        $universities = University::where([ ['type','=','2'], ['form','=','six'], ])->get();
+        $universities = University::where([['type', '=', '2'], ['form', '=', 'six'],])->get();
         return view('admin.university', compact('universities'));
     }
     public function institute7()
     {
-        $corporate1=Corporate1::all();
-        $corporate2=Corporate2::all();
-        return view('admin.institute', compact('corporate1','corporate2'));
+        $corporate1 = Corporate1::all();
+        $corporate2 = Corporate2::all();
+        return view('admin.institute', compact('corporate1', 'corporate2'));
     }
 
-       public function institute8()
+    public function institute8()
     {
-         $competitions = Competition::where([     ['type', '=', '2'],     ['form', '=', 'eight'], ])->get();
+        $competitions = Competition::where([['type', '=', '2'],     ['form', '=', 'eight'],])->get();
         return view('admin.institute8', compact('competitions'));
     }
 
@@ -325,7 +340,7 @@ class HomeController extends Controller
 
     public function register_new_form()
     {
-       return view('auth.auth_new');
+        return view('auth.auth_new');
     }
 
     public function register_new(Request $request)
@@ -351,7 +366,7 @@ class HomeController extends Controller
         $user = User::all();
         return view('auth.auth_users', compact('user'));
     }
-	public function edit_admin($id)
+    public function edit_admin($id)
     {
         $admin = User::find($id);
         return view('auth.edit_admin', compact('admin'));

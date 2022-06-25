@@ -66,9 +66,10 @@
 
 
                         <td>
-                            @if(auth()->user()->role == 'admin1')
+                           
                             <a href="{{ route('show.singing',$corporate) }}" class="view-btn"> <i class="fa fa-eye"></i></a>
                             {{--  <a href="{{ route('delete.corporate', $corporate)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>  --}}
+                            @if(auth()->user()->role == 'admin1')
                             <form action="{{ route('delete.corporate',$corporate)}}" method="post"  accept-charset="UTF-8" style="display:inline">
                                 @method('DELETE')
                                 @csrf

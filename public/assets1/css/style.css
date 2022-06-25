@@ -45547,3 +45547,16 @@ span.twitter-typeahead .tt-suggestion:active {
     width: 530px !important;
     height: 530px !important;
 }
+/* .swal2-styled.swal2-confirm{
+    display:none !important ;
+  } */
+
+  .confirmButton{
+    display: none !important;
+  }
+  /* .d-none{
+    display:none !important ;
+  }
+  .success-swal {
+    display: none !important;
+  } */

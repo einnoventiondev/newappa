@@ -126,12 +126,12 @@ Route::any('fifth/participation', [CompetitionController::class, 'indexnew'])->n
 Route::post('first/corporation', [CompetitionController::class, 'corporation1'])->name('first.corporation.form');
 Route::put('authenticity/{id}', [CompetitionController::class, 'authenticity']);
 Route::put('behalf/{id}', [CompetitionController::class, 'behalf']);
-Route::put('authenticity_single/{id}', [CompetitionController::class, 'authenticity_single']);
+Route::post('authenticity_single/{id}', [CompetitionController::class, 'authenticity_single']); //changed
 Route::put('behalf_single/{id}', [CompetitionController::class, 'behalf_single']);
 Route::post('second/corporation', [CompetitionController::class, 'corporation2'])->name('second.corporation.form');
 Route::post('first/individual', [CompetitionController::class, 'individual1'])->name('first.individual2.form');
 Route::post('second/individual', [CompetitionController::class, 'individual2'])->name('second.individual2.form');
-Route::put('status/{id}', [CompetitionController::class, 'status']); 
+Route::post('status/{id}', [CompetitionController::class, 'status']);
 Route::put('unistatus/{id}', [CompetitionController::class, 'unistatus']);
 Route::get('corporate/show/{id}', [HomeController::class, 'showcorporate'])->name('show.corporate');
 Route::get('corporate/singing/{id}', [HomeController::class, 'showsinging'])->name('show.singing');
@@ -149,8 +149,6 @@ Route::delete('corporate2/delete/{id}',[HomeController::class, 'destroy_data2'])
 Route::get('individual2/show/{id}', [HomeController::class, 'showindividual2'])->name('show.individual2');
 Route::get('individual3/show/{id}', [HomeController::class, 'showindividual3'])->name('show.individual3');
 Route::delete('individual2/delete/{id}',[HomeController::class, 'destroy_data_individual2'])->name('delete.individual2');
-
-
 
 Auth::routes();
 
@@ -245,7 +243,6 @@ Route::get('/indivi',function(){
 Route::get('/corpor',function(){
     return view('User.corporate-form');
 })->name('corporate'); 
-
 
 
 Route::get('generate-pdf/{id}', [CompetitionController::class, 'generatePDF']);

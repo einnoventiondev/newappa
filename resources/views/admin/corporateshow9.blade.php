@@ -12,19 +12,33 @@
                         <h5>تقدم ذاتي</h5> 
                         @endif
                     </div>  --}}
-                    @if(auth()->user()->role == "admin1" || auth()->user()->role == "admin2")
+                    <!-- @if(auth()->user()->role == "admin1" || auth()->user()->role == "admin2")
                     <form action="{{url('status/'.$data->id)}}" method="post">
                         @method('PUT')
                         @csrf
 
                         @if($data->accept == '0')
-                        <button class="btn btn-success" type="submit" onclick="myFunction()">Approve</button>
+                        <button class="btn btn-success" type="submit" onclick="myFunction()">يوافق    </button>
                         @endif
                         @if($data->accept == '1')
-                        <button type="submit" class="btn btn-danger" onclick="fun()">Disapprove</button>
+                        <button type="submit" class="btn btn-danger" onclick="fun()">رفض      </button>
                         @endif
                     </form>
-                    @endif
+                    @endif -->
+                    @if(auth()->user()->role == "admin1" || auth()->user()->role == "admin2")
+            <form method="post" action="{{url('status/'.$data->id)}}">
+
+
+                @csrf
+                <input type="hidden" value="{{$data->id}}" id="hidden">
+                @if($data->accept == '0')
+                <button class="btn btn-success" type="button" class="btn" onclick="return deleteConfirmation(<?php echo $data->id ?>);" id="popupModal">اعتماد</button>
+                @endif
+                @if($data->accept == '1')
+                <button type="submit" class="btn btn-danger">رفض</button>
+                @endif
+            </form>
+            @endif
                     <div class="card-body">
                         <!-- modal -->
                         <div class="modal fade img-modal" id="myModal" tabindex="-1" role="dialog">
@@ -321,13 +335,54 @@
 </div>
 
 
-<script>
-function myFunction() {
-    alert("Are you sure!");
-}
+<!-- JQUERY LINK -->
+<script src="{{ asset('assets1/js/jquery-3.5.1.min.js') }}"></script>
+<!-- POPUP's CDN  -->
+<script src=https://cdn.jsdelivr.net/npm/sweetalert2@11></script>
 
-function fun() {
-    alert("Are you sure!");
-}
+<script>
+    function deleteConfirmation(id) {
+        swal.fire({
+            title: 'هل أنت متأكد؟',
+            icon: 'question',
+            iconHtml: '؟',
+            confirmButtonText: 'نعم',
+            cancelButtonText: 'إغلاق',
+            showCancelButton: true,
+            showCloseButton: true,
+            buttons: false,
+            reverseButtons: 0,
+        }).then(function(e) {
+            if (e.value === true) {
+                let token = $('meta[name="csrf-token"]').attr('content');
+                let _url = `/status/` + id;
+                // alert(_url);
+                $.ajax({
+                    type: 'POST',
+                    url: _url,
+                    data: {
+                        _token: token
+                    },
+                    success: function(resp) {
+                        if (resp.success) {
+                            swal.fire("لقد وافقت بنجاح");
+                            location.reload();
+                        } else {
+                            swal.fire("Error", 'هناك خطأ ما', "error");
+                        }
+                    },
+                    error: function(resp) {
+                        swal.fire("Error", 'هناك خطأ ما', "error");
+                    }
+                });
+
+            } else {
+                e.dismiss;
+            }
+
+        }, function(dismiss) {
+            return false;
+        })
+    }
 </script>
 @endsection

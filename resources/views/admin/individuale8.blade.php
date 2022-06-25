@@ -68,13 +68,16 @@
 
 
                         <td>
+                         
                             <a href="{{ route('show.corporate1',$corporate) }}" class="view-btn"> <i class="fa fa-eye"></i></a>
                             {{--  <a href="{{ route('delete.corporate', $corporate)}}" class="delete-btn"><i class="fa fa-trash-o" style="color:red"></i></a>  --}}
+                            @if(auth()->user()->role == 'admin1')
                             <form action="{{ route('delete.corporate', $corporate)}}" method="post"  accept-charset="UTF-8" style="display:inline">
                                 @method('DELETE')
                                 @csrf
                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete Contact" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                              </form>
+                             @endif
                         </td>
                     </tr>
                     @endif

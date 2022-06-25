@@ -5,23 +5,35 @@
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <div class="card">
-                    {{--  <div class="card-header pb-0">
+                    {{-- <div class="card-header pb-0">
                         @if ($data->type == 2)
                         <h5>ترشیح مؤسسي</h5>
                         @else
                         <h5>تقدم ذاتي</h5>
                         @endif
                     </div>  --}}
-                    @if(auth()->user()->role == "admin1" || auth()->user()->role == "admin2")
+                    <!-- @if(auth()->user()->role == "admin1" || auth()->user()->role == "admin2")
                     <form action="{{url('status/'.$data->id)}}" method="post">
                         @method('PUT')
                         @csrf
 
                         @if($data->accept == '0')
-                        <button class="btn btn-success" type="submit" onclick="myFunction()">Approve</button>
+                        <button class="btn btn-success" type="submit" onclick="myFunction()">يوافق</button>
                         @endif
                         @if($data->accept == '1')
-                        <button type="submit" class="btn btn-danger" onclick="fun()">Disapprove</button>
+                        <button type="submit" class="btn btn-danger" onclick="fun()">رفض</button>
+                        @endif
+                    </form>
+                    @endif -->
+                    @if(auth()->user()->role == "admin1" || auth()->user()->role == "admin2")
+                    <form method="post" action="{{url('status/'.$data->id)}}">
+                        @csrf
+                        <input type="hidden" value="{{$data->id}}" id="hidden">
+                        @if($data->accept == '0')
+                        <button class="btn btn-success" type="button" class="btn" onclick="return deleteConfirmation(<?php echo $data->id ?>);" id="popupModall">اعتماد</button>
+                        @endif
+                        @if($data->accept == '1')
+                        <button type="submit" class="btn btn-danger">رفض</button>
                         @endif
                     </form>
                     @endif
@@ -29,8 +41,7 @@
                         <!-- modal -->
                         <div class="modal fade img-modal" id="myModal" tabindex="-1" role="dialog">
                             <div class="modal-dialog" role="document">
-                                <button class="btn-close theme-close" type="button" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                <button class="btn-close theme-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                                 <div class="modal-body">
                                     <img class="img-fluid modal-image" src="" alt="">
                                 </div>
@@ -43,14 +54,12 @@
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapsetwo"
-                                        aria-expanded="true" aria-controls="collapsetwo">
+                                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
                                         <h5>معلومات الجھة المرشحة</h5>
                                     </button>
                                 </h5>
                             </div>
-                            <div class="collapse show" id="collapsetwo" aria-labelledby="headingOne"
-                                data-bs-parent="#accordion">
+                            <div class="collapse show" id="collapsetwo" aria-labelledby="headingOne" data-bs-parent="#accordion">
                                 <div class="row mt-3">
                                     <div class="col-sm-6 col-lg-6">
                                         <h5 style="margin-left: 25%;"> اسم الجھة</h5>
@@ -93,14 +102,12 @@
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapsetwo"
-                                        aria-expanded="true" aria-controls="collapsetwo">
+                                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
                                         <h5> معلومات المرشح</h5>
                                     </button>
                                 </h5>
                             </div>
-                            <div class="collapse show" id="collapsetwo" aria-labelledby="headingOne"
-                                data-bs-parent="#accordion">
+                            <div class="collapse show" id="collapsetwo" aria-labelledby="headingOne" data-bs-parent="#accordion">
                                 <div class="row mt-3">
                                     <div class="col-sm-6 col-lg-6">
                                         <h5 style="margin-left: 25%;"> الاسم الرباعي </h5>
@@ -139,36 +146,28 @@
                                         <h5 style="margin-left: 25%;"> رفع صورة جواز السفر أو الھویة</h5>
                                     </div>
                                     <div class=" col-sm-6 col-lg-6">
-                                        <h5><img src="{{ url('uploads/passportimages/'.$data->passportimages)}}"
-                                                width="70px" class="img-popup" data-bs-toggle="modal"
-                                                data-bs-target="#myModal"></h5>
-                                        <a type="button" class="btn btn-primary"
-                                            href="{{ url('uploads/passportimages/'.$data->passportimages)}}"
-                                            download>Download</a>
+                                        <h5><img src="{{ url('uploads/passportimages/'.$data->passportimages)}}" width="70px" class="img-popup" data-bs-toggle="modal" data-bs-target="#myModal"></h5>
+                                        <a type="button" class="btn btn-primary" href="{{ url('uploads/passportimages/'.$data->passportimages)}}" download>Download</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
 
-                            <div class="collapse show" id="collapsetwo" aria-labelledby="headingOne"
-                                data-bs-parent="#accordion">
+                            <div class="collapse show" id="collapsetwo" aria-labelledby="headingOne" data-bs-parent="#accordion">
                                 <div class="row mt-3">
                                     <div class="col-sm-6 col-lg-6">
                                         <h5 style="margin-left: 25%;"> تحمیل السیرة الذاتیة </h5>
                                     </div>
                                     <div class=" col-sm-6 col-lg-6">
-                                        <h5><img src="{{ url('uploads/candidateImage/'.$data->candidateImage)}}"
-                                                width="70px" class="img-popup" data-bs-toggle="modal"
-                                                data-bs-target="#myModal"></h5>
-                                            <a type="button" class= "btn btn-primary" href="{{ url('uploads/candidateImage/'.$data->candidateImage)}}" download>Download</a>
+
+                                        <h5><img src="{{ $data->candidateImage != ' '  ? url('uploads/candidateImage/'. $data->candidateImage) : asset('uploads/test.png') }}" width="70px" class="img-popup" data-bs-toggle="modal" data-bs-target="#myModal"></h5>
+                                        <a type="button" class="btn btn-primary" href="{{ url('uploads/candidateImage/'.$data->candidateImage)}}" download>Download</a>
                                     </div>
                                 </div>
                                 <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link" data-bs-toggle="collapse"
-                                            data-bs-target="#collapsetwo" aria-expanded="true"
-                                            aria-controls="collapsetwo">
+                                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
                                             <h5> مسوغات الترشیح</h5>
                                         </button>
                                     </h5>
@@ -182,7 +181,7 @@
                                         <h5>{{ $data->relation }}</h5>
                                     </div>
                                 </div>
-{{--
+                                {{--
                                 <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
                                         <button class="btn btn-link" data-bs-toggle="collapse"
@@ -206,8 +205,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="collapse show" id="collapsetwo" aria-labelledby="headingOne"
-                                data-bs-parent="#accordion">
+                            <div class="collapse show" id="collapsetwo" aria-labelledby="headingOne" data-bs-parent="#accordion">
                                 <div class="row mt-3">
                                     <div class="col-sm-6 col-lg-6">
                                         <h5 style="margin-left: 25%;"> دار النشر </h5>
@@ -231,8 +229,7 @@
                                             التحمیل </h5>
                                     </div>
                                     <div class=" col-sm-6 col-lg-6">
-                                        <h5><a
-                                                href="{{ url('uploads/publishedWorks/'.$item->publishedWorks)}}">{{$item->publishedWorks }}</a>
+                                        <h5><a href="{{ url('uploads/publishedWorks/'.$item->publishedWorks)}}">{{$item->publishedWorks }}</a>
                                         </h5>
 
                                     </div>
@@ -242,9 +239,7 @@
 
                                 <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link" data-bs-toggle="collapse"
-                                            data-bs-target="#collapsetwo" aria-expanded="true"
-                                            aria-controls="collapsetwo">
+                                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
                                             <h5> إرفاق خطاب الجھة</h5>
                                         </button>
                                     </h5>
@@ -270,13 +265,55 @@
     </div>
 </div>
 </div>
-<script>
-function myFunction() {
-    alert("Are you sure!");
-}
 
-function fun() {
-    alert("Are you sure!");
-}
+
+<!-- JQUERY LINK -->
+<script src="{{ asset('assets1/js/jquery-3.5.1.min.js') }}"></script>
+<!-- POPUP's CDN  -->
+<script src=https://cdn.jsdelivr.net/npm/sweetalert2@11></script>
+
+<script>
+    function deleteConfirmation(id) {
+        swal.fire({
+            title: 'هل أنت متأكد؟',
+            icon: 'question',
+            iconHtml: '؟',
+            confirmButtonText: 'نعم',
+            cancelButtonText: 'إغلاق',
+            showCancelButton: true,
+            showCloseButton: true,
+            buttons: false,
+            reverseButtons: 0,
+        }).then(function(e) {
+            if (e.value === true) {
+                let token = $('meta[name="csrf-token"]').attr('content');
+                let _url = `/status/` + id;
+                $.ajax({
+                    type: 'POST',
+                    url: _url,
+                    data: {
+                        _token: token
+                    },
+                    success: function(resp) {
+                        if (resp.success) {
+                            swal.fire("لقد وافقت بنجاح");
+                            location.reload();
+                        } else {
+                            swal.fire("Error", 'هناك خطأ ما', "error");
+                        }
+                    },
+                    error: function(resp) {
+                        swal.fire("Error", 'هناك خطأ ما', "error");
+                    }
+                });
+
+            } else {
+                e.dismiss;
+            }
+
+        }, function(dismiss) {
+            return false;
+        })
+    }
 </script>
 @endsection
