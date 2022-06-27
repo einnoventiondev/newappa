@@ -19,7 +19,7 @@
 
                                 @if(auth()->user()->role == "admin1" || auth()->user()->role == "admin2")
                                 <form method="post" action="{{url(' behalf_single/'.$data->id)}}">
-
+                                    @method('PUT')
                                     @csrf
                                     <input type="hidden" value="{{$data->id}}" id="hidden">
                                     @if($data->accept == '0')
@@ -159,9 +159,9 @@
         }).then(function(e) {
             if (e.value === true) {
                 let token = $('meta[name="csrf-token"]').attr('content');
-                let _url = `/status/` + id;
+                let _url = `/behalf_single/` + id;
                 $.ajax({
-                    type: 'POST',
+                    type: 'PUT',
                     url: _url,
                     data: {
                         _token: token

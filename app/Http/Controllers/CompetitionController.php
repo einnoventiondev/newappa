@@ -895,7 +895,7 @@ class CompetitionController extends Controller
         return redirect('/')->with('success', 'Your Form has been submitted successfully');
     }
 
-    public function unistatus(Request $request , $id)
+    public function unistatus(Request $request, $id)
     {
         $universities = University::find($id);
         if ($universities->accept == 0) {
@@ -903,9 +903,8 @@ class CompetitionController extends Controller
             $universities->accept = 1;
             $universities->save();
             return response()->json([
-                'success'=>"status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
+                'success' => "status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
             ]);
-           
         }
         if ($universities->accept == 1) {
             $universities->accept = 0;
@@ -914,25 +913,25 @@ class CompetitionController extends Controller
         }
     }
 
-    public function status(Request $request , $id)
-    {  
+    public function status(Request $request, $id)
+    {
         $competitions = Competition::find($id);
         if ($competitions->accept == 0) {
 
             $competitions->accept = 1;
             $competitions->save();
             return response()->json([
-                'success'=>"status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
+                'success' => "status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
             ]);
         }
-           
+
         if ($competitions->accept == 1) {
             $competitions->accept = 0;
             $competitions->save();
             return back();
         }
     }
-    public function authenticity(Request $request , $id)
+    public function authenticity(Request $request, $id)
 
     {
         $corporate1 = Corporate1::find($id);
@@ -941,9 +940,8 @@ class CompetitionController extends Controller
             $corporate1->accept = 1;
             $corporate1->save();
             return response()->json([
-                'success'=>"status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
+                'success' => "status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
             ]);
-           
         }
         if ($corporate1->accept == 1) {
 
@@ -960,7 +958,7 @@ class CompetitionController extends Controller
             $corporate2->accept = 1;
             $corporate2->save();
             return response()->json([
-                'success'=>"status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
+                'success' => "status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
             ]);
         }
         if ($corporate2->accept == 1) {
@@ -970,17 +968,16 @@ class CompetitionController extends Controller
             return back();
         }
     }
-    public function authenticity_single(Request $request ,$id)
+    public function authenticity_single(Request $request, $id)
     {
         $individual1 = Individual1::find($id);
         if ($individual1->accept == 0) {
 
             $individual1->accept = 1;
             $individual1->save();
-             return response()->json([
-                'success'=>"status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
+            return response()->json([
+                'success' => "status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
             ]);
-           
         }
         if ($individual1->accept == 1) {
 
@@ -997,7 +994,7 @@ class CompetitionController extends Controller
             $individual2->accept = 1;
             $individual2->save();
             return response()->json([
-                'success'=>"status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
+                'success' => "status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
             ]);
         }
         if ($individual2->accept == 1) {
