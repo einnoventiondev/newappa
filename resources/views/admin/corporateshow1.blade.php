@@ -241,7 +241,6 @@ function fun() {
             cancelButtonText: 'إغلاق',
             showCancelButton: true,
             showCloseButton: true,
-            buttons: false,
             reverseButtons: 0,
         }).then(function(e) {
             if (e.value === true) {

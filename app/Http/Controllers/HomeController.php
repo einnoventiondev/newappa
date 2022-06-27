@@ -135,7 +135,7 @@ class HomeController extends Controller
     {
         // otherfile
         $data = Corporate1::find($id);
-        if ($data == null) { //For getting rid of the issue of the ID showing in the different views of the application pagess
+        if ($data == null) { //For getting rid of the issue of the ID showing in the different views of the application pages
             return "Record Not Found";
         } else {
             return view('admin.showindividual3', compact('data'));

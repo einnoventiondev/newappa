@@ -959,7 +959,9 @@ class CompetitionController extends Controller
 
             $corporate2->accept = 1;
             $corporate2->save();
-            return back();
+            return response()->json([
+                'success'=>"status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
+            ]);
         }
         if ($corporate2->accept == 1) {
 
@@ -994,7 +996,9 @@ class CompetitionController extends Controller
 
             $individual2->accept = 1;
             $individual2->save();
-            return back();
+            return response()->json([
+                'success'=>"status changed successfully",               //This is because of the pop-up on Approval Button redirect to next page
+            ]);
         }
         if ($individual2->accept == 1) {
 
